@@ -8,7 +8,7 @@ NEXUS-ARCHÊ est un outil d'analyse structurelle à double registre, conçu pour
 
 ## Ce que c'est
 
-13 cartes structurelles, chacune portant :
+16 cartes structurelles, chacune portant :
 - Une structure mathématique précise (attracteur, réseau, bifurcation...)
 - Un universel comportemental documenté (Brown, *The Universal People*, 1991)
 - Un glyphe STÈLE primaire pour la compression symbolique
@@ -35,7 +35,7 @@ Le mécanisme est **résonant, non narratif** : les cartes décrivent simultané
 SKILL.md                  — Fichier principal, protocoles, architecture
 README.md                 — Ce fichier
 references/
-  cards.md                — Les 13 fiches complètes
+  cards.md                — Les 16 fiches complètes
   protocol.md             — Mécanisme de tirage + protocole de rigueur
 ```
 

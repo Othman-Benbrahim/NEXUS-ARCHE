@@ -5,7 +5,7 @@ description: >
   Il identifie les structures invariantes qui apparaissent simultanément
   dans les mathématiques (systèmes dynamiques, topologie, théorie des réseaux)
   et dans les universaux comportementaux documentés par Donald Brown.
-  13 cartes structurelles, un mécanisme de tirage résonant (non narratif),
+  16 cartes structurelles, un mécanisme de tirage résonant (non narratif),
   un protocole de rigueur à 4 niveaux, une compression STÈLE par carte.
   Activer quand : analyser la structure cachée d'une situation complexe,
   travailler à l'interface rationnel/symbolique, identifier des patterns
@@ -23,7 +23,7 @@ NEXUS-ARCHÊ est un outil d'analyse structurelle autonome.
 
 Il se distingue de **Miroir-Trans-Échelle** qui orchestre une lecture croisée
 entre deux skills existants (Fractales du Destin / Signaux du Futur).
-NEXUS-ARCHÊ possède son propre corpus de 13 structures et son propre mécanisme.
+NEXUS-ARCHÊ possède son propre corpus de 16 structures et son propre mécanisme.
 
 Articulations possibles :
 - **STÈLE** : chaque carte porte un glyphe STÈLE primaire. Les tirages produisent des chaînes compressibles.
@@ -32,7 +32,7 @@ Articulations possibles :
 
 ---
 
-## LES 13 CARTES
+## LES 16 CARTES
 
 Chaque carte = une structure invariante documentée en deux registres.
 Voir `references/cards.md` pour les fiches complètes.
@@ -51,7 +51,12 @@ Voir `references/cards.md` pour les fiches complètes.
 | CONTRAINTE | ⊘ | NÉGATION |
 | PROPORTION | ◯ | FORME |
 | TRANSFORMATION | ∿ | MOUVEMENT |
-| TRACE | ◊ | TRACE |
+| TRACE · MÉMOIRE | ◊ | TRACE |
+| CROISSANCE | ▲ | INTENSITÉ |
+| COMMUNAUTÉ | ⟶ | TRANSMETTRE |
+| RÉSONANCE | ✶ | RÉVÉLER |
+
+*Les glyphes visuels des 3 dernières cartes sont à confirmer contre l'alphabet STÈLE complet.*
 
 ---
 
@@ -93,16 +98,16 @@ Produit une chaîne STÈLE à 3 glyphes.
 
 | Fichier | Contenu |
 |---|---|
-| `references/cards.md` | Les 13 fiches complètes (rationnel / symbolique / STÈLE / Question IRIS) |
+| `references/cards.md` | Les 16 fiches complètes (rationnel / symbolique / STÈLE / Question IRIS) |
 | `references/protocol.md` | Mécanisme de tirage détaillé + protocole de rigueur complet |
 
 ---
 
 ## FONDEMENTS
 
-**Mathématiques** : structures des systèmes dynamiques, topologie, théorie des réseaux, probabilité, algèbre des transformations.
+**Mathématiques** : structures des systèmes dynamiques, topologie, théorie des réseaux, probabilité, algèbre des transformations, fonctions de croissance, théorie des jeux coopératifs, couplage d'oscillateurs.
 
-**Anthropologie** : universaux comportementaux documentés par Donald Brown (*The Universal People*, 1991), via Steven Pinker (*The Blank Slate*).
+**Anthropologie** : universaux comportementaux documentés par Donald Brown (*The Universal People*, 1991), via Steven Pinker (*The Blank Slate*). Pour RÉSONANCE : ancrage complémentaire dans la biologie évolutive (synchronisation collective, entrainement).
 
 **Symbolique** : alphabet STÈLE — compression glyphique en registre performatif.
 
