@@ -1,4 +1,4 @@
-# NEXUS-ARCHÊ — Les 13 Cartes Structurelles
+# NEXUS-ARCHÊ — Les 16 Cartes Structurelles
 
 > Chaque carte porte une structure invariante lisible en deux registres simultanés.
 > Format : Rationnel / Symbolique / STÈLE / Question IRIS
@@ -149,13 +149,48 @@
 
 ---
 
-## TRACE · ◊ TRACE
+## TRACE · MÉMOIRE · ◊ TRACE
 
-**Rationnel** : invariant résiduel — ce qui persiste après une transformation, l'information conservée, l'empreinte que le changement laisse derrière lui.
+**Rationnel** : invariant résiduel et persistence de l'information — ce qui demeure après une transformation, l'empreinte que le passé laisse dans le présent.
 
-**Symbolique** : mémoire ancestrale, commémoration, tradition orale — toutes les cultures préservent et transmettent les traces de ceux qui sont passés avant.
+**Symbolique** : mémoire ancestrale, commémoration, tradition orale — toutes les cultures préservent et transmettent les traces de ceux qui sont passés avant. La mémoire collective est un universel documenté.
 
 **STÈLE** : `◊` TRACE — empreinte, mémoire résiduelle, ce qui reste après que la chose a passé.
 
-**Question IRIS** : Qu'est-ce qui reste — et qu'est-ce que ce résidu dit de ce qui a changé ?
+**Question IRIS** : Qu'est-ce qui reste et se transmet — et qu'est-ce que cette persistence dit de ce qui a changé ?
 
+---
+
+## CROISSANCE · ▲ INTENSITÉ
+
+**Rationnel** : fonctions de croissance — courbes logistiques, expansion exponentielle suivie de saturation. Ce qui s'amplifie jusqu'à sa limite structurelle.
+
+**Symbolique** : distinction croissance/déclin, jeunesse/âge, vitalité — toutes les cultures différencient les phases d'expansion et de déclin des êtres et des collectifs. Universel documenté par Brown.
+
+**STÈLE** : `▲` INTENSITÉ — amplification, accélération, augmentation de degré.
+
+**Question IRIS** : Qu'est-ce qui est en train de croître ici — et à quel stade de sa courbe se trouve-t-il ?
+
+---
+
+## COMMUNAUTÉ · ⟶ TRANSMETTRE
+
+**Rationnel** : coopération et équilibres collectifs — théorie des jeux coopératifs, coalitions stables, auto-organisation d'un groupe autour d'intérêts partagés.
+
+**Symbolique** : coalition, entraide, solidarité de groupe — parmi les universaux les plus robustes de Brown : formation de coalitions, réciprocité élargie, coopération collective au-delà de la parenté.
+
+**STÈLE** : `⟶` TRANSMETTRE — faire circuler, passer à un autre, mettre en mouvement entre membres.
+
+**Question IRIS** : Quelle communauté est active dans cette situation — et qu'est-ce qui tient ensemble ses membres ?
+
+---
+
+## RÉSONANCE · ✶ RÉVÉLER
+
+**Rationnel** : couplage d'oscillateurs — synchronisation de fréquences, entrainement, alignement spontané de systèmes indépendants sur un rythme commun.
+
+**Symbolique** : musique collective, rituel synchronisé — toutes les cultures créent des états de synchronisation corporelle et émotionnelle (chant, danse, cérémonie). Ancrage complémentaire : synchronisation biologique documentée en éthologie évolutive.
+
+**STÈLE** : `✶` RÉVÉLER — porter au visible ce qui était caché ; la résonance révèle l'alignement latent.
+
+**Question IRIS** : Qu'est-ce qui s'aligne ici — et cette synchronisation est-elle choisie ou subie ?
