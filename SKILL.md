@@ -1,6 +1,6 @@
 ---
 name: nexus-arche
-version: 0.2
+version: 0.3
 description: >
   NEXUS-ARCHÊ est un système de lecture résonante à double registre.
   Il identifie les structures invariantes qui apparaissent simultanément
@@ -110,7 +110,10 @@ Produit une chaîne STÈLE à 3 glyphes.
 | `references/cards.md` | Les 16 fiches complètes : rationnel / symbolique / branche mathématique / STÈLE / Question IRIS / À ne pas confondre avec |
 | `references/protocol.md` | Mécanisme de tirage détaillé + modalités aléatoire/délibératif + protocole de rigueur + configurations pathologiques Mode 3 |
 | `references/stele_rules.md` | Règles syntaxiques STÈLE minimales autonomes : classification des 16 glyphes, grammaire des chaînes, validation |
-| `references/examples.md` | 2 tirages annotés complets (Mode 1, Mode 2, Mode 3) + 1 tirage rejeté commenté |
+| `references/examples.md` | 3 tirages annotés complets (Mode 1, Mode 2, Mode 3) + 1 tirage rejeté commenté |
+| `references/test_log.md` | 10 situations documentées couvrant les 16 cartes — validations d'ancrage, rejets commentés, observations transversales |
+| `references/calibration.md` | Matrice de risque de confusion inter-cartes, faux positifs documentés, protocole de suivi et journal de calibration |
+| `references/prompt_guide.md` | 7 templates d'activation LLM pour différents contextes : Mode 1/2/3, STÈLE, OSINT, Fractales du Destin |
 
 ---
 

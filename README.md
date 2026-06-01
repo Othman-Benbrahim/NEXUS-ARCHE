@@ -43,6 +43,8 @@ fonctionne. Mode 1. Modalité délibérative.
 → Statut : Descriptif
 ```
 
+Pour des templates d'activation avancés (Mode 2/3, OSINT, Fractales du Destin), voir `references/prompt_guide.md`.
+
 ### Questions IRIS directes (sans tirage formel)
 
 Si la situation est déjà claire, poser directement la Question IRIS de la carte suspectée :
@@ -76,12 +78,15 @@ Si la situation est déjà claire, poser directement la Question IRIS de la cart
 | `references/cards.md` | Les 16 fiches complètes |
 | `references/protocol.md` | Protocole de tirage complet |
 | `references/examples.md` | Exemples annotés |
+| `references/test_log.md` | Journal de tests — 10 situations documentées |
+| `references/calibration.md` | Calibration des distinctions inter-cartes |
+| `references/prompt_guide.md` | Guide d'activation LLM — 7 templates |
 
 ### Dépendances externes (écosystème IRIS)
 
 | Skill | Nature de la dépendance | Requis ? |
 |---|---|---|
-| **STÈLE** | Grammaire STÈLE complète (modales avancées, règles de composition étendues) | Non — `stele_rules.md` couvre l'usage de base |
+| **STÈLE** | Grammaire STÈLE complète (modales avancées, règles étendues) | Non — `stele_rules.md` couvre l'usage de base |
 | Fractales du Destin | Complémentarité oraculaire | Non — optionnel |
 | OSINT-Intel | Analyse prédictive post-structurelle | Non — optionnel |
 
@@ -94,11 +99,15 @@ Si la situation est déjà claire, poser directement la Question IRIS de la cart
 ```
 SKILL.md                      — Fichier principal : architecture, cartes, protocole résumé
 README.md                     — Ce fichier
+CHANGELOG.md                  — Historique des versions (v0.1 → v0.2 → v0.3)
 references/
   cards.md                    — Les 16 fiches complètes (+ branche mathématique + distinctions)
   protocol.md                 — Protocole de tirage complet (modes 1-4, configurations pathologiques)
   stele_rules.md              — Règles syntaxiques STÈLE autonomes pour NEXUS-ARCHÊ
   examples.md                 — Tirages annotés : Mode 1, Mode 2, Mode 3 + tirage rejeté
+  test_log.md                 — 10 situations documentées, couverture des 16 cartes, bilan
+  calibration.md              — Matrice de risque, faux positifs, journal de calibration (template)
+  prompt_guide.md             — 7 templates d'activation LLM
 ```
 
 ---
@@ -113,23 +122,15 @@ references/
 
 ## Statut et roadmap
 
-**Version actuelle** : v0.2
+**Version actuelle** : v0.3
 
-### Changements v0.1 → v0.2
-- Branche mathématique ajoutée à chaque carte
-- Sections "À ne pas confondre avec" sur toutes les paires proches
-- Modalités de tirage explicites (aléatoire / délibératif / activation LLM)
-- Configurations pathologiques du Mode 3 documentées
-- Mode 4 (Tirage de résolution) ajouté
-- `references/stele_rules.md` — règles STÈLE autonomes, glyphes ▲ ⟶ ✶ confirmés définitifs
-- `references/examples.md` — 3 tirages annotés complets + 1 tirage rejeté
+Voir `CHANGELOG.md` pour l'historique complet des modifications.
 
-### Roadmap v0.3
+### Roadmap v0.4
 
-- Tests sur 10 situations réelles documentées
-- Calibration des distinctions inter-cartes sur corpus de lectures
-- CHANGELOG.md
-- Éventuellement : interface de tirage guidé (prompt structuré pour LLM)
+- Alimentation du journal de calibration avec des situations réelles (objectif : 50 entrées)
+- Révision des distinctions inter-cartes à risque élevé selon les données de calibration empirique
+- Interface de tirage interactif (optionnel — selon retours d'usage)
 
 ---
 
