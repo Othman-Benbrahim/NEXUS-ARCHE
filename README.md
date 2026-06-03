@@ -135,3 +135,5 @@ Voir `CHANGELOG.md` pour l'historique complet des modifications.
 ---
 
 *Projet IRIS — Dépôt public, usage libre.*
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Othman-Benbrahim/NEXUS-ARCHE)
