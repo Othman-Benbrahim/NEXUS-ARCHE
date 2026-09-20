@@ -97,20 +97,26 @@ La chaîne STÈLE des trois glyphes forme la **signature compressée** de la sit
 
 Certaines configurations de constellation signalent une situation structurellement bloquée ou sous tension extrême. Les reconnaître est aussi informatif qu'une lecture ordinaire.
 
+Une configuration signalée est une hypothèse, pas un verdict : elle se vérifie auprès de l'auteur de la situation, comme un ancrage observable. Voir `references/antagonismes.md`, §8.
+
 **Configuration 1 — Miroir (Ce qui tient = Ce qui manque)**
 La structure stable est identique à la structure absente. Signal : la situation est définie par une contradiction fondamentale non résolue — ce qui tient est ce qui manque.
+Condition : la même carte occupe les positions « ce qui tient » et « ce qui manque ». Impossible en tirage aléatoire sans remise ; ne survient qu'en tirage délibératif.
 → *Lecture recommandée* : nommer la contradiction explicitement. Appliquer la Question IRIS des deux positions à la même carte. La tension elle-même est l'information.
 
 **Configuration 2 — Immobilité structurelle (Ce qui bouge ≈ Ce qui tient)**
 La structure en transit est de même nature que la structure stable. Signal : le mouvement perçu est illusoire — ce qui semble changer reproduit ce qui est stable.
+Condition opératoire : les cartes en positions « ce qui tient » et « ce qui bouge » sont en voisinage documenté au sens du §6 de `references/antagonismes.md` — seize paires sur 120.
 → *Lecture recommandée* : chercher la source de l'illusion de mouvement. Appliquer le test d'anti-résonance renforcé sur la carte en position "Ce qui bouge".
 
 **Configuration 3 — Lacune active contradictoire (Ce qui manque contredit directement Ce qui tient)**
 La structure absente est structurellement incompatible avec la structure stable. Signal : la situation ne peut évoluer sans d'abord déstabiliser ce qui la tient.
-→ *Lecture recommandée* : formuler explicitement la contradiction. Activer optionnellement le Mode 4 (ci-dessous).
+La relation d'incompatibilité est définie dans `references/antagonismes.md` — neuf paires de cartes, chacune fondée sur une citation de `cards.md`.
+→ *Lecture recommandée* : vérifier d'abord que les deux structures portent sur le même objet de la situation (condition du §4 d'`antagonismes.md`) ; si oui, formuler explicitement la contradiction. Activer optionnellement le Mode 4 (ci-dessous).
 
 **Configuration 4 — Tension maximale (les 3 cartes appartiennent à des registres antagonistes)**
 Signal rare mais fort : la situation est organisée par plusieurs structures incompatibles simultanées.
+Condition opératoire : au moins deux des trois paires de la constellation sont antagonistes au sens d'`antagonismes.md`. Dix constellations sur 560 remplissent cette condition.
 → *Lecture recommandée* : ne pas chercher à résoudre prématurément. Documenter la tension comme elle est. Activer le Mode 4.
 
 ---
