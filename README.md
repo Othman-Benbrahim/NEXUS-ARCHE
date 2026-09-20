@@ -80,6 +80,7 @@ Si la situation est déjà claire, poser directement la Question IRIS de la cart
 | `references/examples.md` | Exemples annotés |
 | `references/test_log.md` | Journal de tests — 10 situations documentées |
 | `references/calibration.md` | Calibration des distinctions inter-cartes |
+| `references/antagonismes.md` | Antagonismes structurels et configurations pathologiques |
 | `references/prompt_guide.md` | Guide d'activation LLM — 7 templates |
 
 ### Dépendances externes (écosystème IRIS)
@@ -99,7 +100,7 @@ Si la situation est déjà claire, poser directement la Question IRIS de la cart
 ```
 SKILL.md                      — Fichier principal : architecture, cartes, protocole résumé
 README.md                     — Ce fichier
-CHANGELOG.md                  — Historique des versions (v0.1 → v0.2 → v0.3)
+CHANGELOG.md                  — Historique des versions (v0.1 → v0.2 → v0.3 → v0.3.1)
 references/
   cards.md                    — Les 16 fiches complètes (+ branche mathématique + distinctions)
   protocol.md                 — Protocole de tirage complet (modes 1-4, configurations pathologiques)
@@ -107,6 +108,7 @@ references/
   examples.md                 — Tirages annotés : Mode 1, Mode 2, Mode 3 + tirage rejeté
   test_log.md                 — 10 situations documentées, couverture des 16 cartes, bilan
   calibration.md              — Matrice de risque, faux positifs, journal de calibration (template)
+  antagonismes.md             — Incompatibilités structurelles, configurations pathologiques du Mode 3
   prompt_guide.md             — 7 templates d'activation LLM
 ```
 
@@ -122,18 +124,17 @@ references/
 
 ## Statut et roadmap
 
-**Version actuelle** : v0.3
+**Version actuelle** : v0.3.1
 
 Voir `CHANGELOG.md` pour l'historique complet des modifications.
 
 ### Roadmap v0.4
 
 - Alimentation du journal de calibration avec des situations réelles (objectif : 50 entrées)
+- Alimentation du journal des antagonismes ; révision de la définition du voisinage documenté (configuration 2) sur données réelles
 - Révision des distinctions inter-cartes à risque élevé selon les données de calibration empirique
 - Interface de tirage interactif (optionnel — selon retours d'usage)
 
 ---
 
 *Projet IRIS — Dépôt public, usage libre.*
-
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Othman-Benbrahim/NEXUS-ARCHE)
