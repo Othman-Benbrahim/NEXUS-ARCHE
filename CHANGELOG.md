@@ -2,6 +2,36 @@
 
 ---
 
+## v0.3.1 — Antagonismes structurels
+
+**Objectif** : fournir la relation supposée par les configurations pathologiques 3 et 4 du Mode 3, absente depuis v0.2.
+
+### Nouveaux fichiers
+
+| Fichier | Contenu |
+|---|---|
+| `references/antagonismes.md` | Table des 9 paires de cartes structurellement incompatibles, chacune fondée sur une citation de `cards.md` ; définitions opératoires des 4 configurations pathologiques ; condition du même objet ; journal |
+
+### Modifications de fichiers existants
+
+- `references/protocol.md` : les 4 configurations pathologiques reçoivent une condition vérifiable ; renvoi vers `antagonismes.md` ; la configuration signalée est requalifiée en hypothèse à vérifier
+- `references/calibration.md` : note liminaire distinguant confusion et antagonisme
+- `SKILL.md` : version portée à 0.3.1, renvoi depuis le mécanisme de tirage, tableau des fichiers de référence mis à jour
+- `README.md` : version, tableau des dépendances internes, arborescence et roadmap mis à jour
+
+### Décisions
+
+- La configuration 4 est calculée sur **deux** paires antagonistes et non trois : la table ne contient aucun triangle, et l'exiger rendrait la configuration inatteignable par construction.
+- Aucune partition des 16 cartes en « registres » n'a été introduite. Elle aurait dû être inventée, et aurait servi de fondement à un diagnostic. L'antagonisme est défini paire à paire, à partir des définitions déjà écrites dans `cards.md`.
+- Aucun antagonisme n'est dérivé du « ou » d'un critère discriminant : ce « ou » désigne la carte à retenir pour une lecture, pas une exclusion entre structures. Appliqué mécaniquement, il ferait de HIÉRARCHIE et RÉSEAU des antagonistes.
+- La définition du voisinage documenté (configuration 2) réutilise une relation écrite pour un autre usage. Elle est signalée comme la plus fragile du fichier et à réviser sur données réelles.
+
+### Limitation connue
+
+- Les 24 citations de `cards.md` et `protocol.md` reprises dans `antagonismes.md` ont été vérifiées mot pour mot contre la v0.3. Toute modification ultérieure de `cards.md` impose de refaire cette vérification : une citation devenue fausse invalide la ligne de table qu'elle fonde.
+
+---
+
 ## v0.3 — Phase Publication
 
 **Objectif** : complétion du corpus de référence, calibration des distinctions, guide d'activation LLM.
@@ -61,3 +91,4 @@
 - Absence d'exemples de tirages concrets → résolue en v0.2
 - Absence de distinctions inter-cartes → résolue en v0.2
 - Mécanisme de tirage non précisé → résolu en v0.2
+
