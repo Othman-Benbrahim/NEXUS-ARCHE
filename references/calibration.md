@@ -5,6 +5,13 @@
 > (2) fournir un protocole de suivi des erreurs de distinction en conditions réelles.
 > Mettre à jour ce fichier après chaque série de 10 situations documentées.
 
+> **Confusion n'est pas antagonisme.** Ce fichier mesure le risque qu'un lecteur prenne une
+> carte pour une autre. L'incompatibilité structurelle entre deux cartes — le fait que leurs
+> définitions ne puissent pas être vraies du même objet — est une relation distincte, définie
+> dans `references/antagonismes.md`. Cinq des dix-sept paires listées ici sont aussi
+> antagonistes ; les douze autres ne le sont pas, à commencer par HIÉRARCHIE ↔ RÉSEAU, dont
+> les deux structures peuvent parfaitement décrire le même objet.
+
 ---
 
 ## Matrice de risque de confusion
