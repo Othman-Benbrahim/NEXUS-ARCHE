@@ -1,6 +1,6 @@
 ---
 name: nexus-arche
-version: 0.3
+version: 0.3.1
 description: >
   NEXUS-ARCHÊ est un système de lecture résonante à double registre.
   Il identifie les structures invariantes qui apparaissent simultanément
@@ -66,6 +66,7 @@ Les cartes décrivent simultanément les structures actives d'une situation.
 La question de base : *Quelles structures organisent ce qui est en train de se passer ?*
 
 Voir `references/protocol.md` pour les trois modes, les modalités de tirage et le protocole de rigueur complet.
+Les configurations pathologiques du Mode 3 reposent sur la relation d'antagonisme définie dans `references/antagonismes.md`.
 
 ### Deux modalités de tirage
 
@@ -113,6 +114,7 @@ Produit une chaîne STÈLE à 3 glyphes.
 | `references/examples.md` | 3 tirages annotés complets (Mode 1, Mode 2, Mode 3) + 1 tirage rejeté commenté |
 | `references/test_log.md` | 10 situations documentées couvrant les 16 cartes — validations d'ancrage, rejets commentés, observations transversales |
 | `references/calibration.md` | Matrice de risque de confusion inter-cartes, faux positifs documentés, protocole de suivi et journal de calibration |
+| `references/antagonismes.md` | Table des incompatibilités structurelles entre cartes, conditions opératoires des 4 configurations pathologiques du Mode 3, journal |
 | `references/prompt_guide.md` | 7 templates d'activation LLM pour différents contextes : Mode 1/2/3, STÈLE, OSINT, Fractales du Destin |
 
 ---
@@ -126,3 +128,4 @@ Produit une chaîne STÈLE à 3 glyphes.
 **Symbolique** : alphabet STÈLE — compression glyphique en registre performatif. Règles minimales autonomes dans `references/stele_rules.md`.
 
 **Positionnement** : outil structurel empirique. Ni ésotérisme naïf, ni réductionnisme scientifique. Langage de structures qui traversent les deux régimes.
+
