@@ -13,21 +13,21 @@ description: >
   prévision chiffrée (prediction-engine), un soutien émotionnel, une situation décrite seulement
   par des ressentis sans faits (demander des faits d'abord), ou une phrase STÈLE (skill stele).
 metadata:
-  version: 0.4.1
+  version: 0.4.2
 ---
 
 # NEXUS-ARCHÊ
 
 Lecture des structures invariantes d'une situation. Ce fichier donne **l'ordre des étapes** ;
-les règles R1–R12 sont définies une seule fois dans `references/protocol.md`.
+les règles R1–R13 sont définies une seule fois dans `references/protocol.md`.
 
 ## Contrôle d'intégrité (avant toute lecture)
 
-Cette version (0.4.1) exige les fichiers `references/protocol.md`, `cards.md`, `notation.md`,
-`antagonismes.md`, et chaque fichier de référence porte en tête `> Version : 0.4.1`.
+Cette version (0.4.2) exige les fichiers `references/protocol.md`, `cards.md`, `notation.md`,
+`antagonismes.md`, et chaque fichier de référence porte en tête `> Version : 0.4.2`.
 Si un fichier requis manque, ou si sa version diffère de celle-ci, **le dire à l'utilisateur**
-(« installation incomplète ou mélangée : la v0.4.1 de NEXUS-ARCHÊ exige … ») et ne pas appliquer
-de règle dont la source manque. Une copie en v0.3 ne contient ni `notation.md` ni les règles R1–R12.
+(« installation incomplète ou mélangée : la v0.4.2 de NEXUS-ARCHÊ exige … ») et ne pas appliquer
+de règle dont la source manque. Une copie en v0.3 ne contient ni `notation.md` ni les règles R1–R13.
 Avec un shell : `python3 scripts/nexus_tool.py lint` vérifie fichiers, versions et cohérence.
 
 ## Ce qu'il faut charger
@@ -107,10 +107,15 @@ une carte non ancrée.
   chacune avec ce qu'elle signale et sa question à l'auteur.
 - Mode 4 (R10) : seulement après une configuration ou une reproduction confirmée, ou sur demande ;
   la carte de tenue s'ancre comme les autres.
-- Structure hors corpus (R9) : la nommer en clair plutôt que la rabattre sur une carte.
+- Qualificatifs (R13) : `{rétroaction amplifiante}`, `{rétroaction stabilisante}`, `{multi-échelle}`,
+  `{délai}` s'attachent à une carte ancrée, chacun ancré par un fait sur une ligne
+  `Q · CARTE {qualificatif} : fait ; contre-observation : fait (portée)`. Ils ne changent pas le mode.
+- Structure hors corpus (R9) : seulement après avoir testé les qualificatifs ; la nommer en clair
+  plutôt que la rabattre sur une carte, et la noter au journal des lacunes.
 
 **7. Signature (notation.md).** Noms canoniques : `A` · `A + B` · `tient / bouge / manque` ·
-`… ⇒ R` · `∅`. Glyphes en seconde ligne, facultatifs. Vérifiable par
+`… ⇒ R` · `∅` ; un qualificatif suit sa carte : `POLARITÉ {multi-échelle}`. Glyphes en seconde
+ligne, facultatifs. Vérifiable par
 `python3 scripts/nexus_tool.py validate "<signature>"`.
 
 **8. Statut (R11).** Calculé : Descriptif si toutes les cartes sont Fort, chacune avec une
@@ -125,6 +130,7 @@ Cartes examinées
 | Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
 R3 · [carte Fort] : [voisine] → (raison) ; …
 
+Q · [carte] {qualificatif} : [fait] ; contre-observation : [fait] ([portée])   ← si qualificatif
 Cartes inactives : [carte — raison]
 
 Lecture : [question d'exploration / énoncé de tension / constellation + configurations]

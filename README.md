@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ
 
-**Lecture structurelle d'une situation par 16 structures invariantes** — v0.4.1
+**Lecture structurelle d'une situation par 16 structures invariantes** — v0.4.2
 
 NEXUS-ARCHÊ est un skill Claude de l'écosystème IRIS. Il identifie, dans une situation décrite par
 des faits, les structures qui l'organisent : SEUIL, RÉSEAU, HIÉRARCHIE, ÉMERGENCE, PÉRIODICITÉ…
@@ -21,9 +21,20 @@ Chaque structure est définie par une **structure mathématique nommée** et, lo
 Le skill ne prescrit pas, ne diagnostique pas, ne prévoit pas.
 
 **« 16 structures » n'est pas une revendication de complétude.** Le corpus est volontairement plus
-étroit qu'en v0.3.1 (RÉCURSIVITÉ réduite à l'auto-référence, par exemple) ; deux lacunes sont déjà
-connues (rétroaction simple, auto-similarité). Quand un motif clair n'est décrit par aucune carte, la
-lecture le nomme en clair (R9) au lieu de le rabattre sur la carte la plus proche.
+étroit qu'en v0.3.1 (RÉCURSIVITÉ réduite à l'auto-référence, par exemple). Trois dispositifs gèrent
+ce qui n'entre pas dans une carte :
+
+1. **Les qualificatifs** (R13) — `{rétroaction amplifiante}`, `{rétroaction stabilisante}`,
+   `{multi-échelle}`, `{délai}` — décrivent la manière dont une structure ancrée se déploie. Ils
+   couvrent les deux lacunes connues en v0.4.1 (rétroaction, auto-similarité) sans ajouter de carte,
+   donc sans nouvelle voisine ni nouvelle confusion. Chacun s'ancre par un fait, comme une carte.
+2. **Le hors-corpus nommé** (R9) — quand ni carte ni qualificatif ne décrit un motif clair, la
+   lecture le nomme en clair au lieu de le rabattre sur la carte la plus proche, et le note au
+   journal des lacunes.
+3. **La procédure d'admission** (`calibration.md` §6) — une carte nouvelle n'entre qu'après trois
+   cas réels indépendants, un test de non-réduction contre les 16 cartes et les qualificatifs, une
+   fiche complète et une régression verte. Au-delà de 15 % de lectures hors corpus, c'est le corpus
+   entier qui est révisé.
 
 ## Démarrage
 
@@ -50,7 +61,7 @@ Plus de templates : `references/prompt_guide.md`. Exemples complets : `reference
 ```
 SKILL.md                    procédure (ordre des étapes) et politique de chargement
 README.md                   ce fichier
-CHANGELOG.md                historique ; v0.4.0 et v0.4.1 = réponses point par point aux deux audits
+CHANGELOG.md                historique ; v0.4.0 et v0.4.1 = réponses point par point aux audits ; v0.4.2 = qualificatifs
 VERIFICATION_AUDIT.md       contrôle de l'audit v0.3.1 avant réécriture
 LICENSE
 references/
@@ -59,7 +70,7 @@ references/
   notation.md               noms canoniques, glyphes, syntaxe des signatures, relation à STÈLE
   antagonismes.md           2 incompatibilités, 7 tensions documentées, fréquences
   calibration.md            matrice de confusion a priori, faux positifs, lacunes, indicateurs
-  examples.md               6 lectures annotées (dont rejet, ∅, hors corpus, tirage réel)
+  examples.md               6 lectures annotées (dont rejet, ∅, qualificatif, hors corpus, tirage réel)
   test_log.md               10 démonstrations relues + protocole de test réel (journal vide)
   prompt_guide.md           8 templates
 scripts/
@@ -79,13 +90,13 @@ python3 scripts/nexus_tool.py lint                      # fichiers, versions, vo
 
 ## Déploiement
 
-La v0.4.1 forme un tout : `SKILL.md` + les 8 fichiers de `references/` + `scripts/nexus_tool.py`.
+La v0.4.2 forme un tout : `SKILL.md` + les 8 fichiers de `references/` + `scripts/nexus_tool.py`.
 Une installation partielle ou mélangée (par exemple un `SKILL.md` récent avec des références v0.3,
 qui n'ont ni `notation.md` ni les règles R1–R12) produit des renvois vers des règles inexistantes.
 
 1. Remplacer **tout** le dossier du skill installé, pas fichier par fichier.
 2. Vérifier : `python3 scripts/nexus_tool.py lint` doit afficher `LINT OK` et
-   `version 0.4.1 cohérente` (il contrôle la présence des fichiers requis et l'en-tête
+   `version 0.4.2 cohérente` (il contrôle la présence des fichiers requis et l'en-tête
    `> Version :` de chaque référence).
 3. Sans shell, le skill fait lui-même ce contrôle (section « Contrôle d'intégrité » de `SKILL.md`)
    et signale toute version divergente avant de lire.

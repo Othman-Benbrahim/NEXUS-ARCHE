@@ -2,6 +2,41 @@
 
 ---
 
+## v0.4.2 — Qualificatifs et procédure d'admission
+
+**Objet** : répondre à la question « comment pallier l'étroitesse du corpus ? » sans recréer les
+confusions supprimées en v0.4. Les deux lacunes connues (rétroaction, auto-similarité) ne sont pas
+des structures de même nature que les 16 cartes : ce sont des **mécanismes** ou des **modes de
+déploiement**. Elles deviennent des qualificatifs, pas des cartes.
+
+### Ajouts
+
+| Fichier | Changement |
+|---|---|
+| `references/protocol.md` | **R13 — Qualificatifs** : `{rétroaction amplifiante}` (R↑), `{rétroaction stabilisante}` (R↓), `{multi-échelle}` (×N), `{délai}` (Δt), chacun avec son marqueur observable ; ancrage par une ligne `Q ·`, anti-résonance qui peut le retirer, deux au plus par carte, aucun effet sur le mode, les voisines ou les incompatibilités. R9 : tester les qualificatifs avant de conclure « hors corpus ». R11 : Descriptif exige une contre-observation classée pour chaque qualificatif |
+| `references/notation.md` | syntaxe `A {qualificatif}` dans tout mode ; règle de validation 6 ; codes choisis hors de l'alphabet des cartes |
+| `references/calibration.md` | §4 : statut des lacunes connues, entrées réelles seulement ; **§6 Procédure d'admission** en quatre étapes (seuil de 3 cas réels indépendants, test de non-réduction contre cartes et qualificatifs, fiche complète, régression) + déclencheur global (> 15 % hors corpus sur 20 lectures) ; deux indicateurs ajoutés |
+| `references/examples.md` | exemple 6 relu : `POLARITÉ {multi-échelle}` au lieu de « hors corpus » ; variante honnête d'un hors-corpus (monopole d'une ressource), déclarée **lacune possible**, non comptée pour le seuil |
+| `references/cards.md` | RÉCURSIVITÉ renvoie aux qualificatifs au lieu du hors-corpus |
+| `references/prompt_guide.md` | template 4bis |
+| `scripts/nexus_tool.py` | `validate` lit les qualificatifs dans R13, les valide et les projette (`⥀{×N}`) ; `lint` vérifie que chaque qualificatif d'une signature du corpus a sa ligne `Q ·` avec fait et contre-observation |
+| `SKILL.md`, `README.md` | étapes 6 et 7, format de sortie, section complétude réécrite |
+
+### Correction de conception
+
+La v0.4.1 envisageait `↻±` comme code de la rétroaction : c'est le glyphe de PÉRIODICITÉ, et `+` est
+le séparateur du Mode 2. Les noms canoniques et les codes ne contiennent ni glyphe de carte, ni
+`+`, `/` ou `⇒`.
+
+### Ce qui n'est pas fait
+
+- Aucune carte ajoutée : la procédure d'admission exige des cas réels, et il n'y en a encore aucun.
+- Les qualificatifs n'ont pas de niveau Fort / Faible : un qualificatif est ancré ou retiré. À
+  revoir si l'usage montre des cas intermédiaires fréquents.
+- Le protocole de test réel (`test_log.md` §3) n'est toujours pas exécuté.
+
+---
+
 ## v0.4.1 — Corrections après vérification de la v0.4.0
 
 **Objet** : traiter les points de `VERIFICATION_CORRECTIONS_v0.4.0.md` (12/10/2026) — une
