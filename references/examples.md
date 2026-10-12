@@ -1,214 +1,231 @@
-# NEXUS-ARCHÊ — Exemples de Tirages Annotés
-
-> Ce fichier présente des tirages de référence annotés pas-à-pas.
-> Chaque exemple illustre le protocole de rigueur complet.
-> Un tirage rejeté documente le cas où le protocole déclare une carte inactive.
-
----
-
-## EXEMPLE 1 — Mode 1 (Tirage simple)
-
-**Situation** : Un collectif d'une vingtaine de personnes s'est formé autour d'un projet culturel commun. Personne n'a vraiment décidé de la structure — des rôles ont émergé naturellement, des pratiques se sont installées sans avoir été discutées. La coordination fonctionne, mais les membres ne savent pas exactement pourquoi ni comment.
-
-**Modalité de tirage** : Délibératif.
-
-**Carte tirée** : ÉMERGENCE · ⊙ SOURCE
-
----
-
-**Étape 1 — Ancrage observable**
-
-> *Observation concrète dans la situation* : "Trois sous-groupes de travail se sont constitués sans vote ni désignation — les personnes se sont regroupées spontanément par affinité de compétences. Une personne a commencé à rédiger des comptes-rendus sans qu'on le lui demande, et tout le monde a adopté ce format."
-
-Ancrage validé : l'émergence d'une organisation non planifiée est documentable.
-
----
-
-**Étape 2 — Test d'anti-résonance**
-
-> *Qu'est-ce qui, dans la situation, contredit ÉMERGENCE ?*
-
-"Il y a bien une personne à l'origine du projet qui a posé le cadre initial et effectué les premiers recrutements — le système n'est donc pas entièrement auto-organisé. Une direction existe."
-
-Résultat : la carte ÉMERGENCE est active mais partielle. La structure a émergé dans un cadre initié par un architecte. Nuance à conserver dans la lecture.
-
----
-
-**Étape 3 — Énoncé structurel**
-
-Mode 1, pas de tension inter-cartes. La Question IRIS est posée directement :
-
-> *Qu'est-ce qui est en train d'apparaître sans qu'on l'ait décidé ?*
-
-"Les rôles, les pratiques de coordination, le style de communication du groupe — tout cela s'est installé sans délibération explicite. Ce qui est apparu est une culture de travail collective, pas seulement une organisation."
-
----
-
-**Étape 4 — Chaîne STÈLE**
-
-`⊙` → `SOURCE`
-
-Chaîne minimale (Mode 1). Extensible : `⊙∿` → `SOURCE.MOUVEMENT` si le processus d'émergence est encore en cours.
-
----
-
-**Statut épistémique** : Descriptif — la structure d'émergence est observable et ancrée dans des comportements constatés.
-
----
-
-## EXEMPLE 2 — Mode 2 (Tirage de tension)
-
-**Situation** : Une équipe dans une organisation bureaucratique cherche à innover. Les membres ont des idées, de l'énergie, des compétences. Mais chaque initiative bute sur des procédures, des validations requises, des périmètres définis par la hiérarchie. L'équipe a le sentiment que la structure "mange" le mouvement.
-
-**Modalité de tirage** : Aléatoire (simulation numérique) — cartes tirées : HIÉRARCHIE (✦) et CONTRAINTE (⊘).
-
----
-
-**Étape 1 — Ancrage observable**
-
-*HIÉRARCHIE* : "Les décisions d'innovation doivent être validées par trois niveaux hiérarchiques successifs avant d'être mises en œuvre. En pratique, la majorité des initiatives meurent entre le niveau 2 et le niveau 3."
-
-Ancrage HIÉRARCHIE validé.
-
-*CONTRAINTE* : "Le périmètre d'action de l'équipe est contractuellement défini. Toute action hors périmètre requiert une modification de fiche de poste, un processus de 6 à 8 semaines."
-
-Ancrage CONTRAINTE validé.
-
----
-
-**Étape 2 — Test d'anti-résonance**
-
-*Contre HIÉRARCHIE* : "Certains managers intermédiaires soutiennent activement les initiatives et jouent le rôle de passeurs — la hiérarchie n'est pas uniformément bloquante."
-
-*Contre CONTRAINTE* : "Des contournements informels existent et sont tolérés dans certains services — la contrainte n'est pas absolument appliquée."
-
-Les deux cartes résistent au test : les contre-exemples existent mais sont des exceptions, pas la norme. Les deux structures sont bien actives.
-
----
-
-**Étape 3 — Énoncé structurel de tension**
-
-> *Quelle est la relation structurelle entre HIÉRARCHIE et CONTRAINTE ?*
-
-"Les deux structures se renforcent mutuellement en boucle : la hiérarchie institue les contraintes (elle les légitime), et les contraintes cimentent la hiérarchie (elles rendent sa validation nécessaire). Ce n'est pas un conflit entre deux structures — c'est une solidarité structurelle. Chacune donne à l'autre sa forme de légitimité."
-
-Ce n'est pas une tension de conflit (cas A), ni une inclusion (cas B) — c'est un cas de couplage symbiotique.
-
----
-
-**Étape 4 — Chaîne STÈLE**
-
-`✦.⊘` → `AXE.NÉGATION`
-
-La hiérarchie (structure portante) rend la négation (contrainte) possible et nécessaire.
-
----
-
-**Statut épistémique** : Descriptif — les deux structures sont observables et documentées. L'énoncé de couplage est une inférence structurelle qui reste à tester contre d'autres situations de la même organisation.
-
----
-
-## EXEMPLE 3 — Mode 3 (Tirage de constellation)
-
-**Situation** : Une association culturelle régionale traverse une crise interne. Les membres fondateurs défendent une vision historique du projet ; une nouvelle génération pousse pour transformer les pratiques. Les deux groupes ne se parlent plus directement. Le conseil d'administration tient par inertie. Des membres commencent à partir.
-
-**Modalité de tirage** : Délibératif après analyse de situation.
-
-**Cartes tirées** :
-- Ce qui tient : RÉCIPROCITÉ (⊗)
-- Ce qui bouge : POLARITÉ (⥀)
-- Ce qui manque : RÉSEAU (⊛)
-
----
-
-**Étape 1 — Ancrage observable**
-
-*RÉCIPROCITÉ — Ce qui tient* : "Les membres fondateurs maintiennent entre eux un lien de dette mutuelle et d'histoire commune — ils se sentent redevables les uns envers les autres de l'effort initial. C'est ce lien qui maintient le conseil en place malgré les tensions."
-
-Ancrage RÉCIPROCITÉ validé.
-
-*POLARITÉ — Ce qui bouge* : "Une fracture est en train de se creuser entre deux visions de l'association : tradition vs transformation. Cette polarisation était latente depuis 2 ans et devient structurante — les membres s'identifient maintenant à l'un ou l'autre camp de manière explicite."
-
-Ancrage POLARITÉ validé.
-
-*RÉSEAU — Ce qui manque* : "Les liens entre les deux camps sont quasi-absents. Il n'existe pas d'espace ni de personne qui soit reconnue comme pont entre les deux groupes. Les réunions sont le seul lieu de rencontre, et elles amplifient la fracture plutôt que de la réduire."
-
-Ancrage RÉSEAU validé.
-
----
-
-**Étape 2 — Test d'anti-résonance**
-
-*Contre RÉCIPROCITÉ* : "Plusieurs fondateurs reconnaissent en privé que le projet initial est épuisé — la dette réciproque pourrait se dissoudre si quelqu'un prenait l'initiative de nommer la fin du cycle."
-
-*Contre POLARITÉ* : "Une partie des membres ne se reconnaît pas dans les deux camps — ils sont dans l'attente, pas dans la polarisation."
-
-*Contre RÉSEAU (absent)* : "Un groupe de travail mixte a existé il y a un an — il n'a pas produit de résultats mais il existait."
-
-Les trois cartes résistent. Les nuances confirment qu'on est face à des structures actives mais non absolues.
-
----
-
-**Étape 3 — Énoncé structurel de constellation**
-
-> *Lecture de la constellation* :
-
-"La réciprocité originelle tient encore le centre — c'est elle qui empêche la dissolution immédiate. Mais elle subit la pression d'une polarisation croissante qui recompose le champ en deux camps opposés. Ce mouvement de polarisation se nourrit de l'absence de réseau intermédiaire : sans nœuds de connexion entre les deux groupes, aucun signal faible d'apaisement ne peut circuler. La structure absente (RÉSEAU) est la clé de lecture de la situation : c'est son absence qui autorise la polarisation à s'installer sur le fond de réciprocité."
-
----
-
-**Étape 4 — Chaîne STÈLE**
-
-`⊗.⥀.⊛` → `LIER.INVERSER.NOEUD`
-
-La structure de lien (RÉCIPROCITÉ) est traversée par un mouvement d'inversion (POLARITÉ), en l'absence de nœuds de connexion (RÉSEAU manquant).
-
----
-
-**Statut épistémique** : Spéculatif — la lecture est cohérente avec les faits décrits mais reste une configuration possible. Elle doit être testée en situation réelle, notamment la nature de la réciprocité fondatrice (est-elle vraiment le seul élément stabilisant ?).
-
-**Note Mode 4 optionnel** : la configuration (Ce qui manque = RÉSEAU, facteur clé) justifie un Mode 4. Carte de résolution potentielle : COMMUNAUTÉ (⟶) — quelle coopération autour d'un bien commun pourrait recréer des nœuds de connexion ? Chaîne étendue : `⊗.⥀.⊛ - ⟶` → `LIER.INVERSER.NOEUD - TRANSMETTRE`
-
----
-
-## TIRAGE REJETÉ — Carte déclarée inactive
-
-**Situation** : Un utilisateur décrit sa situation ainsi : "Je me sens seul et déconnecté des autres en ce moment."
-
-**Carte tirée** : RÉSEAU (⊛) — sélectionnée intuitivement.
-
----
-
-**Étape 1 — Test d'ancrage observable**
-
-> *Nommer une observation concrète dans la situation qui correspond à la structure RÉSEAU.*
-
-Premier essai : "Je n'ai pas de liens avec les autres." → Trop vague — ce n'est pas un ancrage observable, c'est la reformulation de la sensation.
-
-Deuxième essai : "Mes contacts se sont réduits." → Ancrage partiel mais insuffisant : il faudrait nommer des liens concrets (avec qui ? quels types de liens ? quels liens manquent spécifiquement ?).
-
-La situation est décrite en termes de **ressenti** (solitude, déconnexion), pas en termes de **topologie de liens** (qui est connecté à qui, selon quelles règles). RÉSEAU est une structure topologique — elle nécessite des nœuds et des liens identifiables.
-
-**Résultat** : **RÉSEAU déclarée inactive** dans cette lecture.
-
----
-
-**Explication du rejet**
-
-RÉSEAU décrit la topologie de connexions — elle est pertinente quand on peut nommer des liens concrets, des connexions présentes ou absentes, des flux de transmission. Dans une situation décrite uniquement sous forme de ressenti, la carte ne dispose pas d'ancrage.
-
----
-
-**Cartes alternatives candidates**
-
-| Carte | Ancrage potentiel | Pertinence |
+# NEXUS-ARCHÊ — Exemples annotés
+
+> Version : 0.4.1
+>
+> Six lectures qui appliquent les règles R1–R12 de `protocol.md`, y compris R3 : chaque carte
+> retenue au niveau Fort porte une ligne `R3 ·` qui passe **toutes** ses voisines documentées
+> (contrôlé par `nexus_tool.py lint`).
+> Ce sont des **cas construits** à des fins d'illustration, pas des données de test
+> (voir `test_log.md`). Les lignes de tirage de l'exemple 2 sont, elles, réelles.
+
+| # | Ce qu'il montre | Issue |
 |---|---|---|
-| INCERTITUDE (Ø) | "Je ne sais pas ce qui m'attend ni vers qui me tourner." | Forte — le vide est la structure active |
-| POLARITÉ (⥀) | "Je me sens séparé des autres comme si un écart s'était creusé." | Moyenne — si la dualité dedans/dehors est structurante |
-| CONTRAINTE (⊘) | "Quelque chose m'empêche d'aller vers les autres — une limite intérieure ou extérieure." | Moyenne — si la contrainte est identifiable |
-
-La lecture reprend avec INCERTITUDE comme carte candidate, dont l'ancrage est immédiatement formulable.
+| 1 | Mode 1 délibératif, contre-candidate, R3 complet | Descriptif |
+| 2 | Tirage aléatoire réel, deux retirages, verdict `←` | ∅ (modalité aléatoire) |
+| 3 | Mode 3, rétrogradation par anti-résonance, configurations non établies | Spéculatif |
+| 4 | Rejet par anti-résonance, coïncidence lexicale, verdict `+` | Mode 2, Spéculatif |
+| 5 | Situation sans faits, puis avec faits | ∅, puis Mode 1 |
+| 6 | Structure hors corpus | Mode 1 + motif nommé |
 
 ---
 
-> **Leçon de ce tirage rejeté** : une carte qui paraît évidente depuis le ressenti n'est pas nécessairement la structure active. Le test d'ancrage observable force à passer du niveau phénoménologique au niveau structurel — ce déplacement est lui-même informatif.
+## Exemple 1 — Mode 1, délibératif
+
+**Situation** : un collectif d'une vingtaine de personnes organise un festival depuis 2024. Trois
+sous-groupes (logistique, programmation, communication) se sont formés sans vote ni désignation.
+En février, une membre a commencé à rédiger un compte rendu après chaque réunion ; depuis avril,
+tous les sous-groupes utilisent son format. La fondatrice a recruté les dix premiers membres.
+
+**Candidates** : ÉMERGENCE (favorite) ; TRANSFORMATION (contre-candidate, voisine documentée
+d'ÉMERGENCE) ; HIÉRARCHIE (la fondatrice).
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| ÉMERGENCE | format de compte rendu apparu en février, adopté par imitation en avril, sans consigne ; sous-groupes formés sans vote | Fort | la fondatrice a recruté les dix premiers — mais ni les sous-groupes ni le format ne viennent d'elle (marginale) | Fort |
+| TRANSFORMATION | aucune entité préexistante qui change de forme : le collectif est né avec ses pratiques | Nul | — | inactive |
+| HIÉRARCHIE | un recrutement initial ne fait pas un ordre de validation : aucun fait de « qui peut dire non à qui » | Nul | — | inactive |
+
+R3 · ÉMERGENCE : TRANSFORMATION → (rien ne préexistait qui changerait de forme) ; RÉCURSIVITÉ → (aucune représentation du collectif par lui-même ne règle ces pratiques) ; CROISSANCE → (aucune grandeur suivie dans le temps) ; INCERTITUDE → (une régularité est apparue, aucun possible n'est en suspens)
+
+**Lecture** — *qu'est-ce qui s'est installé sans que personne ne le décide, et qui le défend
+désormais ?* Le format de compte rendu et la division en trois sous-groupes. La question à poser
+au collectif : ces conventions ont-elles aujourd'hui des gardiens, ou tiennent-elles par simple
+habitude partagée ?
+
+**Signature** : `ÉMERGENCE` · `⊙`
+**Statut** : Descriptif — ancrage Fort avec R3 complet, contre-observation trouvée et classée.
+
+---
+
+## Exemple 2 — Tirage aléatoire réel, conclu à ∅
+
+**Situation** : une équipe de huit personnes, dans une administration, veut lancer des projets
+innovants. Toute initiative doit être validée par le chef de service, puis la sous-direction,
+puis la direction ; en 2025, quatre projets sur cinq ont été arrêtés entre la sous-direction et la
+direction. Le périmètre de l'équipe est fixé par fiche de poste ; l'élargir prend six à huit
+semaines. Deux managers intermédiaires relaient activement les projets.
+
+**Tirage** (R1) — tirage initial, puis deux retirages d'une carte chacun, parmi les cartes non sorties :
+
+```
+TIRAGE 2026-10-12T02:57:19Z · secrets · sans remise · PÉRIODICITÉ | PROPORTION
+TIRAGE 2026-10-12T02:57:25Z · secrets · sans remise · exclues : PÉRIODICITÉ, PROPORTION · POLARITÉ
+TIRAGE 2026-10-12T02:57:27Z · secrets · sans remise · exclues : PÉRIODICITÉ, PROPORTION, POLARITÉ · TRACE·MÉMOIRE
+```
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| PÉRIODICITÉ | une seule année décrite : aucune occurrence répétée datée | Nul | — | inactive |
+| PROPORTION | « 4 projets sur 5 arrêtés » est un rapport — mais voir R3 | Nul | — | inactive |
+| POLARITÉ (retirage 1) | aucun champ à deux pôles ni de camps déclarés | Nul | — | inactive |
+| TRACE·MÉMOIRE (retirage 2) | le périmètre par fiche de poste n'a pas d'origine datée ni d'indice qu'il ne serait plus choisi aujourd'hui | Nul | — | inactive |
+
+R3 · PROPORTION : HIÉRARCHIE ← (le rapport 4/5 mesure l'effet de la chaîne de validation : il relève d'un ordre de préséance, pas d'un rapport entre parties) ; CROISSANCE → (aucune grandeur suivie dans le temps)
+
+Le seul fait de PROPORTION relève de sa voisine (`←`) : la carte est Nul (R3).
+
+```
+Signature : ∅ (modalité aléatoire, deux retirages épuisés)
+Aucune des cartes tirées n'est ancrée.
+```
+**Statut** : Nul.
+
+**Ce que l'exemple montre** : HIÉRARCHIE et CONTRAINTE, les cartes évidentes ici, ne sont pas
+sorties. Le tirage aléatoire n'est pas fait pour retrouver l'évident : il force à tester des
+structures non pressenties, et il peut ne rien trouver. La limite de deux retirages empêche de tirer
+jusqu'à ce que l'attendu sorte. La v0.3.1 présentait un tirage « aléatoire » tombant pile sur les
+deux cartes attendues (une chance sur 120) : c'est le signe d'un tirage simulé. La lecture
+délibérative de la même situation est la démonstration 02 de `test_log.md`.
+
+---
+
+## Exemple 3 — Mode 3, avec rétrogradation
+
+**Situation** : association culturelle régionale, 60 membres. Depuis 2019, les cinq fondateurs
+votent en bloc au conseil d'administration et se remplacent les uns les autres aux permanences ;
+deux d'entre eux ont avancé des fonds en 2023, remboursés par les trois autres. Pour l'assemblée
+générale de novembre, deux listes concurrentes se sont déclarées : « continuité » et « renouveau ».
+Aucun membre ne siège à la fois dans la commission programmation (fondateurs) et dans la commission
+jeunes (renouveau) ; les décisions de l'une sont apprises par l'autre en assemblée. Une vingtaine de
+membres n'ont rejoint aucune liste. Un groupe de travail mixte a existé en 2024, puis s'est dissous.
+
+**Candidates** : RÉCIPROCITÉ, POLARITÉ, RÉSEAU ; COMMUNAUTÉ (contre-candidate, voisine de RÉCIPROCITÉ).
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| RÉCIPROCITÉ | votes en bloc, remplacements mutuels, avances de fonds remboursées entre fondateurs | Fort | plusieurs fondateurs disent le projet initial épuisé — une opinion, pas un arrêt des échanges (marginale) | Fort |
+| POLARITÉ | deux listes déclarées, dont les noms s'opposent | Fort | 20 membres sur 60 n'ont rejoint aucune liste : un tiers hors des deux pôles (**substantielle**) | **Faible** |
+| RÉSEAU (absent) | aucun membre commun aux deux commissions ; décisions apprises en assemblée (effet observable de l'absence) | Fort | groupe mixte en 2024, dissous (marginale : passé) | Fort |
+| COMMUNAUTÉ | bien commun nommé (le festival) ; règles d'adhésion | Faible | les deux camps ne contribuent plus ensemble à la programmation 2026 (**dominante** : le cœur du bien commun n'est plus coproduit) | **rejetée** |
+
+R3 · RÉCIPROCITÉ : COMMUNAUTÉ → (les faits sont des transferts entre personnes identifiées, pas des contributions à un bien commun) ; HIÉRARCHIE → (aucun fondateur ne valide les décisions des autres) ; RÉSEAU → (ce qui est documenté est l'équilibre des transferts, pas la topologie) ; RÉSONANCE → (des dettes et des remboursements, pas un alignement de rythmes)
+
+R3 · POLARITÉ : CONTRAINTE → (aucune règle n'impose les camps) ; SEUIL → (les deux camps coexistent, aucun passage irréversible)
+
+R3 · RÉSEAU : COMMUNAUTÉ → (l'effet porte sur l'absence de chemin entre deux commissions, pas sur un bien commun) ; HIÉRARCHIE → (aucun rang n'est en jeu dans cette absence) ; RÉCIPROCITÉ → (ce qui manque est le lien lui-même, pas l'équilibre de ce qui y circulerait)
+
+**Positions (R7)** : *tient* = RÉCIPROCITÉ (présente, Fort) ; *bouge* = POLARITÉ (présente, Faible) ;
+*manque* = RÉSEAU (absente, effet observable).
+
+**Configurations (R8)** :
+- Scission : non (trois cartes distinctes).
+- Reproduction : conjoint (a) non établi — la situation ne date pas la déclaration des listes par
+  rapport à un vote en bloc ; on ne peut pas montrer qu'une occurrence de RÉCIPROCITÉ a déclenché
+  les faits de POLARITÉ. Non signalée.
+- Lacune contradictoire : RÉCIPROCITÉ / RÉSEAU n'est pas une paire incompatible. Non.
+
+Aucune configuration → **pas de Mode 4**. (La v0.3.1 en recommandait un sans déclencheur.)
+
+**Lecture** : la boucle d'obligations entre fondateurs tient l'association ; une polarisation se
+recompose, mais un tiers des membres reste hors des deux pôles ; l'absence de lien entre les deux
+commissions fait que chaque camp découvre les décisions de l'autre en assemblée, là où elles ont
+le moins de chance d'être discutées.
+
+**Signature** : `RÉCIPROCITÉ / POLARITÉ / RÉSEAU` · `⊗ / ⥀ / ⊛`
+**Statut** : Spéculatif — POLARITÉ n'est que Faible.
+**À vérifier auprès de vous** : les vingt membres sans liste sont-ils en attente, ou constituent-ils
+un troisième groupe ? Les listes se sont-elles déclarées après un vote en bloc précis ?
+
+---
+
+## Exemple 4 — Rejet par anti-résonance
+
+**Situation** : le dirigeant d'une PME parle de « notre croissance ». Effectif : 12 salariés en
+janvier 2024, 18 en janvier 2025, 31 en juin 2025. En mars 2025, la PME a absorbé un concurrent et
+repris ses 13 salariés. L'intégration est en cours : nouveaux process communs, même nom, mêmes
+fondateurs à la direction.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| CROISSANCE | trois mesures datées d'effectif | Fort | 13 des 19 salariés supplémentaires depuis janvier 2024 viennent d'**un seul événement** (la fusion) : pas un taux qui dépend de la taille. Les faits d'ancrage relèvent d'un autre mécanisme (**dominante**). Coïncidence lexicale « croissance » (R2) | **rejetée** |
+| SEUIL | absorption juridique du concurrent, sans retour possible | Fort | aucune trouvée (le contrat est définitif) | Fort |
+| TRANSFORMATION (contre-candidate) | process en cours d'unification ; nom et direction conservés (invariant) | Fort | une partie des équipes absorbées garde ses outils (marginale) | Fort |
+
+R3 · SEUIL : TRANSFORMATION + (ancrée par d'autres faits : l'unification des process) ; CONTRAINTE → (il y a passage effectif à un nouvel état, deux sociétés en une) ; POLARITÉ → (aucun champ à deux pôles) ; TRACE·MÉMOIRE → (ce qui organise est la fermeture du retour, pas un passé ancien qui oriente les conduites)
+
+R3 · TRANSFORMATION : SEUIL + (ancrée par l'absorption juridique) ; CROISSANCE → (changement de forme, pas de degré : la croissance est rejetée) ; ÉMERGENCE → (l'entité préexistait : même nom, même direction) ; TRACE·MÉMOIRE → (l'unification est en cours, on n'est pas dans ce qui en reste)
+
+**Mode 2 (R6)** — relation : tension documentée SEUIL ~ TRANSFORMATION (`antagonismes.md` §4).
+La fusion a passé son point de non-retour ; l'entreprise change de forme en conservant son nom et
+sa direction. Ce qui est à l'œuvre n'est pas une dynamique d'amplification, mais une transformation
+qui suit un seuil franchi.
+
+**Signature** : `SEUIL + TRANSFORMATION` · `⊥ + ∿`
+**Statut** : Spéculatif — pas de contre-observation trouvée pour SEUIL (R4 : plafond).
+
+---
+
+## Exemple 5 — Résultat nul, puis lecture
+
+**Première description** : « Je me sens seul et déconnecté des autres en ce moment. »
+
+Étape 0 (recevabilité) : aucun fait. Si l'utilisateur insiste pour une lecture :
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| RÉSEAU | « déconnecté » est un ressenti, pas une topologie (R2) | Nul | — | inactive |
+| INCERTITUDE | aucune conduite organisée par l'indétermination | Nul | — | inactive |
+
+```
+Signature : ∅
+Aucune des 16 structures n'est ancrée dans la description.
+Faits disponibles : aucun — un ressenti.
+Ce qui permettrait un ancrage : qu'est-ce qui a changé récemment (lieu, travail, relations) ?
+Avec qui êtes-vous encore en contact régulier, et ces personnes se connaissent-elles ?
+Quels liens existaient avant et n'existent plus ?
+```
+**Statut** : Nul.
+
+**Deuxième description** : « J'ai déménagé à Lyon en mars. Je n'ai gardé de contact régulier
+qu'avec deux personnes, qui ne se connaissent pas. Mes anciens collègues se voient encore tous
+les vendredis, sans moi. »
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| RÉSEAU | deux liens restants, non reliés entre eux ; un groupe dense (collègues) dont le lien avec vous a disparu | Fort | aucune trouvée dans la description | Fort |
+| COMMUNAUTÉ (contre-candidate) | aucun bien ou projet commun décrit | Nul | — | inactive |
+
+R3 · RÉSEAU : COMMUNAUTÉ → (aucun bien commun : seuls des liens sont décrits) ; HIÉRARCHIE → (aucune préséance) ; RÉCIPROCITÉ → (rien n'est dit de ce qui circule ni de son équilibre)
+
+**Lecture** — *quel lien, s'il manquait, couperait tout ?* Vos deux contacts sont des ponts
+uniques : chacun est le seul chemin vers son entourage.
+
+**Signature** : `RÉSEAU` · `⊛`
+**Statut** : Spéculatif — aucune contre-observation trouvée (plafond R4).
+
+> La v0.3.1 « retenait » INCERTITUDE sur « je ne sais pas ce qui m'attend ». Selon R2, une
+> déclaration d'ignorance n'ancre pas INCERTITUDE.
+
+---
+
+## Exemple 6 — Structure hors corpus
+
+**Situation** : dans une entreprise de logiciels, le même conflit « produit contre commercial »
+oppose deux binômes dans l'équipe, deux responsables au niveau du département, et deux directeurs
+au comité de direction. Chaque niveau tranche ses arbitrages par le même vote à deux camps.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| POLARITÉ | deux camps nommés à chaque niveau, arbitrages à deux options | Fort | au comité, la DAF arbitre parfois hors des deux camps (marginale) | Fort |
+| CONTRAINTE (contre-candidate) | aucune option explicitement exclue n'est décrite | Nul | — | inactive |
+| RÉCURSIVITÉ | aucun niveau ne se prend pour objet ni ne se modifie en se regardant | Nul | — | inactive |
+| HIÉRARCHIE | trois niveaux décrits — mais le motif ne tient pas à qui valide qui | Faible | les arbitrages ne remontent pas d'un niveau à l'autre : chaque niveau tranche seul (dominante) | rejetée |
+
+R3 · POLARITÉ : CONTRAINTE → (deux camps, aucune règle qui exclut des options) ; SEUIL → (les camps coexistent à chaque niveau, aucun passage irréversible)
+
+**Structure hors corpus (R9)** : la **répétition du même motif à plusieurs échelles**
+(auto-similarité). Aucune carte ne la décrit depuis que RÉCURSIVITÉ est limitée à l'auto-référence.
+Elle est nommée en clair et notée au journal de `calibration.md` comme lacune possible du corpus.
+
+**Signature** : `POLARITÉ` · `⥀` — motif hors corpus : auto-similarité inter-échelles.
+**Statut** : Descriptif — ancrage Fort avec R3 complet, contre-observation classée.

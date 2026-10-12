@@ -1,295 +1,574 @@
-# NEXUS-ARCHÊ — Les 16 Cartes Structurelles
+# NEXUS-ARCHÊ — Les 16 cartes
 
-> Chaque carte porte une structure invariante lisible en deux registres simultanés.
-> Format : Rationnel / Symbolique / Branche mathématique / STÈLE / Question IRIS / À ne pas confondre avec
+> Version : 0.4.1
 
----
+> Source de vérité des **définitions**. La procédure de lecture est dans `SKILL.md` ;
+> les identifiants et glyphes dans `references/notation.md`.
+>
+> Champs de chaque fiche :
+> - **Définition** — ce que la structure *est*, en une ou deux phrases opératoires.
+> - **Structure mathématique** — la structure nommée, puis le domaine de rattachement.
+> - **Marqueurs observables** — ce qui compte comme ancrage. Une carte sans au moins un marqueur
+>   rempli par un fait de la situation est inactive.
+> - **Registre anthropologique** — items **exacts** de la liste des universaux de Donald Brown
+>   (compilation reprise dans Pinker, *The Blank Slate*, 2002) et statut :
+>   *documenté* (item direct), *partiel* (item voisin ou portée restreinte), *à établir* (aucun item).
+> - **À ne pas confondre avec** — les **voisines documentées** de la carte, chacune avec une
+>   **question discriminante**. Cette liste est fermée et symétrique ; c'est elle que R3 parcourt.
+>   La question Le « ou » d'une question
+>   discriminante dit quelle carte retenir pour *cette* lecture ; il ne dit jamais que les deux
+>   structures s'excluent dans le monde (voir `antagonismes.md`).
+> - **Question d'exploration** — à poser **après** validation de l'ancrage, jamais pour le produire.
+> - **Signature** — glyphe emprunté à l'alphabet STÈLE. Le glyphe est un symbole, pas une définition.
 
-## SEUIL · ⊥ LIMITE
-
-**Rationnel** : point de bifurcation où un système bascule irrémédiablement dans un nouvel état — ce qui ne peut pas être défait.
-
-**Symbolique** : rite de passage — toutes les cultures marquent les moments de non-retour. Le seuil ne se franchit qu'une fois.
-
-**Branche mathématique** : Systèmes dynamiques — points de bifurcation, attracteurs, irréversibilité.
-
-**STÈLE** : `⊥` LIMITE — frontière, fin de domaine, ce qui sépare.
-
-**Question IRIS** : Quel passage est en train de s'effectuer — et qu'est-ce qui ne peut plus être défait ?
-
-**À ne pas confondre avec** :
-- *TRANSFORMATION* — La transformation est un processus continu qui change la forme d'une entité tout en conservant son essence ; le seuil est un instant discret et irréversible après lequel rien ne peut reprendre sa forme précédente. Critère : *s'agit-il d'un basculement ponctuel (→ SEUIL) ou d'une mutation progressive (→ TRANSFORMATION) ?*
-- *CONTRAINTE* — La contrainte réduit l'espace des possibles sans nécessairement entraîner de changement d'état ; le seuil marque le basculement réel dans un nouvel état. Critère : *y a-t-il passage effectif vers un nouvel état (→ SEUIL) ou seulement limitation du champ d'action (→ CONTRAINTE) ?*
-
----
-
-## RÉCIPROCITÉ · ⊗ LIER
-
-**Rationnel** : échange symétrique avec conservation — ce qui est donné appelle un retour structurellement équivalent.
-
-**Symbolique** : don, dette, alliance — toutes les cultures organisent l'obligation réciproque et la circulation des biens et services.
-
-**Branche mathématique** : Théorie des jeux coopératifs — échanges symétriques, conservation, équilibres de réciprocité.
-
-**STÈLE** : `⊗` LIER — connecter, tisser, ponter.
-
-**Question IRIS** : Qu'est-ce qui circule ici — et ce circuit est-il équilibré ?
-
-**À ne pas confondre avec** :
-- *COMMUNAUTÉ* — La réciprocité est un échange bilatéral entre deux parties ; la communauté est une coopération multi-acteurs autour d'un bien ou d'un projet commun. Critère : *la relation est-elle entre deux parties (→ RÉCIPROCITÉ) ou entre un collectif et son projet commun (→ COMMUNAUTÉ) ?*
-- *RÉSEAU* — Le réseau décrit la topologie des liens (qui est connecté à qui) ; la réciprocité décrit la nature qualitative de l'échange (symétrie, obligation). Critère : *ce qui importe est-il la structure des connexions (→ RÉSEAU) ou la qualité et l'équilibre de ce qui circule (→ RÉCIPROCITÉ) ?*
+**Statut du registre anthropologique** : 11 documentées, 3 partielles (RÉCURSIVITÉ, CROISSANCE,
+PROPORTION), 2 à établir (ÉMERGENCE, TRANSFORMATION). Une carte « à établir » reste utilisable :
+seul son double registre n'est pas démontré, et la lecture ne doit pas l'invoquer.
 
 ---
 
-## PÉRIODICITÉ · ↻ CYCLE
+## SEUIL
 
-**Rationnel** : retour régulier d'un état — oscillation, rythme, fréquence dans un système dynamique.
+**Définition** : franchissement d'une valeur critique après lequel le retour à l'état antérieur est
+impossible, ou ne peut plus se faire par le même chemin. Le critère est l'**irréversibilité**, pas la
+soudaineté.
 
-**Symbolique** : rituels calendaires, célébrations — toutes les cultures marquent les retours du temps et les cycles naturels.
+**Structure mathématique** : hystérésis (bistabilité : l'aller et le retour basculent à des valeurs
+différentes du paramètre) ; état absorbant (chaîne de Markov) ; application non inversible.
+*Domaine* : systèmes dynamiques, processus stochastiques.
+> Une bifurcation seule n'est **pas** un seuil : une bifurcation supercritique se défait quand le
+> paramètre revient. Elle ne devient SEUIL qu'accompagnée d'hystérésis ou d'absorption.
 
-**Branche mathématique** : Systèmes dynamiques — oscillateurs, cycles limites, orbites périodiques.
+**Marqueurs observables** :
+- acte juridique, contractuel ou matériel sans mécanisme de retour (signature, destruction, dépense irrécupérable) ;
+- tentative de retour qui échoue, ou qui exige un chemin différent de l'aller ;
+- coût du retour sans commune mesure avec le coût de l'aller.
 
-**STÈLE** : `↻` CYCLE — répétition, retour, circularité temporelle.
-
-**Question IRIS** : Quel cycle se rejoue — et à quel point du cycle es-tu ?
+**Registre anthropologique** — *documenté* : « rites of passage ».
 
 **À ne pas confondre avec** :
-- *RÉCURSIVITÉ* — La périodicité est externe : le temps revient, un état se répète dans le temps. La récursivité est structurelle : la forme se produit elle-même, la sortie devient l'entrée. Critère : *ce qui se répète est-il dans le temps (→ PÉRIODICITÉ) ou dans la forme (→ RÉCURSIVITÉ) ?*
-- *TRACE · MÉMOIRE* — La trace est ce qui reste après une transformation et ne revient pas ; la périodicité est ce qui revient régulièrement. Critère : *le passé est-il présent comme empreinte résiduelle (→ TRACE) ou comme retour cyclique (→ PÉRIODICITÉ) ?*
+- *TRANSFORMATION* — Les deux cartes coexistent souvent (une métamorphose traverse un seuil).
+  Question : *ce qui organise la situation est-il le point au-delà duquel le retour est fermé
+  (→ SEUIL) ou le processus de changement de forme et ce qu'il conserve (→ TRANSFORMATION) ?*
+- *CONTRAINTE* — Question : *y a-t-il passage effectif vers un nouvel état sans retour (→ SEUIL)
+  ou seulement des options retirées sans changement d'état (→ CONTRAINTE) ?*
+- *POLARITÉ* — Question : *la dualité est-elle un champ stable à deux pôles (→ POLARITÉ) ou
+  l'avant/après d'un passage non réversible (→ SEUIL) ?*
+- *TRACE · MÉMOIRE* — **Inclusion mathématique** : l'hystérésis est un cas de dépendance au chemin.
+  Les deux cartes coexistent souvent (un seuil franchi laisse une trace). Question : *ce qui organise
+  la situation est-il le point au-delà duquel le retour est fermé (→ SEUIL) ou l'effet persistant
+  d'un passé qui continue d'agir (→ TRACE) ?*
+
+**Question d'exploration** : qu'est-ce qui ne peut plus être défait — et qu'est-ce qui, de ce fait,
+a cessé d'être une option ?
+
+**Signature** : `⊥` LIMITE
 
 ---
 
-## RÉCURSIVITÉ · ↺ RÉFLEXIVITÉ
+## RÉCIPROCITÉ
 
-**Rationnel** : structure qui se contient elle-même — boucle, auto-référence, fractal. La sortie devient l'entrée.
+**Définition** : un transfert entre deux parties crée l'obligation d'un contre-transfert entre les
+mêmes parties ; la relation se maintient par cette boucle don / retour. La symétrie porte sur
+l'**obligation**, pas sur les positions : elle est compatible avec une inégalité de statut.
 
-**Symbolique** : conscience de soi, méta-cognition — toutes les cultures ont des pratiques d'auto-observation et des concepts du « moi qui se regarde ».
+**Structure mathématique** : jeux répétés et stratégies conditionnelles (donnant-donnant,
+Axelrod 1984 ; théorème folk) ; réciprocité directe. *Domaine* : théorie des jeux **non coopératifs**
+répétés.
 
-**Branche mathématique** : Théorie de la computation / fractals — fonctions auto-référentielles, fractals de Mandelbrot, récursion formelle.
+**Marqueurs observables** :
+- transferts identifiables dans les deux sens entre les mêmes parties ;
+- tenue de compte, explicite ou implicite (rappel d'une dette, « je te dois bien ça ») ;
+- refroidissement, rupture ou rétorsion observés après un non-retour.
 
-**STÈLE** : `↺` RÉFLEXIVITÉ — auto-référence, s'applique à lui-même.
-
-**Question IRIS** : Qu'est-ce qui se répète parce que ça se regarde se répéter ?
+**Registre anthropologique** — *documenté* : « reciprocal exchanges (of labor, goods, or services) »,
+« gift giving », « trade », « reciprocity, negative (revenge, retaliation) ».
 
 **À ne pas confondre avec** :
-- *PÉRIODICITÉ* — La périodicité est un retour régulier dans le temps ; la récursivité est une structure qui se contient elle-même, indépendamment du temps. Critère : *ce qui se répète est-il dans le temps (→ PÉRIODICITÉ) ou dans la forme (→ RÉCURSIVITÉ) ?*
-- *ÉMERGENCE* — L'émergence est un ordre global naissant de règles locales sans auto-observation ; la récursivité implique que la structure se produit elle-même par boucle. Critère : *y a-t-il auto-référence explicite (→ RÉCURSIVITÉ) ou apparition imprévisible depuis des règles locales simples (→ ÉMERGENCE) ?*
+- *COMMUNAUTÉ* — Question : *la relation est-elle entre deux parties qui se rendent (→ RÉCIPROCITÉ)
+  ou entre un collectif et son bien commun (→ COMMUNAUTÉ) ?*
+- *RÉSEAU* — Question : *ce qui importe est-il la topologie des liens (→ RÉSEAU) ou l'équilibre de
+  ce qui circule dans un lien (→ RÉCIPROCITÉ) ?*
+- *RÉSONANCE* — Question : *l'alignement est-il un échange obligé (→ RÉCIPROCITÉ) ou une
+  synchronisation de rythmes sans compte (→ RÉSONANCE) ?*
+- *HIÉRARCHIE* — Compatibles (relation patron-client : obligation réciproque sous asymétrie de
+  statut ; Gouldner 1960, Scott 1972). Question : *ce qui organise le rapport est-il la boucle
+  d'obligations (→ RÉCIPROCITÉ) ou l'ordre de préséance (→ HIÉRARCHIE) ?*
+
+**Question d'exploration** : qu'est-ce qui circule ici, dans quel sens — et qui tient le compte ?
+
+**Signature** : `⊗` LIER
 
 ---
 
-## ÉMERGENCE · ⊙ SOURCE
+## PÉRIODICITÉ
 
-**Rationnel** : ordre global né de règles locales simples — ce qui n'était prévu nulle part apparaît comme propriété du système.
+**Définition** : retour d'un même état à intervalles réguliers, entretenu par la dynamique du
+système ou imposé par un forçage extérieur (calendrier, saison, échéance).
 
-**Symbolique** : langage, culture, institution — aucune culture n'a été conçue par un architecte central. Toutes ont émergé.
+**Structure mathématique** : orbites périodiques, cycles limites, oscillateurs autonomes ou forcés.
+*Domaine* : systèmes dynamiques.
 
-**Branche mathématique** : Systèmes complexes — auto-organisation, propriétés émergentes, modèles ABM (Agent-Based Modeling).
+**Marqueurs observables** :
+- au moins **trois** occurrences datées du même état ou de la même séquence de phases ;
+- intervalle approximativement constant ;
+- phases du cycle identifiables (on peut dire où l'on en est).
 
-**STÈLE** : `⊙` SOURCE — origine, point d'émergence, ce d'où une dynamique procède.
-
-**Question IRIS** : Qu'est-ce qui est en train d'apparaître sans qu'on l'ait décidé ?
+**Registre anthropologique** — *documenté* : « time, cyclicity of », « rituals ».
 
 **À ne pas confondre avec** :
-- *TRANSFORMATION* — L'émergence fait apparaître quelque chose de fondamentalement nouveau à partir de règles locales simples ; la transformation mute une entité existante en conservant son essence. Critère : *y a-t-il apparition de quelque chose de nouveau (→ ÉMERGENCE) ou mutation d'une entité déjà existante (→ TRANSFORMATION) ?*
-- *RÉCURSIVITÉ* — L'émergence est un ordre global non planifié sans auto-référence ; la récursivité implique une boucle explicite. Critère : *y a-t-il auto-référence explicite (→ RÉCURSIVITÉ) ou apparition imprévisible depuis des règles locales simples (→ ÉMERGENCE) ?*
+- *RÉCURSIVITÉ* — Question : *le retour est-il réglé par un rythme ou une échéance (→ PÉRIODICITÉ)
+  ou produit par le fait que le système se prend pour objet (→ RÉCURSIVITÉ) ?*
+- *TRACE · MÉMOIRE* — Compatibles (un rituel annuel est à la fois un retour et une trace).
+  Question : *ce qui agit est-il le retour régulier lui-même (→ PÉRIODICITÉ) ou ce que le passé a
+  laissé et qui persiste (→ TRACE) ?*
+- *RÉSONANCE* — Question : *s'agit-il du rythme propre d'un système (→ PÉRIODICITÉ) ou de
+  l'alignement de plusieurs rythmes par couplage (→ RÉSONANCE) ?*
+
+**Question d'exploration** : à quelle phase du cycle en est-on — et qu'est-ce qui, la dernière fois,
+a terminé cette phase ?
+
+**Signature** : `↻` CYCLE
 
 ---
 
-## HIÉRARCHIE · ✦ AXE
+## RÉCURSIVITÉ
 
-**Rationnel** : ordonnancement par position relative — distribution inégale mais structurante selon des lois de puissance.
+**Définition** : le système prend sa propre opération ou sa propre représentation pour objet, et
+cette prise **modifie** l'opération qu'elle observe. Une seule notion : l'auto-référence opérante.
+> Hors carte : la simple rétroaction (une sortie qui influence l'entrée sans représentation de
+> soi) et l'auto-similarité fractale. Si l'une d'elles organise la situation, la nommer en clair
+> comme structure hors corpus.
 
-**Symbolique** : dominance sociale, statut — toutes les cultures organisent des rangs et des rôles différenciés.
+**Structure mathématique** : points fixes d'applications auto-référentielles (théorème de
+récursion, Kleene 1938) ; réflexivité sociale et prophétie autoréalisatrice (Merton 1948).
+*Domaine* : logique et calculabilité ; théorie des systèmes sociaux.
 
-**Branche mathématique** : Théorie des graphes / lois de puissance — arbres dirigés, réseaux scale-free, distributions de Pareto.
+**Marqueurs observables** :
+- un discours, une mesure, un modèle ou une analyse **du système sur lui-même** est observable ;
+- et ce discours modifie le comportement qu'il décrit (un classement publié change les classés ;
+  l'analyse d'un conflit devient un épisode du conflit).
 
-**STÈLE** : `✦` AXE — structure portante, pivot autour duquel tout s'organise.
-
-**Question IRIS** : Quelle structure tient tout en place ici — et est-ce qu'elle tient encore ?
+**Registre anthropologique** — *partiel* : « self as subject and object », « self-image, awareness
+of (concern for what others think) », « private inner life ». Documenté au niveau individuel ;
+l'extension aux collectifs n'est pas couverte par Brown.
 
 **À ne pas confondre avec** :
-- *RÉSEAU* — La hiérarchie définit des positions relatives ordonnées verticalement ; le réseau décrit une topologie de connexions sans ordre intrinsèque nécessaire. Critère : *la structure définit-elle des niveaux et des rangs (→ HIÉRARCHIE) ou seulement des connexions (→ RÉSEAU) ?*
-- *CONTRAINTE* — La hiérarchie est une structure de positions ; la contrainte est une règle qui réduit le champ des possibles, indépendamment de qui est où. Critère : *s'agit-il d'un ordre de positions (→ HIÉRARCHIE) ou d'une règle d'interdiction (→ CONTRAINTE) ?*
+- *PÉRIODICITÉ* — voir PÉRIODICITÉ.
+- *ÉMERGENCE* — Compatibles (une émergence peut s'appuyer sur des boucles). Question : *ce qui
+  organise la situation est-il un ordre collectif apparu sans prescripteur (→ ÉMERGENCE) ou un
+  système qui se regarde et se modifie en se regardant (→ RÉCURSIVITÉ) ?*
+
+**Question d'exploration** : quelle représentation de lui-même le système produit-il — et que
+change-t-elle dans ce qu'elle représente ?
+
+**Signature** : `↺` RÉFLEXIVITÉ
 
 ---
 
-## RÉSEAU · ⊛ NOEUD
+## ÉMERGENCE
 
-**Rationnel** : topologie de connexions — nœuds et liens définissant qui est relié à qui, et selon quelles règles de transmission.
+**Définition** : une régularité collective (norme, convention, rôle, format, ordre) apparaît des
+interactions locales, sans avoir été prescrite par un agent central et sans être présente dans les
+composants pris isolément. La rétroaction est compatible et fréquente.
 
-**Symbolique** : kinship, coalition, alliance — toutes les cultures cartographient les obligations de lien et les réseaux d'appartenance.
+**Structure mathématique** : auto-organisation ; rupture spontanée de symétrie ; criticité
+auto-organisée (Bak, Tang & Wiesenfeld 1987). *Méthode* (et non structure) : modèles multi-agents.
+*Domaine* : systèmes complexes.
 
-**Branche mathématique** : Théorie des graphes / topologie — graphes orientés et non orientés, centralité, cliques, small-world networks.
+**Marqueurs observables** :
+- une régularité collective nommable et datable dans son apparition ;
+- l'absence démontrable de prescription (pas de décision, de vote, de consigne qui l'instaure) ;
+- son adoption par imitation ou convergence observée.
 
-**STÈLE** : `⊛` NOEUD — convergence de dynamiques, croisement, là où plusieurs flux se rencontrent.
-
-**Question IRIS** : Quels liens te structurent en ce moment — et lesquels sont absents ?
+**Registre anthropologique** — *à établir*. La thèse « les cultures ont émergé » relève de la théorie
+de l'ordre spontané (Ferguson 1767, Hayek 1973), pas d'un universel documenté ; la liste de Brown contient
+au contraire des institutions délibérées (« government », « leaders », « succession »).
 
 **À ne pas confondre avec** :
-- *COMMUNAUTÉ* — Le réseau décrit la topologie (qui est relié à qui) ; la communauté décrit la coopération autour d'un projet commun (ce qui tient ensemble). Un réseau peut exister sans projet commun. Critère : *ce qui importe est-il la structure des liens (→ RÉSEAU) ou le projet commun qui unit (→ COMMUNAUTÉ) ?*
-- *HIÉRARCHIE* — Le réseau est une topologie de connexions ; la hiérarchie est une structure de positions relatives ordonnées. Critère : *la structure définit-elle des connexions (→ RÉSEAU) ou des rangs (→ HIÉRARCHIE) ?*
-- *RÉCIPROCITÉ* — Le réseau décrit la topologie ; la réciprocité décrit la qualité symétrique de l'échange. Critère : *ce qui importe est-il la structure des connexions (→ RÉSEAU) ou l'équilibre de ce qui circule (→ RÉCIPROCITÉ) ?*
+- *TRANSFORMATION* — **Incompatibles sur un même objet** (voir `antagonismes.md`). Question :
+  *l'entité observée est-elle apparue (→ ÉMERGENCE) ou existait-elle déjà et change de forme
+  (→ TRANSFORMATION) ?*
+- *RÉCURSIVITÉ* — voir RÉCURSIVITÉ.
+- *CROISSANCE* — Compatibles (le changement d'échelle fait souvent apparaître des propriétés
+  nouvelles — Anderson 1972). Question : *ce qui compte est-il l'apparition d'une propriété nouvelle
+  (→ ÉMERGENCE) ou l'augmentation d'une grandeur existante (→ CROISSANCE) ?*
+- *INCERTITUDE* — Question : *une régularité est-elle apparue (→ ÉMERGENCE) ou les acteurs
+  agissent-ils encore sous plusieurs possibles non tranchés (→ INCERTITUDE) ?*
+
+**Question d'exploration** : qu'est-ce qui s'est installé sans que personne ne le décide — et qui
+le défend désormais ?
+
+**Signature** : `⊙` SOURCE
 
 ---
 
-## POLARITÉ · ⥀ INVERSER
+## HIÉRARCHIE
 
-**Rationnel** : organisation autour de deux pôles opposés — dualité structurant la perception et l'espace des possibles.
+**Définition** : relation d'ordre entre positions — pour les paires concernées, l'une prime sur
+l'autre (autorité, validation, préséance), et l'ordre est au moins partiellement transitif.
 
-**Symbolique** : oppositions binaires dans la pensée et le langage — toutes les cultures pensent en paires (sacré/profane, nature/culture, dedans/dehors).
+**Structure mathématique** : ordres partiels ; arborescences (graphes orientés acycliques enracinés) ;
+hiérarchies de dominance et leur linéarité (indice de Landau 1951). *Domaine* : théorie des ordres,
+théorie des graphes.
+> Les inégalités de **grandeur** (lois de puissance, Pareto) relèvent de PROPORTION ; la
+> **centralité** d'un nœud relève de RÉSEAU.
 
-**Branche mathématique** : Algèbre / topologie différentielle — espaces bipolaires, symétrie, groupes de transformation Z₂.
+**Marqueurs observables** :
+- qui peut valider, bloquer ou annuler la décision de qui ;
+- chaînes de validation successives ; préséances observées ;
+- organigramme **effectif** (pas seulement affiché).
 
-**STÈLE** : `⥀` INVERSER — retourner, faire pivoter, basculer le point de vue.
-
-**Question IRIS** : Quels sont les deux pôles en tension — et lequel est invisibilisé ?
+**Registre anthropologique** — *documenté* : « dominance/submission », « statuses and roles »,
+« prestige inequalities », « leaders ».
 
 **À ne pas confondre avec** :
-- *CONTRAINTE* — La polarité structure la perception en deux pôles opposés ; la contrainte réduit l'espace des possibles sans nécessairement le polariser. Critère : *y a-t-il deux pôles en tension (→ POLARITÉ) ou une règle qui bloque certains mouvements (→ CONTRAINTE) ?*
-- *SEUIL* — La polarité est une dualité structurale stable ; le seuil est un point de basculement irréversible entre deux états. Critère : *la dualité est-elle un état structurel permanent (→ POLARITÉ) ou un moment de passage irréversible (→ SEUIL) ?*
+- *RÉSEAU* — Une hiérarchie est un graphe particulier : les deux peuvent décrire le même objet.
+  Question : *ce qui organise la situation est-il un ordre de préséance (→ HIÉRARCHIE) ou la
+  topologie des liens (→ RÉSEAU) ?*
+- *CONTRAINTE* — Question : *s'agit-il d'un ordre de positions (→ HIÉRARCHIE) ou d'une règle qui
+  retire des options quel que soit qui l'applique (→ CONTRAINTE) ?*
+- *PROPORTION* — Question : *s'agit-il d'un rang (→ HIÉRARCHIE) ou d'un rapport de grandeurs
+  (→ PROPORTION) ?*
+- *RÉCIPROCITÉ* — voir RÉCIPROCITÉ.
+
+**Question d'exploration** : qui peut dire non à qui — et cet ordre tient-il encore là où il est
+contesté ?
+
+**Signature** : `✦` AXE
 
 ---
 
-## INCERTITUDE · Ø VIDE
+## RÉSEAU
 
-**Rationnel** : entropie, probabilité — l'espace de ce qui n'est pas encore déterminé, la structure de l'inconnu.
+**Définition** : topologie des liens — quels éléments sont reliés, par quels chemins un flux peut
+passer, où sont les ponts et les trous.
 
-**Symbolique** : divination, augure — toutes les cultures ont développé des pratiques de raisonnement face à l'inconnu et aux décisions sous incertitude.
+**Structure mathématique** : graphes ; centralités (degré, intermédiarité) ; composantes et ponts ;
+trous structuraux (Burt 1992) ; petits mondes (Watts & Strogatz 1998). *Domaine* : théorie des
+graphes, analyse de réseaux.
 
-**Branche mathématique** : Théorie des probabilités / entropie — entropie de Shannon, espaces d'états indéterminés, inférence bayésienne.
+**Marqueurs observables** :
+- au moins trois nœuds nommables et leurs liens (présents ou absents) ;
+- un chemin de transmission identifiable, ou un pont dont la disparition couperait le graphe.
 
-**STÈLE** : `Ø` VIDE — absence créatrice, non-encore-advenu, ce qui appelle sans se définir.
-
-**Question IRIS** : Qu'est-ce qui reste ouvert — et comment te comportes-tu face à ce vide ?
+**Registre anthropologique** — *documenté* : « kin groups », « classification of kin », « kinship
+statuses », « coalitions », « triangular awareness (assessing relationships among the self and two
+other people) ». Ce cluster est **partagé** avec RÉCIPROCITÉ et COMMUNAUTÉ (voir `calibration.md`).
 
 **À ne pas confondre avec** :
-- *CONTRAINTE* — L'incertitude décrit ce qui n'est pas encore déterminé ; la contrainte décrit ce qui est explicitement interdit. Le vide est ouvert, la contrainte est fermée. Critère : *y a-t-il de l'inconnu structurel (→ INCERTITUDE) ou une règle d'interdiction (→ CONTRAINTE) ?*
-- *ÉMERGENCE* — L'incertitude est l'état d'indétermination avant qu'un pattern n'apparaisse ; l'émergence est l'apparition effective d'un ordre nouveau. Critère : *est-on dans l'avant (→ INCERTITUDE) ou dans l'apparition elle-même (→ ÉMERGENCE) ?*
+- *COMMUNAUTÉ* — Question : *ce qui importe est-il la structure des liens (→ RÉSEAU) ou le bien
+  commun qui unit (→ COMMUNAUTÉ) ?*
+- *HIÉRARCHIE* — voir HIÉRARCHIE.
+- *RÉCIPROCITÉ* — voir RÉCIPROCITÉ.
+
+**Question d'exploration** : par où l'information ou la ressource passe-t-elle — et quel lien, s'il
+manquait, couperait tout ?
+
+**Signature** : `⊛` NOEUD
 
 ---
 
-## CONTRAINTE · ⊘ NÉGATION
+## POLARITÉ
 
-**Rationnel** : règles réduisant l'espace des possibles — la forme est définie autant par ce qui ne peut pas se faire que par ce qui peut.
+**Définition** : un champ s'organise autour de deux pôles qui se définissent l'un par l'autre ;
+chaque élément est situé par rapport à eux, et passer d'un pôle à l'autre est une inversion.
 
-**Symbolique** : lois, tabous, règles de jeux — toutes les cultures ont des systèmes formels d'interdiction qui structurent le comportement possible.
+**Structure mathématique** : involution (groupe Z₂) ; symétrie de réflexion. *Domaine* : algèbre,
+théorie des groupes.
 
-**Branche mathématique** : Théorie des systèmes / optimisation — espaces de contraintes, programmation linéaire, frontières de domaine.
+**Marqueurs observables** :
+- les acteurs se classent eux-mêmes dans deux camps, ou deux termes opposés reviennent dans leur
+  propre vocabulaire ;
+- les positions intermédiaires sont rares, invisibles ou disqualifiées.
 
-**STÈLE** : `⊘` NÉGATION — refus, exclusion, ce qui est hors du possible.
-
-**Question IRIS** : Quelle contrainte est active ici — et vient-elle de l'extérieur ou de toi ?
+**Registre anthropologique** — *documenté* : « binary cognitive distinctions », « logical notion of
+"opposite" », « culture/nature distinction », « in-group distinguished from out-group(s) ».
 
 **À ne pas confondre avec** :
-- *SEUIL* — La contrainte limite l'espace des possibles sans changer l'état du système ; le seuil marque le basculement effectif vers un nouvel état. Critère : *y a-t-il limitation sans changement d'état (→ CONTRAINTE) ou basculement irréversible (→ SEUIL) ?*
-- *HIÉRARCHIE* — La contrainte est une règle d'interdiction ; la hiérarchie est une structure de positions relatives. Critère : *s'agit-il d'une règle qui bloque (→ CONTRAINTE) ou d'un ordre de rangs (→ HIÉRARCHIE) ?*
+- *CONTRAINTE* — Question : *y a-t-il deux pôles qui structurent le champ (→ POLARITÉ) ou une règle
+  qui bloque des mouvements (→ CONTRAINTE) ?*
+- *SEUIL* — voir SEUIL.
+
+**Question d'exploration** : quels sont les deux pôles — et qui se tient entre eux sans être vu ?
+
+**Signature** : `⥀` INVERSER
 
 ---
 
-## PROPORTION · ◯ FORME
+## INCERTITUDE
 
-**Rationnel** : rapport entre parties — harmonie, ratio, équilibre des échelles dans un système.
+**Définition** : pour les **acteurs de la situation**, plusieurs états futurs ou cachés restent
+possibles, et cette indétermination **organise leurs conduites** (attente, couverture, recherche
+d'information, arrangements provisoires).
+> Régime unique : l'incertitude est une propriété de la situation **telle que les acteurs y
+> agissent**. L'incertitude de l'analyste — ou une simple déclaration « je ne sais pas » — n'ancre
+> pas la carte : il faut une conduite organisée par l'indétermination.
 
-**Symbolique** : évaluation esthétique — toutes les cultures jugent ce qui est juste, beau, bien proportionné. Le sens de la mesure est universel.
+**Structure mathématique** : distribution de probabilité sur un espace d'états non réduit.
+*Mesure* : entropie (Shannon 1948). *Méthode de mise à jour* : inférence bayésienne. *Domaine* :
+théorie des probabilités et de l'information.
 
-**Branche mathématique** : Géométrie / algèbre — ratios, section dorée, homothéties, équilibres d'échelle.
+**Marqueurs observables** :
+- décision reportée dans l'attente d'une information nommée ;
+- scénarios concurrents explicitement tenus ; dispositifs provisoires ;
+- ressources dépensées à réduire l'indétermination (enquête, consultation, pronostic, divination).
 
-**STÈLE** : `◯` FORME — ce qui est advenu, la manifestation, le contour stabilisé.
-
-**Question IRIS** : Qu'est-ce qui est hors proportion ici — et qu'est-ce que ça dit de l'ensemble ?
+**Registre anthropologique** — *documenté* : « divination », « magic », « beliefs about fortune and
+misfortune », « future, attempts to predict », « anticipation ».
 
 **À ne pas confondre avec** :
-- *HIÉRARCHIE* — La proportion décrit les rapports d'échelle entre parties ; la hiérarchie décrit des positions relatives ordonnées. Critère : *s'agit-il d'un équilibre de mesures (→ PROPORTION) ou d'un ordre de rangs (→ HIÉRARCHIE) ?*
-- *CROISSANCE* — La proportion décrit un état d'équilibre des rapports ; la croissance décrit une dynamique d'amplification. Critère : *est-on dans un état de rapport (→ PROPORTION) ou dans un processus d'amplification (→ CROISSANCE) ?*
+- *CONTRAINTE* — **Incompatibles sur une même option** (voir `antagonismes.md`). Question :
+  *l'option est-elle encore ouverte (→ INCERTITUDE) ou exclue (→ CONTRAINTE) ?*
+- *ÉMERGENCE* — voir ÉMERGENCE.
+
+**Question d'exploration** : qu'est-ce que les acteurs attendent de savoir — et que font-ils en
+attendant ?
+
+**Signature** : `Ø` VIDE
 
 ---
 
-## TRANSFORMATION · ∿ MOUVEMENT
+## CONTRAINTE
 
-**Rationnel** : changement continu avec conservation d'un invariant — ce qui change de forme sans cesser d'être ce qu'il est fondamentalement.
+**Définition** : une règle ou une limite retire des options de l'espace des possibles — formelle
+(loi, contrat, règlement), matérielle (budget, capacité, délai) ou sociale (tabou, sanction).
 
-**Symbolique** : métamorphose — la chrysalide n'est pas un seuil, c'est un processus. Toutes les cultures ont des récits de transformation radicale avec persistance d'une essence.
+**Structure mathématique** : ensemble admissible et contraintes **actives** (celles qui lient
+effectivement la solution ; multiplicateur de Lagrange non nul) ; programmation sous contraintes.
+*Domaine* : optimisation.
 
-**Branche mathématique** : Algèbre des transformations / topologie — homéomorphismes, groupes de Lie, invariants topologiques.
+**Marqueurs observables** :
+- règle écrite ou sanction observée ;
+- action tentée et bloquée ; option explicitement exclue ;
+- la contrainte est **active** : sa levée changerait ce que font les acteurs.
 
-**STÈLE** : `∿` MOUVEMENT — flux, transformation en cours, devenir actif.
-
-**Question IRIS** : Qu'est-ce qui est en train de changer de forme — et qu'est-ce qui reste ?
+**Registre anthropologique** — *documenté* : « taboos », « tabooed foods », « law (rights and
+obligations) », « law (rules of membership) », « sanctions ».
 
 **À ne pas confondre avec** :
-- *SEUIL* — La transformation est un processus continu avec conservation d'une essence ; le seuil est un instant discret de basculement irréversible. Critère : *s'agit-il d'un processus de mutation qui dure (→ TRANSFORMATION) ou d'un instant de non-retour (→ SEUIL) ?*
-- *ÉMERGENCE* — La transformation mute une entité existante ; l'émergence fait apparaître quelque chose de fondamentalement nouveau. Critère : *y a-t-il mutation d'une entité existante (→ TRANSFORMATION) ou apparition d'une entité nouvelle (→ ÉMERGENCE) ?*
-- *CROISSANCE* — La croissance est une amplification quantitative d'une grandeur ; la transformation est un changement qualitatif de forme. Critère : *s'agit-il d'un changement de degré (→ CROISSANCE) ou de nature (→ TRANSFORMATION) ?*
+- *SEUIL* — voir SEUIL.
+- *HIÉRARCHIE* — voir HIÉRARCHIE.
+- *POLARITÉ* — voir POLARITÉ.
+- *INCERTITUDE* — voir INCERTITUDE.
+- *TRACE · MÉMOIRE* — Une règle héritée relève des deux. Question : *ce qui agit est-il
+  l'exclusion d'options (→ CONTRAINTE) ou la persistance d'un passé qui ne serait plus choisi
+  (→ TRACE) ?*
+
+**Question d'exploration** : quelle contrainte est active — et que feraient les acteurs si elle
+tombait ?
+
+**Signature** : `⊘` NÉGATION
 
 ---
 
-## TRACE · MÉMOIRE · ◊ TRACE
+## PROPORTION
 
-**Rationnel** : invariant résiduel et persistence de l'information — ce qui demeure après une transformation, l'empreinte que le passé laisse dans le présent.
+**Définition** : rapport entre les grandeurs des parties d'un ensemble, et sa conservation ou sa
+rupture quand l'ensemble change d'échelle.
 
-**Symbolique** : mémoire ancestrale, commémoration, tradition orale — toutes les cultures préservent et transmettent les traces de ceux qui sont passés avant. La mémoire collective est un universel documenté.
+**Structure mathématique** : ratios ; similitudes et homothéties ; lois d'échelle et allométrie
+(y = a·xᵇ, Huxley 1932) ; courbes de concentration (Lorenz) pour décrire des inégalités de grandeur.
+*Domaine* : géométrie, analyse dimensionnelle.
+> Retiré en v0.4 : la « section dorée ». Son universalité esthétique n'est pas établie
+> (Markowsky 1992).
 
-**Branche mathématique** : Théorie de l'information — persistence de l'information, invariants résiduels, mémoire des systèmes dynamiques.
+**Marqueurs observables** :
+- au moins deux grandeurs mesurables et leur rapport ;
+- idéalement le même rapport à deux dates, pour voir s'il se conserve.
 
-**STÈLE** : `◊` TRACE — empreinte, mémoire résiduelle, ce qui reste après que la chose a passé.
-
-**Question IRIS** : Qu'est-ce qui reste et se transmet — et qu'est-ce que cette persistence dit de ce qui a changé ?
+**Registre anthropologique** — *partiel* : aucun item de proportion ; items voisins « measuring »,
+« numerals (counting) », « aesthetics », « fairness (equity), concept of » (le partage équitable
+est un jugement de proportion).
 
 **À ne pas confondre avec** :
-- *PÉRIODICITÉ* — La trace est ce qui reste après une transformation et ne revient pas ; la périodicité est ce qui revient régulièrement. Critère : *le passé est-il présent comme empreinte résiduelle unique (→ TRACE) ou comme retour cyclique (→ PÉRIODICITÉ) ?*
-- *TRANSFORMATION* — La trace est le résidu stable après une transformation ; la transformation est le processus de changement lui-même. Critère : *est-on dans le processus de mutation (→ TRANSFORMATION) ou dans ce qui en reste après (→ TRACE) ?*
+- *HIÉRARCHIE* — voir HIÉRARCHIE.
+- *CROISSANCE* — Compatibles (une croissance homothétique conserve les rapports). Question :
+  *ce qui compte est-il le rapport entre parties (→ PROPORTION) ou la dynamique d'une grandeur
+  (→ CROISSANCE) ?*
+
+**Question d'exploration** : quel rapport a changé — et qu'est-ce qui a grossi sans que le reste
+suive ?
+
+**Signature** : `◯` FORME
 
 ---
 
-## CROISSANCE · ▲ INTENSITÉ
+## TRANSFORMATION
 
-**Rationnel** : fonctions de croissance — courbes logistiques, expansion exponentielle suivie de saturation. Ce qui s'amplifie jusqu'à sa limite structurelle.
+**Définition** : une entité **existante** change de forme de façon progressive en conservant au
+moins un invariant nommable (identité, mission, membres, fonction).
 
-**Symbolique** : distinction croissance/déclin, jeunesse/âge, vitalité — toutes les cultures différencient les phases d'expansion et de déclin des êtres et des collectifs. Universel documenté par Brown.
+**Structure mathématique** : déformations continues (homotopies) ; groupes de transformations et
+leurs invariants (Klein 1872, programme d'Erlangen). *Domaine* : topologie, géométrie.
 
-**Branche mathématique** : Analyse mathématique / équations différentielles — fonctions logistiques, croissance exponentielle, saturation et points d'inflexion.
+**Marqueurs observables** :
+- état de départ et état en cours décrits ;
+- un invariant explicitement conservé ;
+- étapes intermédiaires observées (pas seulement un avant/après).
 
-**STÈLE** : `▲` INTENSITÉ — amplification, accélération, augmentation de degré.
-
-**Question IRIS** : Qu'est-ce qui est en train de croître ici — et à quel stade de sa courbe se trouve-t-il ?
+**Registre anthropologique** — *à établir*. Aucun item de la liste ; « myths » n'est qu'un voisin.
 
 **À ne pas confondre avec** :
-- *TRANSFORMATION* — La croissance est une amplification quantitative d'une grandeur existante ; la transformation est un changement qualitatif de forme. Critère : *s'agit-il d'un changement de degré (→ CROISSANCE) ou de nature (→ TRANSFORMATION) ?*
-- *ÉMERGENCE* — La croissance amplifie quelque chose d'existant ; l'émergence fait apparaître quelque chose de fondamentalement nouveau. Critère : *y a-t-il amplification d'une chose existante (→ CROISSANCE) ou apparition d'une chose nouvelle (→ ÉMERGENCE) ?*
+- *ÉMERGENCE* — **Incompatibles sur un même objet** (voir ÉMERGENCE).
+- *SEUIL* — voir SEUIL.
+- *CROISSANCE* — Question : *s'agit-il d'un changement de degré (→ CROISSANCE) ou de forme
+  (→ TRANSFORMATION) ?*
+- *TRACE · MÉMOIRE* — Relation séquentielle, pas d'exclusion. Question : *est-on dans le
+  processus de changement (→ TRANSFORMATION) ou dans ce qu'un changement a laissé (→ TRACE) ?*
+
+**Question d'exploration** : qu'est-ce qui change de forme — et qu'est-ce qui, à travers ce
+changement, doit rester pour que ce soit encore la même chose ?
+
+**Signature** : `∿` MOUVEMENT
 
 ---
 
-## COMMUNAUTÉ · ⟶ TRANSMETTRE
+## TRACE · MÉMOIRE
 
-**Rationnel** : coopération et équilibres collectifs — théorie des jeux coopératifs, coalitions stables, auto-organisation d'un groupe autour d'intérêts partagés.
+**Définition** : l'état présent dépend du **chemin suivi**, pas seulement des forces actuelles ;
+un résidu du passé (enregistrement, habitude, infrastructure, règle héritée, réputation) continue
+d'agir.
 
-**Symbolique** : coalition, entraide, solidarité de groupe — parmi les universaux les plus robustes de Brown : formation de coalitions, réciprocité élargie, coopération collective au-delà de la parenté.
+**Structure mathématique** : dépendance au chemin et rendements croissants (David 1985,
+Arthur 1989) ; processus non markoviens (à mémoire). *Domaine* : systèmes dynamiques, processus
+stochastiques.
+> L'hystérésis, structure de SEUIL, est un **cas particulier** de dépendance au chemin : la relation
+> SEUIL / TRACE est une inclusion (`antagonismes.md` §4bis), pas une confusion de définitions.
 
-**Branche mathématique** : Théorie des jeux coopératifs / auto-organisation — coalitions stables, dilemmes du prisonnier répétés, équilibres collectifs.
+**Marqueurs observables** :
+- un élément présent dont l'origine est datable ;
+- qui continue d'orienter les conduites ;
+- et qui ne serait pas choisi tel quel si l'on repartait de zéro aujourd'hui (signe que c'est
+  l'histoire, et non la situation actuelle, qui le maintient).
 
-**STÈLE** : `⟶` TRANSMETTRE — faire circuler, passer à un autre, mettre en mouvement entre membres.
-
-**Question IRIS** : Quelle communauté est active dans cette situation — et qu'est-ce qui tient ensemble ses membres ?
+**Registre anthropologique** — *documenté* : « memory », « myths », « folklore », « death rituals »,
+« mourning », « inheritance rules ».
 
 **À ne pas confondre avec** :
-- *RÉSEAU* — La communauté décrit la coopération autour d'un projet commun ; le réseau décrit la topologie des connexions. Un réseau peut exister sans projet commun, une communauté peut exister sans topologie clairement définie. Critère : *ce qui importe est-il le projet commun qui unit (→ COMMUNAUTÉ) ou la structure des liens (→ RÉSEAU) ?*
-- *RÉCIPROCITÉ* — La réciprocité est bilatérale ; la communauté est multi-acteurs. Critère : *la relation est-elle entre deux parties (→ RÉCIPROCITÉ) ou entre un collectif et son bien commun (→ COMMUNAUTÉ) ?*
+- *PÉRIODICITÉ* — voir PÉRIODICITÉ.
+- *TRANSFORMATION* — voir TRANSFORMATION.
+- *CONTRAINTE* — voir CONTRAINTE.
+- *SEUIL* — voir SEUIL.
+
+**Question d'exploration** : qu'est-ce qui reste et agit encore — et qui le porte maintenant ?
+
+**Signature** : `◊` TRACE
 
 ---
 
-## RÉSONANCE · ✶ RÉVÉLER
+## CROISSANCE
 
-**Rationnel** : couplage d'oscillateurs — synchronisation de fréquences, entraînement, alignement spontané de systèmes indépendants sur un rythme commun.
+**Définition** : augmentation d'une grandeur dont le taux dépend de la grandeur elle-même, jusqu'à
+une limite de capacité ; inclut les régimes exponentiel, logistique, de saturation et de déclin.
 
-**Symbolique** : musique collective, rituel synchronisé — toutes les cultures créent des états de synchronisation corporelle et émotionnelle (chant, danse, cérémonie). Ancrage complémentaire : synchronisation biologique documentée en éthologie évolutive.
+**Structure mathématique** : équations de croissance (exponentielle, logistique de Verhulst 1838,
+Gompertz 1825) ; point d'inflexion ; capacité limite. *Domaine* : équations différentielles.
 
-**Branche mathématique** : Physique des oscillateurs couplés — modèle de Kuramoto, synchronisation, entraînement de fréquences.
+**Marqueurs observables** :
+- au moins trois mesures datées d'une même grandeur ;
+- un taux estimable ; une limite identifiée ou une saturation visible.
 
-**STÈLE** : `✶` RÉVÉLER — porter au visible ce qui était caché ; la résonance révèle l'alignement latent.
-
-**Question IRIS** : Qu'est-ce qui s'aligne ici — et cette synchronisation est-elle choisie ou subie ?
+**Registre anthropologique** — *partiel* : documenté pour le cycle de vie des **personnes**
+(« age grades », « age statuses », « age terms », « classification of age », « weaning ») ;
+**à établir** pour la croissance et le déclin des collectifs.
 
 **À ne pas confondre avec** :
-- *RÉCIPROCITÉ* — La résonance est un alignement spontané de rythmes entre systèmes ; la réciprocité est un échange conscient et symétrique. Critère : *l'alignement est-il spontané et rythmique (→ RÉSONANCE) ou délibéré et réciproque (→ RÉCIPROCITÉ) ?*
-- *COMMUNAUTÉ* — La résonance est un phénomène de synchronisation de fréquences ; la communauté est une coopération organisée autour d'un projet. Critère : *s'agit-il d'un alignement de rythmes (→ RÉSONANCE) ou d'une organisation coopérative (→ COMMUNAUTÉ) ?*
-- *PÉRIODICITÉ* — La résonance implique le couplage entre deux systèmes ou plus ; la périodicité décrit le rythme interne d'un seul système. Critère : *y a-t-il couplage entre systèmes distincts (→ RÉSONANCE) ou cycle interne d'un seul système (→ PÉRIODICITÉ) ?*
+- *TRANSFORMATION* — voir TRANSFORMATION.
+- *ÉMERGENCE* — voir ÉMERGENCE.
+- *PROPORTION* — voir PROPORTION.
+
+**Question d'exploration** : à quel point de sa courbe est la grandeur — et quelle limite la
+freinera ?
+
+**Signature** : `▲` INTENSITÉ
+
+---
+
+## COMMUNAUTÉ
+
+**Définition** : coopération d'un collectif de **plus de deux** membres autour d'un bien ou d'un
+projet commun, avec des règles d'appartenance et de contribution, et un problème de passager
+clandestin à gérer.
+
+**Structure mathématique** : jeux de biens publics à n joueurs ; jeux coopératifs de coalition
+(cœur, valeur de Shapley) ; gouvernance des communs (Ostrom 1990). *Domaine* : théorie des jeux
+coopératifs, économie institutionnelle.
+> Retiré en v0.4 : le dilemme du prisonnier itéré, jeu bilatéral dont le mécanisme canonique est
+> celui de RÉCIPROCITÉ.
+
+**Marqueurs observables** :
+- un bien ou un projet commun nommé par les membres eux-mêmes ;
+- contributions et règles d'appartenance observables ;
+- un dispositif contre le passager clandestin (contrôle, sanction, exclusion, pression).
+
+**Registre anthropologique** — *documenté* : « cooperation », « cooperative labor », « coalitions »,
+« group living », « collective identities ».
+
+**À ne pas confondre avec** :
+- *RÉSEAU* — voir RÉSEAU.
+- *RÉCIPROCITÉ* — voir RÉCIPROCITÉ.
+- *RÉSONANCE* — Question : *s'agit-il d'une coopération organisée autour d'un bien (→ COMMUNAUTÉ)
+  ou d'un alignement de rythmes (→ RÉSONANCE) ?*
+
+**Question d'exploration** : quel bien tient le collectif ensemble — et qui en profite sans
+contribuer ?
+
+**Signature** : `⟶` TRANSMETTRE
+
+---
+
+## RÉSONANCE
+
+**Définition** : plusieurs systèmes ayant chacun leur rythme propre se synchronisent par couplage ;
+au-delà d'une force de couplage, les rythmes s'alignent.
+
+**Structure mathématique** : oscillateurs couplés ; modèle de Kuramoto ; entraînement (verrouillage
+de phase). *Domaine* : physique des systèmes non linéaires.
+
+**Marqueurs observables** :
+- au moins deux rythmes propres identifiés ;
+- l'observation de leur alignement (simultanéité, cadence commune, gestes synchrones) ;
+- un canal de couplage (co-présence, signal partagé, musique, horaire commun).
+
+**Registre anthropologique** — *documenté* : « music », « dance », « rhythm », « music related in part
+to dance », « rituals ». L'entraînement lui-même n'est pas un item de Brown ; il est documenté en
+biologie et en psychologie expérimentale.
+
+**À ne pas confondre avec** :
+- *RÉCIPROCITÉ* — voir RÉCIPROCITÉ.
+- *COMMUNAUTÉ* — voir COMMUNAUTÉ.
+- *PÉRIODICITÉ* — voir PÉRIODICITÉ.
+
+**Question d'exploration** : qu'est-ce qui s'aligne — et que se passe-t-il quand le couplage
+s'interrompt ?
+
+**Signature** : `✶` RÉVÉLER
+
+---
+
+## Références
+
+- Anderson, P. W. (1972). More is different. *Science*, 177.
+- Arthur, W. B. (1989). Competing technologies, increasing returns, and lock-in by historical events. *Economic Journal*, 99.
+- Axelrod, R. (1984). *The Evolution of Cooperation*. Basic Books.
+- Bak, P., Tang, C., & Wiesenfeld, K. (1987). Self-organized criticality. *Physical Review Letters*, 59.
+- Brown, D. E. (1991). *Human Universals*. McGraw-Hill (chap. « The Universal People »). Liste citée dans sa compilation reprise par Pinker, S. (2002). *The Blank Slate*. Viking.
+- Burt, R. (1992). *Structural Holes*. Harvard University Press.
+- David, P. (1985). Clio and the economics of QWERTY. *American Economic Review*, 75.
+- Ferguson, A. (1767). *An Essay on the History of Civil Society*.
+- Gompertz, B. (1825). On the nature of the function expressive of the law of human mortality. *Philosophical Transactions of the Royal Society*, 115.
+- Gouldner, A. (1960). The norm of reciprocity. *American Sociological Review*, 25.
+- Hayek, F. A. (1973). *Law, Legislation and Liberty*, vol. 1 : *Rules and Order*. University of Chicago Press.
+- Huxley, J. (1932). *Problems of Relative Growth*. Methuen.
+- Kleene, S. C. (1938). On notation for ordinal numbers. *Journal of Symbolic Logic*, 3.
+- Klein, F. (1872). *Vergleichende Betrachtungen über neuere geometrische Forschungen* (programme d'Erlangen).
+- Kuramoto, Y. (1984). *Chemical Oscillations, Waves, and Turbulence*. Springer.
+- Landau, H. G. (1951). On dominance relations and the structure of animal societies. *Bulletin of Mathematical Biophysics*, 13.
+- Markowsky, G. (1992). Misconceptions about the golden ratio. *College Mathematics Journal*, 23.
+- Merton, R. K. (1948). The self-fulfilling prophecy. *Antioch Review*, 8.
+- Ostrom, E. (1990). *Governing the Commons*. Cambridge University Press.
+- Scott, J. C. (1972). Patron-client politics and political change in Southeast Asia. *American Political Science Review*, 66.
+- Shannon, C. E. (1948). A mathematical theory of communication. *Bell System Technical Journal*, 27.
+- Verhulst, P.-F. (1838). Notice sur la loi que la population suit dans son accroissement. *Correspondance mathématique et physique*, 10.
+- Watts, D., & Strogatz, S. (1998). Collective dynamics of 'small-world' networks. *Nature*, 393.

@@ -1,216 +1,109 @@
-# NEXUS-ARCHÊ — Guide d'Activation LLM
+# NEXUS-ARCHÊ — Guide d'activation
 
-> 7 templates d'activation pour différents contextes.
-> Chaque template est conçu pour être copié-collé directement dans un LLM disposant du skill NEXUS-ARCHÊ.
-> Les parties entre crochets [ ] sont à remplacer par le contenu réel.
+> Version : 0.4.1
 
----
+> Templates à copier-coller. Les règles citées (R1–R12) sont dans `protocol.md` ; ce fichier ne
+> les redéfinit pas. Les parties entre crochets sont à remplacer.
 
-## Principes d'une bonne activation
+## Ce qui fait une bonne demande
 
-**Ce qui produit de bons résultats :**
-- Décrire la situation en 3 à 6 phrases avec des éléments concrets (qui, quoi, quand, quel comportement observable)
-- Préciser le mode souhaité (1, 2 ou 3) — sinon le LLM choisit le plus adapté
-- Accepter que des cartes soient rejetées — un rejet bien documenté est une bonne lecture
-- Demander explicitement la chaîne STÈLE et le statut épistémique
-
-**Ce qui produit de mauvaises activations :**
-- Descriptions uniquement en termes de ressentis ("je me sens perdu") sans éléments observables
-- Demander une "solution" — NEXUS-ARCHÊ identifie des structures, il ne prescrit pas
-- Forcer une carte préférée ("analyse avec ÉMERGENCE") — laisser le protocole d'ancrage décider
+- **Des faits** : qui, quoi, quand, combien, quel comportement. Un ressenti peut accompagner un
+  fait ; seul, il conduit à un résultat nul (R2, R9).
+- **Laisser le mode se déterminer** (R5) : il dépend du nombre de cartes ancrées. Demander un
+  mode est possible ; le skill dira s'il n'est pas atteint.
+- **Ne pas imposer de carte** : une carte proposée est testée comme une candidate parmi d'autres.
+- **Ne pas demander de solution ni de prévision** (R12).
 
 ---
 
-## Template 1 — Activation standard (mode libre)
+## Template 1 — Lecture standard
 
 ```
-Activez NEXUS-ARCHÊ. Choisissez le mode le plus adapté à la situation.
-
-Situation : [description en 3 à 6 phrases avec des éléments concrets et observables]
-
-Appliquez le protocole complet :
-1. Nommez les cartes candidates et leurs ancrages observables
-2. Appliquez le test d'anti-résonance à chaque carte retenue
-3. Déclarez toute carte sans ancrage comme inactive
-4. Formulez l'énoncé structurel (si plusieurs cartes)
-5. Produisez la chaîne STÈLE avec transcription verbale
-6. Déclarez le statut épistémique (Descriptif / Spéculatif / Performatif)
+NEXUS-ARCHÊ. Situation : [4 à 8 phrases factuelles].
+Modalité : délibérative.
 ```
 
-**Usage** : quand vous ne savez pas quel mode choisir. Le LLM sélectionnera le mode en fonction de la complexité de la situation.
+Le skill applique la procédure complète et rend le format de sortie de `SKILL.md`.
+
+## Template 2 — Tirage aléatoire
+
+```
+NEXUS-ARCHÊ, tirage aléatoire de [1 / 2 / 3] cartes. Situation : [...].
+```
+
+Le tirage passe par `python3 scripts/nexus_tool.py draw -n [n]` ; la ligne de journal figure dans
+la lecture. Le tirage choisit les cartes, pas les positions (R1). Une carte non ancrée peut être
+remplacée deux fois au plus : `draw -n 1 --exclude "[cartes déjà sorties]"`. Si aucun outil d'exécution n'est disponible, le skill le dit et passe en délibératif.
+Pour un tirage rejouable : `draw -n [n] --seed "[texte de la situation]"`.
+
+## Template 3 — Constellation (Mode 3)
+
+```
+NEXUS-ARCHÊ, je cherche une constellation tient / bouge / manque.
+Situation : [6 à 10 phrases, en incluant ce qui fait défaut et ses effets observables].
+```
+
+Le Mode 3 exige une structure dont l'absence a des effets observables (R7). Les configurations
+signalées (R8) reviennent sous forme de questions à confirmer.
+
+## Template 4 — Mode 4 après une configuration confirmée
+
+```
+Je confirme la configuration [Scission / Reproduction / Lacune contradictoire]
+(ou la relation de reproduction du Mode 2) :
+[ce qui la confirme]. Quelle structure, déjà présente, permettrait de tenir cette tension ?
+```
+
+## Template 5 — Vérifier une signature
+
+```
+Valide cette signature NEXUS-ARCHÊ : [signature].
+```
+
+→ `python3 scripts/nexus_tool.py validate "[signature]"`. Pour en faire une phrase STÈLE légale,
+confier la signature et l'énoncé structurel au skill `stele` (notation.md §5).
+
+## Template 6 — Avant une analyse OSINT ou prédictive
+
+```
+Avant l'analyse OSINT / prédictive, identifie la structure de cette situation avec NEXUS-ARCHÊ.
+Situation : [acteurs, événements datés, données disponibles].
+Puis traduis la structure retenue en questions d'investigation.
+```
+
+Exemple de traduction : PÉRIODICITÉ + CONTRAINTE sur un blocage institutionnel récurrent →
+chercher le rythme du cycle (dates des épisodes précédents, phase actuelle) et les contraintes
+renommées sans changer d'effet. La lecture fournit des **questions** ; les probabilités relèvent de
+`prediction-engine` ou `osint-intel`.
+
+## Template 7 — Après un tirage Fractales du Destin
+
+```
+Tirage Fractales du Destin : [cartes et positions], sur la situation : [faits].
+Quelle structure NEXUS-ARCHÊ est ancrée dans les faits de cette situation ?
+```
+
+Les cartes FdD ne sont **pas** des ancrages : l'ancrage porte sur les faits de la situation.
+Les deux lectures coexistent ; NEXUS-ARCHÊ dit ce que les faits permettent d'affirmer
+structurellement, FdD ce que le registre symbolique fait apparaître.
+
+## Template 8 — Auditer une lecture
+
+```
+Voici une lecture NEXUS-ARCHÊ : [lecture]. Vérifie : ancrages (R2–R3), portée des
+contre-observations (R4), lignes R3 sur toutes les voisines, choix du mode (R5), relation (R6),
+configurations (R8), signature, statut (R11).
+```
 
 ---
 
-## Template 2 — Mode 1 : identification de la structure dominante
-
-```
-Activez NEXUS-ARCHÊ — Mode 1 (Tirage simple).
-
-Situation : [description en 3 à 5 phrases]
-
-Identifiez la structure dominante. Nommez-en une seule, sauf si deux structures
-sont aussi solidement ancrées l'une que l'autre. Dans ce cas, passez en Mode 2.
-
-Protocole attendu :
-- Carte retenue + ancrage observable
-- Test d'anti-résonance
-- Cartes candidates rejetées (le cas échéant)
-- Question IRIS de la carte retenue, posée à la situation
-- Chaîne STÈLE + transcription
-- Statut épistémique
-```
-
-**Usage** : quand la situation semble confuse et qu'on cherche à nommer sa structure profonde. Mode le plus rapide.
-
-**Exemple d'échange :**
-
-> **Utilisateur** : Activez NEXUS-ARCHÊ — Mode 1. Situation : Une startup que j'ai fondée il y a 3 ans vient d'accueillir un investisseur majoritaire. La gouvernance change. Mon rôle de CEO est maintenu sur le papier mais la structure décisionnelle est désormais orientée par le board. Je ne sais pas encore ce que ça change vraiment.
->
-> **LLM** :
-> **Carte retenue** : SEUIL · ⊥ LIMITE
-> **Ancrage** : Le changement d'actionnariat majoritaire est un fait juridique irréversible. La structure décisionnelle a basculé — le board a désormais les droits de vote qui confèrent l'autorité finale. Ce n'est pas un processus en cours : c'est un état nouveau.
-> **Anti-résonance** : Votre rôle est maintenu et vous décrivez de l'incertitude sur les effets réels — le basculement n'a pas encore produit tous ses effets visibles. Mais la structure formelle du franchissement est accomplie.
-> **Question IRIS** : Qu'est-ce qui ne peut plus être défait — et qu'est-ce que ça implique pour la façon dont vous prenez des décisions désormais ?
-> **Chaîne STÈLE** : `⊥` → `LIMITE`
-> **Statut** : Descriptif
-
----
-
-## Template 3 — Mode 2 : analyse d'une tension
-
-```
-Activez NEXUS-ARCHÊ — Mode 2 (Tirage de tension).
-
-Situation : [description en 3 à 6 phrases]
-
-Je perçois une tension entre [élément A] et [élément B] — ou identifiez vous-même
-la tension structurelle.
-
-Protocole attendu :
-- Deux cartes retenues avec leurs ancrages respectifs
-- Test d'anti-résonance pour chacune
-- Énoncé structurel de tension (formulé en termes structurels précis, pas en métaphore)
-- Nature de la relation : conflit / inclusion / couplage symbiotique / autre
-- Chaîne STÈLE à deux glyphes + transcription
-- Statut épistémique
-```
-
-**Usage** : quand une tension est perceptible entre deux dynamiques dans une situation. Mode intermédiaire.
-
----
-
-## Template 4 — Mode 3 : constellation complète
-
-```
-Activez NEXUS-ARCHÊ — Mode 3 (Tirage de constellation).
-
-Situation : [description en 5 à 8 phrases, suffisamment détaillée pour identifier trois plans structurels]
-
-Produisez une constellation Ce qui tient / Ce qui bouge / Ce qui manque.
-
-Protocole attendu :
-- Trois cartes avec leurs positions et leurs ancrages observables
-- Test d'anti-résonance pour chacune
-- Vérification des configurations pathologiques (Miroir / Immobilité / Lacune contradictoire / Tension maximale)
-- Énoncé structurel de constellation
-- Chaîne STÈLE à trois glyphes + transcription
-- Proposition de Mode 4 si une configuration pathologique est identifiée
-- Statut épistémique
-```
-
-**Usage** : quand la situation est complexe et nécessite une cartographie de ses plans structurels simultanés.
-
----
-
-## Template 5 — Compression STÈLE post-tirage
-
-```
-J'ai réalisé le tirage NEXUS-ARCHÊ suivant :
-
-Cartes retenues : [liste des cartes avec leurs positions]
-Énoncé structurel : [votre formulation]
-
-Compressez ce tirage en une chaîne STÈLE valide selon les règles de stele_rules.md.
-
-Attendu :
-- Identification de la syntaxe applicable (condensée / tension / constellation / résolution)
-- Chaîne glyphique
-- Transcription verbale mot-code
-- Vérification de la validité syntaxique (ordre des classes, nombre de positions)
-```
-
-**Usage** : quand le tirage a été réalisé manuellement et qu'on cherche uniquement la compression finale.
-
----
-
-## Template 6 — Intégration OSINT / Superforecasting
-
-```
-Avant d'analyser la situation suivante avec les outils OSINT ou de prédiction,
-activez NEXUS-ARCHÊ en Mode [1/2/3] pour identifier la structure invariante de fond.
-
-Situation : [description de l'objet d'analyse — acteur, événement, dynamique]
-
-La structure identifiée par NEXUS-ARCHÊ servira de cadre d'ancrage pour :
-- L'analyse OSINT : identifier à quelle structure appartient le signal observé
-- Le Superforecasting : formuler les hypothèses depuis la structure de la situation, pas seulement depuis les événements
-
-Attendu :
-1. Tirage NEXUS-ARCHÊ complet (cartes + chaîne STÈLE)
-2. Traduction structurelle : comment cette structure oriente-t-elle l'analyse ?
-3. Questions prioritaires que la structure impose à l'investigation OSINT
-```
-
-**Usage** : en amont d'une analyse stratégique ou prédictive. NEXUS-ARCHÊ nomme le type de situation avant que l'analyse prospective ne commence.
-
-**Exemple de traduction structurelle :**
-
-> Tirage : PÉRIODICITÉ + CONTRAINTE (Mode 2) sur une situation de blocage institutionnel récurrent
->
-> Traduction pour OSINT : chercher non pas les causes du blocage actuel, mais le rythme du cycle (à quelle fréquence ce type de blocage apparaît-il ? à quelle phase du cycle sommes-nous ?). Chercher les contraintes institutionnelles qui ont changé de forme sans changer de nature.
->
-> Questions prioritaires : Quel était l'état du système au cycle précédent ? Qu'est-ce qui a déclenché la sortie du blocage la dernière fois ? La contrainte actuelle est-elle nouvelle ou renommée ?
-
----
-
-## Template 7 — Intégration Fractales du Destin
-
-```
-J'ai réalisé un tirage Fractales du Destin avec les cartes suivantes :
-[liste des cartes FdD avec leurs positions]
-
-Activez NEXUS-ARCHÊ pour identifier la structure invariante sous-jacente à ce tirage.
-
-Attendu :
-1. Lecture des cartes FdD comme indices d'une structure plus profonde
-2. Identification de 1 à 2 cartes NEXUS-ARCHÊ qui nomment la structure sous-jacente
-3. Dialogue entre les deux registres : ce que le symbolique (FdD) révèle que le structurel ne nomme pas, et vice versa
-4. Chaîne STÈLE de la structure NEXUS-ARCHÊ
-5. Question IRIS posée à la situation FdD
-
-Ne pas remplacer la lecture FdD — l'approfondir depuis la structure.
-```
-
-**Usage** : pour ajouter un plan structurel rationnel à un tirage oraculaire. Les deux lectures coexistent sans se réduire l'une à l'autre.
-
-**Exemple de dialogue entre registres :**
-
-> FdD : La Tour (rupture soudaine) + L'Étoile (renouveau) — situation de crise professionnelle
->
-> NEXUS-ARCHÊ : SEUIL (⊥) — un point de non-retour structurel est actif
->
-> Dialogue : FdD nomme la rupture et son potentiel de renouveau (registre symbolique-narratif). NEXUS-ARCHÊ confirme que la rupture est structurellement irréversible (registre structurel). Ce que FdD dit que NEXUS-ARCHÊ ne dit pas : il y a un potentiel de lumière après le franchissement (L'Étoile). Ce que NEXUS-ARCHÊ dit que FdD ne dit pas : le basculement est une propriété du système, pas seulement un événement subi.
-
----
-
-## Tableau récapitulatif des templates
-
-| Template | Mode | Contexte d'usage | Complexité |
-|---|---|---|---|
-| 1 — Standard | Libre | Exploration générale | ★★ |
-| 2 — Mode 1 | 1 | Structure dominante à nommer | ★ |
-| 3 — Mode 2 | 2 | Tension perceptible à analyser | ★★ |
-| 4 — Mode 3 | 3 | Situation complexe multi-plans | ★★★ |
-| 5 — Compression STÈLE | Post-tirage | Tirage réalisé, compression manquante | ★ |
-| 6 — OSINT / Forecasting | 1, 2 ou 3 | Avant analyse stratégique ou prédictive | ★★★ |
-| 7 — Fractales du Destin | 1 ou 2 | Après tirage FdD, approfondissement structurel | ★★ |
+| Template | Usage |
+|---|---|
+| 1 | lecture standard |
+| 2 | tirage aléatoire réel |
+| 3 | constellation |
+| 4 | carte de tenue |
+| 5 | signature / export STÈLE |
+| 6 | cadrage OSINT ou prédictif |
+| 7 | complément Fractales du Destin |
+| 8 | audit d'une lecture |

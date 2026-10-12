@@ -1,356 +1,248 @@
-# NEXUS-ARCHÊ — Journal de Tests
+# NEXUS-ARCHÊ — Journal de tests
 
-> 10 situations documentées selon le protocole de rigueur complet.
-> Objectif : valider la cohérence des distinctions inter-cartes, tester les ancrages observables, identifier les zones de friction du système.
-> Format abrégé : contexte → cartes candidates → ancrages → anti-résonance → chaîne STÈLE → statut → observation.
-
----
-
-## Méthodologie
-
-Chaque situation est sélectionnée pour couvrir un domaine différent et faire apparaître une ou plusieurs cartes spécifiques. Les rejets sont documentés avec la même rigueur que les acceptations — une carte rejetée produit une information structurelle aussi utile qu'une carte retenue.
-
-**Couverture des 16 cartes** : chacune apparaît dans au moins une situation, en position active ou en rejet commenté.
+> Version : 0.4.1
+>
+> **Statut honnête de ce fichier** : il ne contient encore **aucun test**. Les dix situations du §2
+> sont des **démonstrations construites** en v0.3, choisies pour faire apparaître des cartes
+> précises, puis relues avec les règles R1–R12. Elles servent de cas d'école et de **régression**
+> (`nexus_tool.py lint` vérifie que chaque carte Fort y porte une ligne R3 complète), pas de preuve.
+> Le protocole de test réel est au §3 ; son journal (§4) est vide.
 
 ---
 
-## Situation 01 — Reconversion professionnelle
+## 1. Ce que les relectures ont changé
 
-**Domaine** : Parcours personnel | **Mode** : 1 (Simple) | **Modalité** : Délibératif
+| Démo | Changement | Règle | Version |
+|---|---|---|---|
+| toutes | ligne R3 sur toutes les voisines documentées pour chaque carte Fort | R3 | 0.4.1 |
+| 01 | signature condensée `LIMITE.MOUVEMENT` supprimée | notation.md §2 | 0.4.0 |
+| 02 | même cas que l'exemple 2 (lecture délibérative) — non indépendant | — | 0.4.0 |
+| 03 | même forme que l'exemple 1 — non indépendant | — | 0.4.0 |
+| 04 | RÉCIPROCITÉ « absente » en Mode 2 : position inexistante, ancrage par ressenti ; relation requalifiée en renforcement mutuel | R6, R2 | 0.4.0 / 0.4.1 |
+| 05 | le contre-exemple « autres lycées » porte sur un autre objet : ce n'est pas une anti-résonance | R4 | 0.4.0 |
+| 06 | INCERTITUDE placée en *manque* alors qu'elle est présente → Mode 2 + carte listée ; relation « appui » | R7, R5, R6 | 0.4.0 / 0.4.1 |
+| 07 | « pattern générique des mouvements sociaux » retiré (prévision) ; COMMUNAUTÉ rétrogradée | R12, R4 | 0.4.0 |
+| 08 | INCERTITUDE relue sous le régime « acteurs de la situation » | cards.md | 0.4.0 |
+| 09 | ÉMERGENCE en *manque* sans effet observable → Nul ; Mode 3 → Mode 2 ; l'immobilité est lue comme **relation de reproduction** vérifiée par deux faits | R7, R6 | 0.4.1 |
+| 10 | PÉRIODICITÉ rétablie (écartée en v0.3 pour préserver un antagonisme) ; RÉSONANCE non ancrée | R2, antagonismes.md §4 | 0.4.0 |
 
-**Contexte** : Une professionnelle de 38 ans pose sa démission après 12 ans dans le même poste. Elle a un projet, une date de départ, et la certitude qu'elle ne reviendra pas en arrière. La décision est faite — ce n'est plus une question d'hésitation mais de traversée.
-
-**Carte candidate** : SEUIL · ⊥ LIMITE
-
-**Ancrage observable** : La lettre de démission a été remise et acceptée. Le contrat de prestation indépendante est signé. Il n'existe pas de mécanisme de retour — ni contractuel, ni psychologique de son propre aveu.
-
-**Test d'anti-résonance** : Elle conserve une période de préavis de 2 mois — elle est encore dans l'ancien système. Le basculement est amorcé mais pas encore accompli.
-
-*Résultat* : SEUIL active dans sa phase d'amorce — le point de non-retour est passé structurellement (décision irréversible) même si la transition temporelle est encore en cours.
-
-**Chaîne STÈLE** : `⊥∿` → `LIMITE.MOUVEMENT`
-
-La limite est franchie, le mouvement de traversée est actif.
-
-**Statut** : Descriptif
-
-**Observation** : La carte SEUIL est robuste sur les situations de décision irréversible. Le test d'anti-résonance (préavis encore actif) n'invalide pas la carte — il précise sa temporalité. Le MOUVEMENT en opérative est justifié par le fait que le franchissement est en cours.
+Bilan : sur dix démonstrations, **deux** ne sont pas indépendantes des exemples, **une** carte est
+rétrogradée par anti-résonance (07), **une** carte non retenue en v0.3 est rétablie (10), **une**
+carte retenue en v0.4.0 est retirée par R7 (09).
 
 ---
 
-## Situation 02 — Réunion de direction bloquée
+## 2. Les dix démonstrations, relues
 
-**Domaine** : Management organisationnel | **Mode** : 2 (Tension) | **Modalité** : Délibératif
+### 01 — Reconversion professionnelle
+Démission remise et acceptée ; contrat de prestation signé ; aucun mécanisme de retour.
 
-**Contexte** : Une PME de 45 salariés. Le département innovation soumet des projets qui meurent systématiquement au niveau du PDG, qui valide tout personnellement. Les délais de validation s'étendent de 6 à 14 semaines. Le département innovation commence à s'autocensurer avant même de soumettre.
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| SEUIL | démission acceptée, contrat signé, pas de clause de retour | Fort | préavis de deux mois en cours (marginale : le départ est acté) | Fort |
+| TRANSFORMATION (contre-candidate) | aucun changement de forme à invariant décrit | Nul | — | inactive |
 
-**Cartes candidates** : HIÉRARCHIE · ✦ AXE + CONTRAINTE · ⊘ NÉGATION
+R3 · SEUIL : TRANSFORMATION → (aucun processus de changement de forme décrit) ; CONTRAINTE → (passage effectif à un nouvel état) ; POLARITÉ → (aucun champ à deux pôles) ; TRACE·MÉMOIRE → (ce qui organise est la fermeture du retour, pas un passé qui agit)
 
-**Ancrage HIÉRARCHIE** : Toutes les décisions d'innovation passent par un seul point de validation — le PDG. La topologie décisionnelle est un arbre à nœud unique non délégant.
+**Signature** `SEUIL` · **Statut** Descriptif.
 
-**Ancrage CONTRAINTE** : Le périmètre d'action de l'équipe innovation est contractuellement borné. Les initiatives hors périmètre entraînent des discussions longues qui débouchent rarement sur une autorisation.
+### 02 — PME, validation centralisée
+Toutes les décisions d'innovation passent par le PDG ; délais de 6 à 14 semaines ; périmètre de
+l'équipe contractuellement borné ; autocensure avant soumission.
 
-**Test d'anti-résonance (HIÉRARCHIE)** : Deux managers intermédiaires ont des marges informelles de décision sur les projets inférieurs à 5 000 €. La hiérarchie n'est pas absolument centralisée.
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| HIÉRARCHIE | validation par le seul PDG, délais de 6 à 14 semaines | Fort | deux managers décident seuls sous 5 000 € (marginale) | Fort |
+| CONTRAINTE | périmètre contractuellement borné ; autocensure avant soumission | Fort | des contraintes levées l'an dernier sur demande collective (marginale) | Fort |
 
-**Test d'anti-résonance (CONTRAINTE)** : Certaines contraintes ont été levées l'an dernier sur demande collective — le système n'est pas totalement rigide.
+R3 · HIÉRARCHIE : CONTRAINTE + (ancrée par le périmètre contractuel) ; PROPORTION → (une préséance, pas un rapport de grandeurs) ; RÉCIPROCITÉ → (aucune boucle d'obligations) ; RÉSEAU → (un ordre de validation, pas une topologie de liens)
 
-*Résultat* : Les deux nuances confirment la présence des deux structures sans les invalider. La hiérarchie est quasi-centralisée, la contrainte est predominante mais non absolue.
+R3 · CONTRAINTE : HIÉRARCHIE + (ancrée par la validation centrale) ; INCERTITUDE → (des options exclues, pas ouvertes) ; POLARITÉ → (pas de deux pôles) ; SEUIL → (aucun changement d'état) ; TRACE·MÉMOIRE → (aucune origine datée du périmètre : c'est la règle actuelle qui agit)
 
-**Énoncé structurel de tension** : HIÉRARCHIE et CONTRAINTE forment une boucle de renforcement mutuel : la centralisation de l'autorité institue les contraintes de périmètre, et ces contraintes légitiment la nécessité d'une validation centrale. Ni l'une ni l'autre n'existe sans l'autre dans ce système.
+**Relation (R6)** : renforcement mutuel — la centralisation fixe les périmètres, les périmètres
+rendent la validation centrale nécessaire.
+**Signature** `HIÉRARCHIE + CONTRAINTE` · **Statut** Descriptif.
 
-**Chaîne STÈLE** : `✦.⊘` → `AXE.NÉGATION`
+### 03 — Projet open source repris
+11 contributeurs en 6 semaines sans concertation ; convention de nommage apparue par convergence ;
+CONTRIBUTING.md adopté sans vote.
 
-**Statut** : Descriptif
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| ÉMERGENCE | convention de nommage apparue par convergence ; CONTRIBUTING.md adopté sans vote | Fort | un contributeur plus actif influence les orientations (marginale : il n'a prescrit ni la convention ni le fichier) | Fort |
+| COMMUNAUTÉ | pas de bien commun nommé par les contributeurs | Nul | — | inactive |
 
-**Observation** : La boucle de renforcement mutuel est une configuration plus informatrice qu'un simple conflit. Elle explique pourquoi les tentatives de lever une seule des deux structures (soit décentraliser, soit élargir les périmètres) échouent systématiquement — l'autre maintient la première en place.
+R3 · ÉMERGENCE : TRANSFORMATION → (l'objet est la convention, qui n'existait pas) ; RÉCURSIVITÉ → (aucune représentation du projet par lui-même) ; CROISSANCE → (un comptage unique, pas une série) ; INCERTITUDE → (une régularité est apparue)
+
+**Signature** `ÉMERGENCE` · **Statut** Descriptif.
+
+### 04 — Conflit conjugal récurrent
+Même conflit depuis 4 ans (« ma liberté » / « notre avenir ») ; le couple a analysé son conflit
+ensemble et cette analyse alimente l'épisode suivant.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| POLARITÉ | deux termes opposés, ceux des partenaires eux-mêmes | Fort | accord sur finances, lieu de vie, enfants (marginale : hors de l'objet du conflit) | Fort |
+| RÉCURSIVITÉ | l'analyse du conflit par le couple déclenche l'épisode suivant | Fort | certaines résolutions ont tenu 3 à 4 mois (marginale) | Fort |
+
+R3 · POLARITÉ : CONTRAINTE → (aucune règle ne bloque, deux pôles s'opposent) ; SEUIL → (aucun passage irréversible)
+
+R3 · RÉCURSIVITÉ : PÉRIODICITÉ → (le retour est produit par l'analyse du conflit, pas par une échéance) ; ÉMERGENCE → (aucune régularité collective nouvelle)
+
+RÉCIPROCITÉ n'est pas lisible ici : le Mode 2 n'a pas de position d'absence, et « les concessions
+ne sont pas perçues comme équivalentes » est un ressenti. Un fait (concessions datées et non rendues)
+permettrait un Mode 3 avec RÉCIPROCITÉ en *manque*.
+**Relation** : renforcement mutuel — la polarité produit les épisodes que l'analyse prend pour objet,
+et l'analyse produit l'épisode suivant.
+**Signature** `POLARITÉ + RÉCURSIVITÉ` · **Statut** Spéculatif (relation non confirmée par les deux partenaires).
+
+### 05 — Déséquilibre d'un cursus
+Volume STEM 72 % (55 % il y a 8 ans) ; notes d'expression écrite en baisse de 1,4 point sur 5 ans.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| PROPORTION | ratio 72/28 contre 55/45 il y a 8 ans | Fort | aucune trouvée dans la situation (le contre-exemple v0.3 « autres lycées » porte sur un autre objet) | Fort |
+| HIÉRARCHIE | aucune préséance entre matières, seulement des volumes | Nul | — | inactive |
+
+R3 · PROPORTION : HIÉRARCHIE → (des volumes, pas des rangs) ; CROISSANCE → (un rapport à deux dates, pas un taux qui dépend de la grandeur)
+
+**Signature** `PROPORTION` · **Statut** Spéculatif (plafond R4).
+
+### 06 — Fédération en restructuration
+3 fondateurs sur 5 partis en 18 mois ; statuts de 2003 ; deux groupes de travail ; consultations ;
+aucun projet de nouveaux statuts déposé.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| TRACE·MÉMOIRE | statuts de 2003, mêmes lieux et partenaires depuis | Fort | pratiques historiques déjà abandonnées (marginale) | Fort |
+| TRANSFORMATION | nouvelle gouvernance cherchée, objet social conservé | Fort | des membres militent pour le statu quo (marginale) | Fort |
+| INCERTITUDE | groupes de travail et consultations : conduites organisées par l'indétermination | Fort | une esquisse de modèle horizontal a été présentée (marginale) | Fort |
+
+R3 · TRACE·MÉMOIRE : TRANSFORMATION + (ancrée par la recherche de gouvernance) ; PÉRIODICITÉ → (aucun retour régulier) ; CONTRAINTE → (les statuts ne règlent plus les pratiques : c'est leur persistance qui agit, pas une exclusion d'options) ; SEUIL → (le retour à l'ancienne structure reste possible, des membres le demandent)
+
+R3 · TRANSFORMATION : TRACE·MÉMOIRE + (ancrée par les statuts et lieux hérités) ; ÉMERGENCE → (la fédération préexiste) ; CROISSANCE → (changement de forme, pas de degré) ; SEUIL → (aucun point de non-retour franchi)
+
+R3 · INCERTITUDE : CONTRAINTE → (les options sont ouvertes, aucune n'est exclue) ; ÉMERGENCE → (aucune forme nouvelle n'est apparue)
+
+Les trois cartes sont **présentes** ; aucune absence aux effets observables n'est ancrée → pas de
+position *manque* (R7) → Mode 2 sur les deux cartes aux faits les plus nombreux (R5) ;
+INCERTITUDE est listée « ancrée non retenue ».
+**Relation** : appui — la trace fournit l'invariant (objet social, lieux, partenaires) de la transformation.
+**Signature** `TRACE·MÉMOIRE + TRANSFORMATION` · **Statut** Descriptif.
+
+### 07 — Mouvement citoyen en expansion
+15 → 280 membres en 4 mois ; réunions ingérables ; deux factions (action directe / plaidoyer).
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| CROISSANCE | effectif 15 → 280 en 4 mois, mesures mensuelles | Fort | départs de fondateurs (marginale) | Fort |
+| COMMUNAUTÉ | défense de la zone nommée par les membres ; dons mutuels | Fort | deux factions aux stratégies opposées (**substantielle**) | **Faible** |
+
+R3 · CROISSANCE : TRANSFORMATION → (augmentation de degré : l'effectif) ; ÉMERGENCE → (aucune propriété nouvelle ancrée) ; PROPORTION → (une grandeur, pas un rapport)
+
+R3 · COMMUNAUTÉ : RÉSEAU → (ce qui unit est le bien défendu, pas la topologie) ; RÉCIPROCITÉ → (un collectif autour d'un bien, pas des paires qui se rendent) ; RÉSONANCE → (une coopération organisée, pas un alignement de rythmes)
+
+**Relation** : conflit — la taille dépasse les règles de contribution existantes.
+La phrase v0.3 « pattern générique des mouvements sociaux en expansion » est retirée : c'est une
+généralisation prédictive (R12), à formuler, si besoin, dans `prediction-engine`.
+**Signature** `CROISSANCE + COMMUNAUTÉ` · **Statut** Spéculatif.
+
+### 08 — Enquête sur des flux financiers
+7 entités et leurs liens documentés ; 3 à 5 connexions supposées non documentées ; l'enquêteur tient
+des hypothèses et collecte des actes.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| RÉSEAU | 7 entités et leurs liens documentés (actes, rapports annuels) | Fort | topologie incomplète (marginale : le graphe partiel est observable) | Fort |
+| INCERTITUDE | l'enquêteur, **acteur** de la situation, tient des hypothèses et collecte des documents | Fort | certaines connexions confirmées à 80 % (marginale) | Fort |
+
+R3 · RÉSEAU : COMMUNAUTÉ → (pas de bien commun : des flux entre entités) ; HIÉRARCHIE → (aucune préséance documentée) ; RÉCIPROCITÉ → (la topologie est l'objet, pas l'équilibre des flux)
+
+R3 · INCERTITUDE : CONTRAINTE → (des connexions possibles, aucune exclue) ; ÉMERGENCE → (aucune régularité nouvelle)
+
+La v0.3 disait « INCERTITUDE ne décrit pas l'état de l'enquêteur » ; c'était l'inverse : les
+connexions existent, c'est leur connaissance qui manque, et cette ignorance organise la conduite
+de l'enquêteur.
+**Relation** : inclusion — l'indétermination porte sur des arêtes du réseau.
+**Signature** `RÉSEAU + INCERTITUDE` · **Statut** Descriptif.
+
+### 09 — Plans de transformation tous les 18 mois
+4 plans en 6 ans, chacun abandonné vers 60–70 % et remplacé par le suivant ; chaque plan redéfinit
+les règles et périmètres ; « révolution permanente », disent les salariés avec ironie.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| PÉRIODICITÉ | 4 plans, intervalle de 18 mois, même séquence de phases | Fort | outils numériques conservés (marginale) | Fort |
+| CONTRAINTE | règles et périmètres redéfinis à chaque plan | Fort | quelques validations simplifiées définitivement (marginale) | Fort |
+| ÉMERGENCE (absente) | « rien de nouveau n'est apparu » est le constat de l'absence, pas un effet ; le discours ironique est un fait sur un discours (R2, R7) | Nul | — | inactive |
+| TRANSFORMATION | coïncidence lexicale (« plan de transformation ») | Nul | — | inactive |
+
+R3 · PÉRIODICITÉ : RÉCURSIVITÉ → (le retour suit une échéance de 18 mois ; le discours des salariés ne modifie pas le cycle) ; RÉSONANCE → (un seul rythme, aucun couplage) ; TRACE·MÉMOIRE → (ce qui agit est le retour lui-même ; les outils conservés sont marginaux)
+
+R3 · CONTRAINTE : HIÉRARCHIE → (aucun rang décrit) ; INCERTITUDE → (options exclues, pas ouvertes) ; POLARITÉ → (pas de deux pôles) ; SEUIL → (contraintes redéfinies, aucun non-retour) ; TRACE·MÉMOIRE → (contraintes nouvelles à chaque plan, pas héritées)
+
+**Mode 2** (R5 : deux cartes ancrées). La v0.4.0 gardait ÉMERGENCE en *manque* tout en notant
+qu'elle n'était pas ancrée par un effet : R7 l'interdit.
+**Relation (R6)** : **reproduction** —
+(a) production : chaque redéfinition des contraintes est datée du lancement d'un plan (4 sur 4) ;
+(b) reproduction : après chaque redéfinition, l'effet de l'ancrage de PÉRIODICITÉ est de nouveau
+observé (abandon vers 60–70 %, plan suivant 18 mois plus tard).
+Les deux conjoints sont établis par des faits. Relation signalée, à confirmer par l'auteur.
+**Mode 4 (R10)**, après confirmation : SEUIL comme carte de tenue — non ancrée (aucun point de
+non-retour en germe n'est décrit), donc proposée comme hypothèse.
+**Signature** `PÉRIODICITÉ + CONTRAINTE ⇒ SEUIL` · **Statut** Spéculatif.
+
+### 10 — Rituel familial
+Depuis 40 ans, chaque premier dimanche de janvier, mêmes plats, mêmes chansons, même lieu ; les
+grands-parents qui le portaient sont décédés.
+
+| Carte | Fait d'ancrage | Niveau | Contre-observation (portée) | Final |
+|---|---|---|---|---|
+| PÉRIODICITÉ | retour annuel au même jour depuis 40 ans | Fort | aucune trouvée | Fort |
+| TRACE·MÉMOIRE | recettes, chansons, lieu hérités | Fort | gestes abandonnés depuis les décès (marginale) | Fort |
+| RÉSONANCE (absente) | « une absence de quelque chose » est un ressenti | Nul | — | inactive |
+
+R3 · PÉRIODICITÉ : TRACE·MÉMOIRE + (ancrée par les recettes et chansons héritées) ; RÉCURSIVITÉ → (le retour suit le calendrier) ; RÉSONANCE → (aucun alignement de rythmes documenté aujourd'hui)
+
+R3 · TRACE·MÉMOIRE : PÉRIODICITÉ + (ancrée par le retour annuel) ; TRANSFORMATION → (la forme est conservée, pas changée) ; CONTRAINTE → (rien n'est imposé, tout est perpétué) ; SEUIL → (ce qui organise est la persistance des formes, pas le non-retour des décès)
+
+La v0.3 écartait PÉRIODICITÉ (« la famille se réunit par habitude ») pour préserver l'antagonisme
+PÉRIODICITÉ ↮ TRACE, retiré en v0.4. Un fait sur RÉSONANCE (« les chansons ne sont plus reprises en
+chœur ») l'ancrerait en *manque* et ouvrirait le Mode 3.
+**Relation** : tension documentée PÉRIODICITÉ ~ TRACE — un retour régulier qui transporte un héritage.
+**Signature** `PÉRIODICITÉ + TRACE·MÉMOIRE` · **Statut** Spéculatif (aucune contre-observation pour PÉRIODICITÉ).
 
 ---
 
-## Situation 03 — Projet open-source orphelin qui reprend vie
-
-**Domaine** : Développement technique / Collectif distribué | **Mode** : 1 (Simple) | **Modalité** : Aléatoire
-
-**Contexte** : Un projet de bibliothèque logicielle, abandonné depuis 3 ans par son créateur initial, commence à recevoir des contributions spontanées de développeurs indépendants qui ne se connaissent pas. Un style de code commun émerge. Une documentation se constitue. Personne ne coordonne.
-
-**Carte tirée aléatoirement** : ÉMERGENCE · ⊙ SOURCE
-
-**Ancrage observable** : En 6 semaines, 11 contributeurs différents ont poussé des commits sans concertation préalable. Une convention de nommage commune est apparue sans avoir été discutée — elle s'est imposée par convergence. Un fichier CONTRIBUTING.md a été créé par un contributeur et adopté sans vote.
-
-**Test d'anti-résonance** : Un des contributeurs a clairement plus d'activité que les autres et commence à exercer une influence de facto sur les orientations. Ce n'est donc pas une émergence purement non-centrée.
-
-*Résultat* : ÉMERGENCE active. La nuance (un acteur plus influent) décrit une émergence hiérarchique — un pattern documenté dans les systèmes complexes : l'émergence produit souvent ses propres structures de différenciation.
-
-**Carte rejetée** : COMMUNAUTÉ · ⟶ TRANSMETTRE
-
-*Tentative d'ancrage* : les contributeurs forment-ils une communauté avec un projet commun articulé ? Non — ils partagent un intérêt technique mais n'ont pas de projet collectif explicite. Il n'y a pas encore de "nous" conscient.
-
-*Résultat* : COMMUNAUTÉ déclarée inactive. Elle est candidate pour une lecture future si le projet se structure davantage.
-
-**Chaîne STÈLE** : `⊙` → `SOURCE`
-
-**Statut** : Descriptif
-
-**Observation** : La distinction ÉMERGENCE / COMMUNAUTÉ est ici nette. ÉMERGENCE décrit l'apparition d'un ordre sans architecte. COMMUNAUTÉ décrirait la coopération consciente autour d'un projet commun — elle n'est pas encore active.
-
----
-
-## Situation 04 — Conflit conjugal récurrent
-
-**Domaine** : Relation interpersonnelle | **Mode** : 2 (Tension) | **Modalité** : Délibératif
-
-**Contexte** : Un couple revient au même conflit depuis 4 ans : autonomie individuelle vs projet de vie partagé. Chaque résolution apparente (vacances en solo acceptées, engagement commun signé) se défait en quelques semaines. La structure du conflit se reproduit à l'identique.
-
-**Cartes candidates** : POLARITÉ · ⥀ INVERSER + RÉCURSIVITÉ · ↺ RÉFLEXIVITÉ
-
-**Ancrage POLARITÉ** : Le conflit est structuré autour de deux pôles opposés formellement définis par les deux partenaires eux-mêmes : "ma liberté" vs "notre avenir". Chaque conversation ramène ces termes.
-
-**Ancrage RÉCURSIVITÉ** : Le schéma de conflit se regarde lui-même. Les deux partenaires ont analysé leur conflit ensemble, nommé ses patterns, et c'est cette analyse qui alimente la prochaine itération. La méta-communication sur le conflit est devenue une partie du conflit.
-
-**Test d'anti-résonance (POLARITÉ)** : Les deux partenaires sont d'accord sur des pans entiers de leur vie commune — finances, lieu de vie, enfants. La polarisation n'est pas totale.
-
-**Test d'anti-résonance (RÉCURSIVITÉ)** : Certaines itérations du conflit suivent des voies nouvelles — certaines résolutions ont tenu 3 à 4 mois. La boucle n'est pas parfaitement fermée.
-
-*Résultat* : Les deux cartes sont actives avec des ancrages solides.
-
-**Carte rejetée** : RÉCIPROCITÉ · ⊗ LIER
-
-*Tentative d'ancrage* : l'échange dans le conflit est-il symétrique et équilibré ? Non — les concessions ne sont pas perçues comme équivalentes par les deux parties. La réciprocité est précisément ce qui manque, pas ce qui est actif.
-
-*Résultat* : RÉCIPROCITÉ déclarée inactive (elle serait plutôt candidate pour la position "Ce qui manque" en Mode 3).
-
-**Énoncé structurel** : La polarité fournit la structure duale stable du conflit. La récursivité explique pourquoi il se perpétue : l'auto-observation du conflit par le couple devient elle-même le mécanisme de reproduction.
-
-**Chaîne STÈLE** : `⥀.↺` → `INVERSER.RÉFLEXIVITÉ`
-
-**Statut** : Spéculatif — la lecture est cohérente avec la description mais non testée en présence des deux partenaires.
-
-**Observation** : La combinaison POLARITÉ + RÉCURSIVITÉ décrit ce que certains thérapeutes appellent une "double contrainte structurelle" — la discussion sur le problème devient le problème. Le rejet de RÉCIPROCITÉ est informatif : son absence est la clé.
-
----
-
-## Situation 05 — Déséquilibre dans un cursus éducatif
-
-**Domaine** : Système éducatif | **Mode** : 1 (Simple) | **Modalité** : Délibératif
-
-**Contexte** : Un lycée technique a progressivement augmenté le volume horaire des matières STEM au détriment des humanités (littérature, philosophie, arts). Le volume STEM représente désormais 72 % des heures. Les enseignants et une partie des élèves signalent une tension diffuse, un manque de recul, une fragilité dans les capacités d'expression écrite et de raisonnement critique.
-
-**Carte candidate** : PROPORTION · ◯ FORME
-
-**Ancrage observable** : 72 % STEM / 28 % humanités — un ratio qui était de 55/45 il y a 8 ans. Les notes en expression écrite ont baissé de 1,4 point en moyenne sur 5 ans. Ce sont des grandeurs mesurables.
-
-**Test d'anti-résonance** : Des lycées similaires avec le même ratio STEM/humanités produisent de très bons résultats aux concours d'ingénieurs — le déséquilibre n'est pas universellement négatif.
-
-*Résultat* : PROPORTION active. Le contre-exemple (autres lycées) ne l'invalide pas — il précise que la tension observée est contextuelle, pas structurellement nécessaire. La question IRIS reste pertinente.
-
-**Carte rejetée** : HIÉRARCHIE · ✦ AXE
-
-*Tentative d'ancrage* : y a-t-il une structure de rangs entre matières ? Formellement non — aucune matière n'est officiellement "supérieure". L'inégalité horaire est un rapport de volumes, pas un ordre de positions.
-
-*Résultat* : HIÉRARCHIE déclarée inactive — c'est PROPORTION qui nomme correctement le pattern (rapport entre parties), pas HIÉRARCHIE (ordonnancement par rang).
-
-**Chaîne STÈLE** : `◯` → `FORME`
-
-**Statut** : Descriptif
-
-**Observation** : La distinction PROPORTION / HIÉRARCHIE est confirmée empiriquement ici. Un déséquilibre de volumes est une question de rapports d'échelle (PROPORTION), pas de positions relatives (HIÉRARCHIE). Cette distinction est non-triviale — elle oriente vers des solutions différentes.
-
----
-
-## Situation 06 — Fédération associative en restructuration
-
-**Domaine** : Institutionnel | **Mode** : 3 (Constellation) | **Modalité** : Délibératif
-
-**Contexte** : Une fédération régionale d'associations culturelles perd 3 de ses 5 membres fondateurs en 18 mois (retraite, déménagement, épuisement). L'ancienne structure formelle (statuts datant de 2003) ne correspond plus aux pratiques réelles. Les membres restants ne savent pas quelle forme prendre.
-
-**Cartes tirées** :
-- Ce qui tient : TRACE · MÉMOIRE · ◊ TRACE
-- Ce qui bouge : TRANSFORMATION · ∿ MOUVEMENT
-- Ce qui manque : INCERTITUDE · Ø VIDE
-
-**Ancrage TRACE (Ce qui tient)** : Les statuts de 2003, les pratiques ancrées (mêmes lieux, mêmes partenaires institutionnels), la réputation construite — ce sont des traces actives du passé qui tiennent le présent en place, même en l'absence des fondateurs.
-
-**Ancrage TRANSFORMATION (Ce qui bouge)** : La fédération cherche activement un nouveau modèle de gouvernance. Deux groupes de travail ont été formés. Des consultations sont en cours. La forme change mais quelque chose persiste (l'objet social, les valeurs fondatrices).
-
-**Ancrage INCERTITUDE (Ce qui manque)** : Il n'existe pas encore de nouvelle forme stable. L'espace de ce qui pourrait être la fédération dans 2 ans est entièrement ouvert — aucun projet de statuts alternatifs n'a encore été soumis.
-
-**Test d'anti-résonance (TRACE)** : Certaines pratiques historiques ont déjà été abandonnées — la trace n'est pas complètement conservée.
-
-**Test d'anti-résonance (TRANSFORMATION)** : Certains membres militent pour un retour à l'ancienne structure — le mouvement de transformation est contesté.
-
-**Test d'anti-résonance (INCERTITUDE)** : Une esquisse de nouveau modèle (fédération horizontale) a été présentée en réunion — l'incertitude n'est pas totale.
-
-*Résultat* : Les trois cartes restent actives. Les nuances précisent que la constellation décrit un système en transition partielle, pas un effondrement total.
-
-**Énoncé structurel** : La trace du passé stabilise le présent en l'absence de nouvelle structure (ce qui tient). Une transformation est en cours mais sans forme achevée (ce qui bouge). L'incertitude sur la forme future est la lacune structurelle active — c'est elle qui génère l'anxiété organisationnelle, pas la transformation elle-même.
-
-**Chaîne STÈLE** : `◊.∿.Ø` → `TRACE.MOUVEMENT.VIDE`
-
-**Statut** : Spéculatif
-
-**Observation** : La position "Ce qui manque" comme INCERTITUDE est contre-intuitive — on attendrait une structure manquante (RÉSEAU, HIÉRARCHIE). Mais ici, ce qui manque n'est pas une structure spécifique mais un espace stable de possibles. Cela oriente l'action différemment : l'enjeu n'est pas de choisir une structure mais de créer les conditions pour qu'une structure puisse se révéler.
-
----
-
-## Situation 07 — Mouvement citoyen en expansion rapide
-
-**Domaine** : Sociopolitique | **Mode** : 2 (Tension) | **Modalité** : Délibératif
-
-**Contexte** : Un collectif de défense d'une zone naturelle urbaine passe de 15 à 280 membres en 4 mois. La première phase d'expansion est portée par un enthousiasme collectif fort. Mais les réunions deviennent difficiles à gérer, des dissensions internes apparaissent, et la question de la gouvernance se pose.
-
-**Cartes candidates** : CROISSANCE · ▲ INTENSITÉ + COMMUNAUTÉ · ⟶ TRANSMETTRE
-
-**Ancrage CROISSANCE** : L'expansion est documentée (15 → 280 membres, 4 mois). Les ressources (bénévoles, financements) s'amplifient. Le mouvement est clairement sur une phase ascendante de sa courbe logistique — mais la saturation organisationnelle s'approche.
-
-**Ancrage COMMUNAUTÉ** : Le collectif est soudé par un projet commun explicite (défense de la zone). Des mécanismes de solidarité sont actifs (appels aux dons mutuels, mobilisations croisées). Le "nous" est articulé.
-
-**Test d'anti-résonance (CROISSANCE)** : Certains membres fondateurs commencent à se retirer — la croissance est numériquement ascendante mais qualitativement hétérogène.
-
-**Test d'anti-résonance (COMMUNAUTÉ)** : Deux factions se forment (action directe vs lobbying légal) — la cohésion communautaire est sous tension.
-
-*Résultat* : Les deux cartes restent actives. La tension identifiée est précisément celle entre la croissance (qui dilue) et la communauté (qui cherche à tenir).
-
-**Énoncé structurel** : CROISSANCE et COMMUNAUTÉ sont en tension fonctionnelle : la croissance numérique dépasse la capacité de la communauté à maintenir sa cohérence. Ce n'est pas un conflit de valeurs — c'est une tension structurelle entre une dynamique d'expansion et une exigence de cohésion.
-
-**Chaîne STÈLE** : `▲.⟶` → `INTENSITÉ.TRANSMETTRE`
-
-L'amplification (croissance) exerce une pression sur la capacité de transmission (communauté).
-
-**Statut** : Descriptif
-
-**Observation** : Cette configuration (CROISSANCE → tension sur COMMUNAUTÉ) est un pattern générique des mouvements sociaux en expansion. La lecture de la tension structure différemment le problème : ce n'est pas "la communauté est divisée" mais "la structure de communauté n'est pas dimensionnée pour ce niveau de croissance".
-
----
-
-## Situation 08 — Chercheur face à un réseau de sources fragmenté
-
-**Domaine** : Épistémique / Recherche | **Mode** : 2 (Tension) | **Modalité** : Aléatoire
-
-**Contexte** : Un journaliste d'investigation cartographie les flux financiers entre une dizaine d'entités (ONG, sociétés offshore, fondations). Il sait que des connexions existent mais ne parvient pas à les documenter. Certains nœuds du réseau sont clairement identifiés ; d'autres sont des hypothèses. Les connexions manquantes sont au cœur de l'enquête.
-
-**Cartes tirées aléatoirement** : RÉSEAU · ⊛ NOEUD + INCERTITUDE · Ø VIDE
-
-**Ancrage RÉSEAU** : 7 entités ont été identifiées avec leurs liens documentés (actes notariaux, rapports annuels, déclarations). La topologie partielle est tracée — nœuds et liens connus forment déjà un graphe.
-
-**Ancrage INCERTITUDE** : 3 à 5 connexions supposées ne sont pas encore documentables. L'espace des connexions manquantes est structuré (on sait ce qu'on cherche) mais non résolu (on ne sait pas ce qu'on trouvera).
-
-**Test d'anti-résonance (RÉSEAU)** : La structure topologique n'est que partiellement connue — peut-on parler de réseau quand la topologie est incomplète ? Oui : le réseau partiel est lui-même une structure observable.
-
-**Test d'anti-résonance (INCERTITUDE)** : Certaines connexions supposées ont été confirmées à 80 % par des témoignages concordants — ce n'est pas une incertitude totale.
-
-*Résultat* : Les deux cartes sont actives. L'incertitude n'invalide pas la structure de réseau — elle la qualifie.
-
-**Énoncé structurel** : Le réseau partiel (RÉSEAU) est en tension avec l'espace non résolu de ses connexions manquantes (INCERTITUDE). La tension n'est pas entre deux structures opposées mais entre ce qui est structuré et ce qui reste ouvert au sein d'une même structure.
-
-**Chaîne STÈLE** : `⊛.Ø` → `NOEUD.VIDE`
-
-Le nœud de convergence existe, mais l'espace vide des connexions manquantes est la lacune structurelle active.
-
-**Statut** : Descriptif
-
-**Observation** : Cette configuration (RÉSEAU + INCERTITUDE) est typique des enquêtes OSINT. La carte INCERTITUDE ne décrit pas l'état de l'enquêteur (il est incertain) — elle décrit la structure de la situation (le réseau a des zones d'indétermination). La distinction est épistémologiquement importante.
-
----
-
-## Situation 09 — Entreprise en cycle de transformation perpétuelle
-
-**Domaine** : Stratégie organisationnelle | **Mode** : 3 (Constellation) | **Modalité** : Délibératif
-
-**Contexte** : Une entreprise de services lance un plan de transformation tous les 18 mois depuis 6 ans (4 plans successifs). Chaque plan démarre avec enthousiasme, progresse à 60-70 % d'exécution, puis se voit remplacé par le suivant. Les salariés parlent de "révolution permanente" avec ironie. Rien de fondamentalement nouveau n'est apparu.
-
-**Cartes tirées** :
-- Ce qui tient : PÉRIODICITÉ · ↻ CYCLE
-- Ce qui bouge : CONTRAINTE · ⊘ NÉGATION
-- Ce qui manque : ÉMERGENCE · ⊙ SOURCE
-
-**Ancrage PÉRIODICITÉ (Ce qui tient)** : Le cycle 18 mois est documenté sur 4 itérations. Les phases (annonce / enthousiasme / 60 % / abandon) se répètent avec une régularité mesurable. C'est la structure stable de fond.
-
-**Ancrage CONTRAINTE (Ce qui bouge)** : Chaque nouveau plan redéfinit les contraintes (nouvelles règles, nouveaux périmètres, nouvelles interdictions). Les contraintes changent de nom mais maintiennent le même effet limitant. Ce qui bouge, c'est l'habillage des contraintes, pas leur nature.
-
-**Ancrage ÉMERGENCE (Ce qui manque)** : Aucune propriété réellement nouvelle n'est apparue dans l'organisation depuis 6 ans. Les plans succèdent aux plans sans produire d'ordre qualitatif nouveau. L'émergence est l'absent actif — c'est son absence qui caractérise la situation.
-
-**Test d'anti-résonance (PÉRIODICITÉ)** : Certains changements ont tenu — notamment des outils numériques intégrés qui n'ont pas été abandonnés. Le cycle n'est pas parfaitement conservatif.
-
-**Test d'anti-résonance (CONTRAINTE)** : Quelques contraintes historiques ont été levées définitivement (process de validation simplifiés). Le mouvement des contraintes n'est pas purement cosmétique.
-
-**Test d'anti-résonance (ÉMERGENCE absente)** : Un nouveau service a été créé lors du 3e plan et fonctionne encore — une forme limitée d'émergence a eu lieu. L'absence n'est pas totale.
-
-*Résultat* : Les trois nuances précisent sans invalider. La constellation décrit un système partiellement conservatif, non totalement bloqué.
-
-**Identification de la configuration** : Configuration pathologique type *Immobilité structurelle* : "Ce qui bouge" (CONTRAINTE) est structurellement similaire à "Ce qui tient" (PÉRIODICITÉ) — le mouvement perçu (changement des contraintes) reproduit la stabilité (le cycle). Les plans de transformation sont eux-mêmes devenus une nouvelle périodicité.
-
-**Énoncé structurel** : La périodicité des plans tient le système. La transformation des contraintes (leur renommage cyclique) est le mouvement apparent — mais ce mouvement est lui-même périodique, donc il ne sort pas de la structure de fond. Ce qui manque est une émergence réelle : quelque chose qui n'était prévu par aucun plan.
-
-**Chaîne STÈLE** : `↻.⊘.⊙` → `CYCLE.NÉGATION.SOURCE`
-
-**Statut** : Spéculatif
-
-**Observation** : La configuration pathologique (immobilité structurelle) est détectée par la proximité de "Ce qui tient" et "Ce qui bouge". Elle aurait justifié un Mode 4 : quelle structure permettrait de tenir la tension ? Candidat : SEUIL (⊥) — un basculement irréversible pourrait être la seule sortie du cycle. Chaîne étendue : `↻.⊘.⊙ - ⊥` → `CYCLE.NÉGATION.SOURCE - LIMITE`
-
----
-
-## Situation 10 — Rituel familial intergénérationnel en voie de disparition
-
-**Domaine** : Mémoire culturelle / Transmission | **Mode** : 2 (Tension) | **Modalité** : Délibératif
-
-**Contexte** : Depuis 40 ans, une famille se réunit chaque premier dimanche de janvier avec les mêmes gestes, les mêmes plats, les mêmes chansons. Les grands-parents qui portaient ce rituel sont décédés. Les enfants adultes perpétuent les formes, mais quelque chose manque — la synchronisation émotionnelle du passé n'est plus là.
-
-**Cartes candidates** : TRACE · MÉMOIRE · ◊ TRACE + RÉSONANCE · ✶ RÉVÉLER
-
-**Ancrage TRACE** : Le rituel formel est conservé (mêmes recettes documentées, mêmes chansons, même lieu). Les gestes sont transmis. Ce sont des traces actives du passé qui structurent le présent de manière observable.
-
-**Ancrage RÉSONANCE** : Dans le passé, la synchronisation émotionnelle collective était tangible (larmes communes, fous-rires partagés, sentiment d'unité ressenti corporellement). Aujourd'hui, plusieurs membres de la famille décrivent une "absence de quelque chose" lors du rassemblement — la résonance est donc présente comme absence ressentie, non comme état actif.
-
-*Question* : peut-on ancrer RÉSONANCE si elle est absente ? Oui — RÉSONANCE en position "Ce qui manque" (Mode 3) ou comme pôle manquant d'une tension (Mode 2). En Mode 2, la tension est : la trace de la forme est présente, mais la résonance qu'elle portait est absente.
-
-**Test d'anti-résonance (TRACE)** : Certains gestes ont déjà été abandonnés depuis la disparition des grands-parents — la transmission n'est pas intégrale. La trace n'est que partielle.
-
-**Test d'anti-résonance (RÉSONANCE absente)** : Des moments de synchronisation authentique ont quand même lieu (fous-rires spontanés, émotions partagées à certains moments). La résonance n'est pas complètement absente — elle est affaiblie et irrégulière.
-
-*Résultat* : Les deux cartes sont actives. La tension décrit précisément la situation : la forme (trace) a survécu à ses porteurs, mais la synchronisation émotionnelle (résonance) qu'ils généraient n'est pas transmissible par la forme seule.
-
-**Énoncé structurel** : La trace maintient la structure formelle du rituel, mais la résonance collective qu'elle devrait activer est affaiblie. La forme sans résonance produit une mémoire mécanique — elle perpétue sans faire vibrer.
-
-**Chaîne STÈLE** : `◊.✶` → `TRACE.RÉVÉLER`
-
-La trace porte le potentiel de révéler une résonance latente — mais ce potentiel n'est pas encore actualisé.
-
-**Statut** : Spéculatif / Performatif (la formulation elle-même peut modifier la façon dont la famille habite le rituel)
-
-**Observation** : Cette situation illustre la différence entre PÉRIODICITÉ et TRACE : le rituel annuel pourrait sembler relever de la périodicité (retour régulier). Mais ce qui est structurellement actif n'est pas le rythme (la famille se réunit par habitude, pas parce que le cycle la porte) — c'est la trace de ce qui a été. La périodicité n'était pas retenue.
-
----
-
-## Bilan des 10 situations
-
-### Couverture des 16 cartes
-
-| Carte | Situations | Rôle |
-|---|---|---|
-| SEUIL · ⊥ | 01 | Active (Mode 1) |
-| RÉCIPROCITÉ · ⊗ | 04 | Rejetée |
-| PÉRIODICITÉ · ↻ | 09, 10 | Active (Ce qui tient) / Rejetée |
-| RÉCURSIVITÉ · ↺ | 04 | Active (Mode 2) |
-| ÉMERGENCE · ⊙ | 03, 09 | Active / Active (Ce qui manque) |
-| HIÉRARCHIE · ✦ | 02, 05 | Active / Rejetée |
-| RÉSEAU · ⊛ | 08 | Active (Mode 2) |
-| POLARITÉ · ⥀ | 04 | Active (Mode 2) |
-| INCERTITUDE · Ø | 06, 08 | Active (Ce qui manque) / Active |
-| CONTRAINTE · ⊘ | 02, 09 | Active / Active (Ce qui bouge) |
-| PROPORTION · ◯ | 05 | Active (Mode 1) |
-| TRANSFORMATION · ∿ | 06 | Active (Ce qui bouge) |
-| TRACE · MÉMOIRE · ◊ | 06, 10 | Active (Ce qui tient) / Active |
-| CROISSANCE · ▲ | 07 | Active (Mode 2) |
-| COMMUNAUTÉ · ⟶ | 03, 07 | Rejetée / Active |
-| RÉSONANCE · ✶ | 10 | Active (Mode 2) |
-
-### Observations transversales
-
-**Cartes les plus robustes à l'ancrage** : SEUIL, HIÉRARCHIE, CONTRAINTE — les ancrages observables sont faciles à nommer (décisions irréversibles, topologies de pouvoir, règles formelles).
-
-**Cartes les plus exigeantes en ancrage** : RÉSONANCE, ÉMERGENCE — nécessitent de nommer des phénomènes collectifs ou systémiques, pas toujours facilement objectivables.
-
-**Paires dont la distinction a été testée** : ÉMERGENCE/COMMUNAUTÉ (03), PROPORTION/HIÉRARCHIE (05), TRACE/PÉRIODICITÉ (10), RÉCIPROCITÉ/POLARITÉ (04), RÉSEAU/INCERTITUDE (08).
-
-**Configuration pathologique détectée** : Situation 09 — Immobilité structurelle (Ce qui bouge ≈ Ce qui tient). Mode 4 activé en observation.
-
-**Rejets documentés** : 4 rejets (COMMUNAUTÉ/03, RÉCIPROCITÉ/04, HIÉRARCHIE/05, PÉRIODICITÉ/10). Chaque rejet a produit une information structurelle complémentaire à la lecture retenue.
+## 3. Protocole de test réel (à exécuter)
+
+Objectif : savoir si deux lecteurs indépendants, appliquant ce protocole, retiennent les mêmes
+cartes — et si R4 et R9 produisent réellement des rejets et des résultats nuls.
+
+1. **Corpus** : 20 situations **non choisies par l'auteur du skill** (par exemple tirées au sort dans
+   un recueil d'études de cas publiées ou de faits rapportés), décrites en 4 à 8 phrases factuelles.
+2. **Cas adverses** (5, en plus des 20), avec issue attendue **écrite avant la lecture** :
+   une description sans faits (attendu : ∅) ; un piège lexical ; une structure hors corpus ;
+   un cas où l'anti-résonance doit être dominante ; un cas où la carte « évidente » n'est pas
+   ancrable.
+3. **Lecteurs** : deux, indépendants (deux personnes, ou deux instances de modèle sans contexte
+   partagé), qui ne voient pas les lectures l'un de l'autre.
+4. **Mesures** : accord sur la présence de chaque carte (kappa de Cohen) ; accord sur le mode ;
+   taux de rejet R4 ; taux de ∅ ; taux de reproduction confirmée / signalée ; résultats des cas
+   adverses.
+5. **Seuils de lecture** : kappa < 0,4 → le protocole ne produit pas des lectures reproductibles ;
+   taux de rejet R4 = 0 → R4 reste décoratif ; un cas adverse « sans faits » non conclu en ∅ →
+   R2 n'est pas appliqué.
+
+## 4. Journal des tests réels
+
+*Vide.*
+
+```
+## Test N — [date]
+Situation : [source + texte]
+Lecteur A : [signature, statut, cartes rejetées et pourquoi]
+Lecteur B : [idem]
+Accord : [cartes communes / divergentes]
+Cas adverse ? : [non / oui — issue attendue / obtenue]
+```

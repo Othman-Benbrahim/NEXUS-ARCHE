@@ -1,112 +1,127 @@
-# NEXUS-ARCHÊ — Calibration des Distinctions Inter-Cartes
+# NEXUS-ARCHÊ — Calibration
 
-> Ce fichier sert deux fonctions :
-> (1) documenter les risques de confusion identifiés à l'analyse et confirmés par les tests ;
-> (2) fournir un protocole de suivi des erreurs de distinction en conditions réelles.
-> Mettre à jour ce fichier après chaque série de 10 situations documentées.
+> Version : 0.4.1
 
-> **Confusion n'est pas antagonisme.** Ce fichier mesure le risque qu'un lecteur prenne une
-> carte pour une autre. L'incompatibilité structurelle entre deux cartes — le fait que leurs
-> définitions ne puissent pas être vraies du même objet — est une relation distincte, définie
-> dans `references/antagonismes.md`. Cinq des dix-sept paires listées ici sont aussi
-> antagonistes ; les douze autres ne le sont pas, à commencer par HIÉRARCHIE ↔ RÉSEAU, dont
-> les deux structures peuvent parfaitement décrire le même objet.
+> Mesure le risque qu'un lecteur ou un modèle prenne une carte pour une autre (**confusion**),
+> documente les faux positifs et les lacunes du corpus, et définit les indicateurs de suivi.
+> Confusion ≠ incompatibilité : voir `antagonismes.md` §1.
+>
+> **Statut** : la matrice ci-dessous est une **estimation a priori**. Aucun chiffre n'est encore
+> issu de l'usage ; les journaux sont vides.
 
 ---
 
-## Matrice de risque de confusion
+## 1. Matrice de risque de confusion (a priori)
 
-Chaque paire est évaluée selon deux critères :
-- **Risque** : probabilité qu'un utilisateur ou un LLM confonde les deux cartes (Élevé / Moyen / Faible)
-- **Critère discriminant** : la question qui tranche entre les deux de manière structurelle
+Les questions discriminantes complètes sont dans `cards.md`. Colonne « Origine » : *lecteur*
+(les définitions sont nettes, le risque vient de la lecture) ou *source* (le recouvrement est dans
+le corpus lui-même — registre anthropologique partagé ou structures compatibles).
 
-### Risque élevé — confusion probable sans protocole de rigueur
+### Risque élevé
 
-| Paire | Risque | Critère discriminant |
+| Paire | Origine | Indice rapide |
 |---|---|---|
-| PÉRIODICITÉ ↔ RÉCURSIVITÉ | ⚠⚠⚠ | Ce qui se répète est-il *dans le temps* (→ PÉRIODICITÉ) ou *dans la forme* (→ RÉCURSIVITÉ) ? |
-| RÉSEAU ↔ COMMUNAUTÉ | ⚠⚠⚠ | Ce qui importe est-il la *topologie des liens* (→ RÉSEAU) ou le *projet commun qui unit* (→ COMMUNAUTÉ) ? |
-| SEUIL ↔ TRANSFORMATION | ⚠⚠⚠ | S'agit-il d'un *basculement ponctuel irréversible* (→ SEUIL) ou d'un *processus de mutation continu* (→ TRANSFORMATION) ? |
-| ÉMERGENCE ↔ TRANSFORMATION | ⚠⚠⚠ | Y a-t-il *apparition de quelque chose de fondamentalement nouveau* (→ ÉMERGENCE) ou *mutation d'une entité existante* (→ TRANSFORMATION) ? |
-| RÉCIPROCITÉ ↔ COMMUNAUTÉ | ⚠⚠⚠ | La relation est-elle *bilatérale entre deux parties* (→ RÉCIPROCITÉ) ou *multi-acteurs autour d'un bien commun* (→ COMMUNAUTÉ) ? |
+| PÉRIODICITÉ ↔ RÉCURSIVITÉ | lecteur | rythme / échéance → PÉRIODICITÉ ; le système se prend pour objet → RÉCURSIVITÉ |
+| RÉSEAU ↔ COMMUNAUTÉ | **source** (même cluster Brown) | liens → RÉSEAU ; bien commun → COMMUNAUTÉ |
+| RÉCIPROCITÉ ↔ COMMUNAUTÉ | **source** (même cluster Brown) | deux parties → RÉCIPROCITÉ ; plus de deux autour d'un bien → COMMUNAUTÉ |
+| ÉMERGENCE ↔ TRANSFORMATION | lecteur — **incompatibles** | l'entité est apparue → ÉMERGENCE ; elle préexistait → TRANSFORMATION |
+| SEUIL ↔ TRANSFORMATION | **source** (compatibles depuis v0.4) | non-retour → SEUIL ; changement de forme à invariant → TRANSFORMATION ; souvent les deux |
+| SEUIL ↔ TRACE·MÉMOIRE | **source** (inclusion mathématique depuis v0.4 : l'hystérésis est une dépendance au chemin) | retour fermé → SEUIL ; passé qui continue d'agir → TRACE ; souvent les deux |
 
-### Risque moyen — confusion possible dans des situations ambiguës
+### Risque moyen
 
-| Paire | Risque | Critère discriminant |
+| Paire | Origine | Indice rapide |
 |---|---|---|
-| HIÉRARCHIE ↔ RÉSEAU | ⚠⚠ | La structure définit-elle des *rangs et positions* (→ HIÉRARCHIE) ou seulement des *connexions* (→ RÉSEAU) ? |
-| TRACE · MÉMOIRE ↔ PÉRIODICITÉ | ⚠⚠ | Le passé est-il présent comme *empreinte résiduelle* (→ TRACE) ou comme *retour cyclique* (→ PÉRIODICITÉ) ? |
-| RÉSONANCE ↔ COMMUNAUTÉ | ⚠⚠ | S'agit-il d'un *alignement de rythmes* (→ RÉSONANCE) ou d'une *coopération organisée* (→ COMMUNAUTÉ) ? |
-| CONTRAINTE ↔ SEUIL | ⚠⚠ | Y a-t-il *limitation du champ d'action sans changement d'état* (→ CONTRAINTE) ou *basculement irréversible vers un nouvel état* (→ SEUIL) ? |
-| INCERTITUDE ↔ ÉMERGENCE | ⚠⚠ | Est-on dans *l'avant sans forme* (→ INCERTITUDE) ou dans *l'apparition d'un ordre nouveau* (→ ÉMERGENCE) ? |
-| CROISSANCE ↔ TRANSFORMATION | ⚠⚠ | S'agit-il d'un *changement de degré quantitatif* (→ CROISSANCE) ou d'un *changement de nature qualitatif* (→ TRANSFORMATION) ? |
-| RÉCIPROCITÉ ↔ RÉSEAU | ⚠⚠ | Ce qui importe est-il *la qualité symétrique de l'échange* (→ RÉCIPROCITÉ) ou *la topologie des connexions* (→ RÉSEAU) ? |
+| RÉCIPROCITÉ ↔ RÉSEAU | **source** | ce qui circule dans un lien → RÉCIPROCITÉ ; topologie → RÉSEAU |
+| HIÉRARCHIE ↔ RÉSEAU | lecteur (réduit en v0.4 : HIÉRARCHIE n'invoque plus les réseaux scale-free) | préséance → HIÉRARCHIE ; liens → RÉSEAU |
+| HIÉRARCHIE ↔ PROPORTION | lecteur (augmenté en v0.4 : les inégalités de grandeur relèvent de PROPORTION) | rang → HIÉRARCHIE ; rapport de grandeurs → PROPORTION |
+| TRACE·MÉMOIRE ↔ PÉRIODICITÉ | **source** (compatibles) | ce qui persiste → TRACE ; le retour lui-même → PÉRIODICITÉ |
+| RÉSONANCE ↔ COMMUNAUTÉ | **source** (cluster « rituals ») | alignement de rythmes → RÉSONANCE ; coopération autour d'un bien → COMMUNAUTÉ |
+| CONTRAINTE ↔ SEUIL | lecteur | options retirées → CONTRAINTE ; état sans retour → SEUIL |
+| INCERTITUDE ↔ ÉMERGENCE | lecteur | possibles non tranchés → INCERTITUDE ; régularité apparue → ÉMERGENCE |
+| CROISSANCE ↔ TRANSFORMATION | lecteur | degré → CROISSANCE ; forme → TRANSFORMATION |
+| CONTRAINTE ↔ TRACE·MÉMOIRE | **source** (règle héritée) | exclusion d'options → CONTRAINTE ; persistance du passé → TRACE |
 
-### Risque faible — distinction généralement claire
+### Risque faible
 
-| Paire | Risque | Critère discriminant |
+| Paire | Origine | Indice rapide |
 |---|---|---|
-| POLARITÉ ↔ CONTRAINTE | ⚠ | Y a-t-il *deux pôles en tension* (→ POLARITÉ) ou *une règle qui bloque certains mouvements* (→ CONTRAINTE) ? |
-| PROPORTION ↔ HIÉRARCHIE | ⚠ | S'agit-il d'un *équilibre de mesures* (→ PROPORTION) ou d'un *ordre de rangs* (→ HIÉRARCHIE) ? |
-| RÉSONANCE ↔ RÉCIPROCITÉ | ⚠ | L'alignement est-il *spontané et rythmique* (→ RÉSONANCE) ou *délibéré et symétrique* (→ RÉCIPROCITÉ) ? |
-| TRACE · MÉMOIRE ↔ TRANSFORMATION | ⚠ | Est-on dans *le résidu stable après mutation* (→ TRACE) ou dans *le processus de mutation lui-même* (→ TRANSFORMATION) ? |
-| INCERTITUDE ↔ CONTRAINTE | ⚠ | Y a-t-il de *l'inconnu structurel* (→ INCERTITUDE) ou une *règle d'interdiction* (→ CONTRAINTE) ? |
+| POLARITÉ ↔ CONTRAINTE | lecteur | deux pôles → POLARITÉ ; règle qui bloque → CONTRAINTE |
+| RÉSONANCE ↔ RÉCIPROCITÉ | lecteur | synchronisation → RÉSONANCE ; échange obligé → RÉCIPROCITÉ |
+| TRACE·MÉMOIRE ↔ TRANSFORMATION | lecteur (séquentiel) | ce qui reste → TRACE ; le processus → TRANSFORMATION |
+| INCERTITUDE ↔ CONTRAINTE | lecteur — **incompatibles** | option ouverte → INCERTITUDE ; exclue → CONTRAINTE. Glyphes confondables `Ø` / `⊘` |
+| RÉCIPROCITÉ ↔ HIÉRARCHIE | lecteur (compatibles) | boucle d'obligations → RÉCIPROCITÉ ; préséance → HIÉRARCHIE |
+
+> Quand l'origine est **source**, aucun entraînement du lecteur ne supprimera la confusion : seule
+> une révision des définitions le peut. Ces paires sont les premières à surveiller dans le journal.
 
 ---
 
-## Faux positifs structurels documentés
+## 2. Faux positifs typiques
 
-Un faux positif est une situation où une carte semble évidente depuis le ressenti ou la description superficielle, mais ne passe pas le test d'ancrage observable.
-
-| Faux positif | Situation déclenchante | Raison du rejet | Carte correcte |
+| Faux positif | Déclencheur | Pourquoi | Issue correcte |
 |---|---|---|---|
-| RÉSEAU | "Je me sens seul et déconnecté" | La topologie de liens n'est pas nommable — le ressenti ne suffit pas | INCERTITUDE, POLARITÉ ou CONTRAINTE selon ancrage |
-| COMMUNAUTÉ | Projet open-source sans "nous" articulé | Les contributeurs partagent un intérêt mais pas un projet commun conscient | ÉMERGENCE |
-| RÉCIPROCITÉ | Conflit conjugal — "on ne se donne plus" | L'échange n'est pas symétrique — son absence est la structure active | POLARITÉ + RÉCURSIVITÉ |
-| HIÉRARCHIE | Déséquilibre de volumes horaires dans un cursus | Le déséquilibre est un rapport d'échelle, pas un ordre de rangs | PROPORTION |
-| TRANSFORMATION | Plan de transformation organisationnel | Le plan est nommé "transformation" mais la structure réelle est cyclique | PÉRIODICITÉ |
+| RÉSEAU | « je me sens seul et déconnecté » | ressenti, pas de topologie (R2) | résultat nul puis demande de faits (exemple 5) |
+| INCERTITUDE | « je ne sais pas ce qui m'attend » | ignorance déclarée, pas de conduite organisée (R2) | Nul tant qu'aucune conduite n'est décrite |
+| CROISSANCE | « notre croissance » après une acquisition | coïncidence lexicale ; mécanisme concurrent dominant (R4) | SEUIL + TRANSFORMATION (exemple 4) |
+| TRANSFORMATION | « plan de transformation » récurrent | coïncidence lexicale ; structure cyclique | PÉRIODICITÉ (test_log 09) |
+| HIÉRARCHIE | déséquilibre de volumes horaires | rapport de grandeurs, pas de préséance | PROPORTION (test_log 05) |
+| RÉCURSIVITÉ | « on tourne en rond » | rétroaction ou répétition sans représentation de soi | PÉRIODICITÉ, ou structure hors corpus |
+| COMMUNAUTÉ | contributeurs sans bien commun nommé | intérêt partagé ≠ projet commun | ÉMERGENCE (test_log 03) |
 
-> **Règle de vigilance** : lorsque le nom d'une carte correspond au vocabulaire utilisé dans la situation (une "transformation" nommée, un "réseau" mentionné), renforcer le test d'anti-résonance. La coïncidence lexicale n'est pas un ancrage.
+**Règle de vigilance** : quand le nom d'une carte figure dans la description, chercher
+l'anti-résonance du côté de la carte voisine (R2).
 
 ---
 
-## Protocole de suivi des erreurs de distinction
+## 3. Journal des erreurs de distinction
 
-À remplir après chaque lecture où une confusion a été identifiée (soit a priori par auto-correction, soit a posteriori par révision).
-
-### Template d'entrée de journal
+*Vide.* Template :
 
 ```
 ## Erreur N — [date]
-
-**Situation** : [description en 2 phrases]
-**Carte initialement retenue** : [Carte A]
-**Ancrage initial** : [ce qui semblait justifier la carte]
-**Carte correcte** : [Carte B]
-**Raison de la confusion** : [ce qui a induit en erreur]
-**Critère discriminant applicable** : [question qui aurait tranché]
-**Leçon systémique** : [ce que cette erreur dit du système]
+Situation : [2 phrases]
+Carte retenue d'abord : [A] — ancrage : [fait]
+Carte correcte : [B] — question discriminante qui aurait tranché : [question]
+Origine : [lecteur / source]
+Leçon : [ce que l'erreur dit des définitions ou du protocole]
 ```
 
----
-
-## Journal de calibration
-
-*Ce journal est vide à la publication de v0.3. À remplir en conditions d'usage réel.*
-
-> Format : chaque erreur documentée alimente la matrice de risque ci-dessus.
-> Lorsqu'une paire de risque "Moyen" accumule 3 erreurs documentées → passer en "Élevé".
-> Lorsqu'une paire de risque "Élevé" atteint 0 erreur sur 20 lectures → passer en "Moyen".
+**Règles** : une paire de risque moyen qui accumule 3 erreurs passe en élevé ; une paire de
+risque élevé à 0 erreur sur 20 lectures concernées passe en moyen. Une paire d'origine *source*
+qui accumule 3 erreurs déclenche une révision de `cards.md`.
 
 ---
 
-## Indicateurs de calibration à terme
+## 4. Journal des lacunes du corpus (structures hors corpus, R9)
 
-À calculer après 50 situations documentées :
+*Vide en données réelles.* Lacunes identifiées à l'analyse, à confirmer par l'usage :
+- **rétroaction simple** (sortie qui influence l'entrée, sans représentation de soi) — exclue de
+  RÉCURSIVITÉ en v0.4 ;
+- **auto-similarité** (même motif à plusieurs échelles) — idem (exemple 6).
 
-| Indicateur | Définition | Cible |
+Template :
+
+```
+## Lacune N — [date]
+Situation : [2 phrases]
+Motif nommé en clair : [...]
+Cartes testées et pourquoi elles ne conviennent pas : [...]
+```
+
+Une lacune notée trois fois sur des situations indépendantes justifie d'examiner une carte nouvelle.
+
+---
+
+## 5. Indicateurs (à calculer après 50 lectures réelles)
+
+| Indicateur | Définition | Lecture |
 |---|---|---|
-| Taux de rejet | % de tirages où au moins une carte est déclarée inactive | > 20 % (signe que le protocole est appliqué) |
-| Taux de confusion corrigée | % de lectures où la première carte retenue a été remplacée | < 15 % (signe de maîtrise des distinctions) |
-| Paires les plus confondues | Top 3 des paires ayant généré le plus d'erreurs | À observer empiriquement |
-| Statuts épistémiques | Distribution Descriptif / Spéculatif / Performatif | Indicateur de la nature des situations traitées |
+| Taux de rejet par anti-résonance | % de cartes ancrées puis rejetées ou rétrogradées par R4 | **0 % = R4 décoratif** ; à surveiller en premier |
+| Taux de résultat nul | % de lectures concluant ∅ | 0 % sur 50 lectures suggère une obligation de trouver |
+| Taux de rejet d'ancrage | % de candidates déclarées Nul | |
+| Taux de confusion corrigée | % de lectures où la première carte a été remplacée | |
+| Accord inter-lecteurs | kappa de Cohen entre deux lecteurs indépendants sur les mêmes situations | voir `test_log.md` §3 |
+| Répartition des statuts | Descriptif / Spéculatif / Nul | |
+| Lacunes | nombre et récurrence des structures hors corpus | |
+| Configurations confirmées / signalées | par configuration (Scission, Reproduction, Lacune contradictoire) et pour la relation de reproduction en Mode 2 | **Reproduction** est la seule configuration sans fréquence combinatoire et la plus exposée au sur-déclenchement (un mouvement est souvent en aval de la structure stable) : un taux de confirmation bas impose de durcir R6 (a)–(b) |
