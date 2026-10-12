@@ -1,8 +1,8 @@
 # NEXUS-ARCHÊ — Protocole
 
-> Version : 0.4.1
+> Version : 0.4.2
 >
-> **Source de vérité des règles** (R1–R12). `SKILL.md` donne l'ordre des étapes et renvoie ici ;
+> **Source de vérité des règles** (R1–R13). `SKILL.md` donne l'ordre des étapes et renvoie ici ;
 > aucun autre fichier ne redéfinit une règle. `examples.md`, `test_log.md` et `prompt_guide.md`
 > les appliquent ; `scripts/nexus_tool.py lint` vérifie une partie de cette application.
 
@@ -197,9 +197,12 @@ Ce qui permettrait un ancrage : [faits manquants, sous forme de questions préci
 Le résultat nul n'est pas un refus d'aider : il dit ce que la description ne permet pas d'affirmer,
 et quelles informations le permettraient.
 
-**Structure hors corpus** : un motif clair organise la situation mais aucune carte ne le décrit
-(rétroaction simple, auto-similarité, dépendance à une ressource unique…). Le nommer en clair,
-**sans** le rabattre sur la carte la plus proche, et le noter au journal de `calibration.md` §4.
+**Structure hors corpus** : un motif clair organise la situation mais aucune carte ne le décrit.
+Avant de conclure, vérifier si une carte ancrée **munie d'un qualificatif** (R13) en rend compte :
+une boucle d'amplification ou de stabilisation, un motif répété à plusieurs échelles, un décalage
+daté. Sinon, nommer le motif en clair (dépendance à une ressource unique, par exemple), **sans** le
+rabattre sur la carte la plus proche, et le noter au journal de `calibration.md` §4 : c'est ce
+journal qui alimente la procédure d'admission d'une carte (`calibration.md` §6).
 
 ---
 
@@ -224,7 +227,7 @@ faire.
 
 | Statut | Condition |
 |---|---|
-| **Descriptif** | toutes les cartes retenues sont **Fort** (R3 complet), au moins une contre-observation a été trouvée et classée pour chacune, et toute configuration ou relation de reproduction signalée a été confirmée par l'auteur |
+| **Descriptif** | toutes les cartes retenues sont **Fort** (R3 complet), au moins une contre-observation a été trouvée et classée pour chacune **et pour chaque qualificatif** (R13), et toute configuration ou relation de reproduction signalée a été confirmée par l'auteur |
 | **Spéculatif** | dans tous les autres cas |
 | **Nul** | résultat nul (R9) |
 
@@ -241,3 +244,37 @@ Il **ne prévoit pas** : une lecture peut suggérer des hypothèses, mais toute 
 l'avenir (« ce type de situation évolue généralement vers… ») est hors protocole. Pour la
 transformer en prévision scorable, la confier à `prediction-engine` ou `osint-intel`.
 Les 16 cartes ne sont pas une liste complète des structures possibles (R9).
+
+---
+
+## R13 — Qualificatifs
+
+Un **qualificatif** décrit la **manière** dont une structure ancrée se déploie. Il s'attache à une
+carte ; il n'est pas une carte. Raison : les motifs qu'il couvre sont des **mécanismes** ou des
+**modes de déploiement** qui traversent plusieurs structures (une rétroaction amplifiante produit
+de la CROISSANCE, une rétroaction stabilisante avec délai de la PÉRIODICITÉ). En faire des cartes
+les rendrait voisines de presque tout le corpus, et R3 ne trancherait plus.
+
+| Qualificatif (nom canonique) | Code | Marqueur observable exigé |
+|---|---|---|
+| `{rétroaction amplifiante}` | `R↑` | une chaîne A → B → A documentée sur **au moins deux tours**, où chaque tour **accroît** A (sens et grandeur donnés) |
+| `{rétroaction stabilisante}` | `R↓` | une chaîne A → B → A documentée sur au moins deux tours, où chaque tour **ramène** A vers une valeur de référence |
+| `{multi-échelle}` | `×N` | la **même** carte ancrée par un fait distinct à **au moins trois échelles nommées** (équipe, service, direction…), avec les mêmes rôles à chaque échelle |
+| `{délai}` | `Δt` | deux événements datés, la cause et l'effet, et l'intervalle entre eux, dans la structure qualifiée |
+
+Règles :
+1. **Ancrage** — un qualificatif s'ancre comme une carte (R2) : par un fait précis, cité sur une
+   ligne `Q · CARTE {qualificatif} : <fait> ; contre-observation : <fait> (<portée>)`. Sans fait,
+   pas de qualificatif.
+2. **Anti-résonance** — R4 s'applique : une contre-observation substantielle ou dominante retire le
+   qualificatif (il n'a pas de niveau Faible). Aucune trouvée → le statut est plafonné à Spéculatif (R11).
+3. **Support** — seule une carte ancrée (Fort ou Faible) peut porter un qualificatif ; deux
+   qualificatifs au plus par carte, sans répétition.
+4. **Neutralité** — un qualificatif ne compte pas dans le choix du mode (R5), ne crée aucune
+   voisine (R3) et n'entre dans aucune incompatibilité.
+5. **Distinction** — `{rétroaction amplifiante}` n'est pas CROISSANCE : CROISSANCE exige une série
+   de mesures d'une grandeur ; le qualificatif exige la boucle qui la produit. Une croissance sans
+   boucle documentée se lit CROISSANCE seule.
+
+Notation : `POLARITÉ {multi-échelle}` ; `CROISSANCE {rétroaction amplifiante} + CONTRAINTE`
+(`notation.md` §2).

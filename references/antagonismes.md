@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Incompatibilités et tensions
 
-> Version : 0.4.1
+> Version : 0.4.2
 
 > Définit deux relations entre cartes, distinctes de la **confusion** (`calibration.md`) :
 > l'**incompatibilité** (les deux définitions ne peuvent pas être vraies du même objet au même

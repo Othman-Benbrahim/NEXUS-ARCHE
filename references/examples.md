@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Exemples annotés
 
-> Version : 0.4.1
+> Version : 0.4.2
 >
 > Six lectures qui appliquent les règles R1–R12 de `protocol.md`, y compris R3 : chaque carte
 > retenue au niveau Fort porte une ligne `R3 ·` qui passe **toutes** ses voisines documentées
@@ -15,7 +15,7 @@
 | 3 | Mode 3, rétrogradation par anti-résonance, configurations non établies | Spéculatif |
 | 4 | Rejet par anti-résonance, coïncidence lexicale, verdict `+` | Mode 2, Spéculatif |
 | 5 | Situation sans faits, puis avec faits | ∅, puis Mode 1 |
-| 6 | Structure hors corpus | Mode 1 + motif nommé |
+| 6 | Motif multi-échelle : qualificatif plutôt que carte ou « hors corpus » (R13) ; puis vrai hors-corpus | Mode 1 qualifié |
 
 ---
 
@@ -208,7 +208,7 @@ uniques : chacun est le seul chemin vers son entourage.
 
 ---
 
-## Exemple 6 — Structure hors corpus
+## Exemple 6 — Qualificatif, puis structure hors corpus
 
 **Situation** : dans une entreprise de logiciels, le même conflit « produit contre commercial »
 oppose deux binômes dans l'équipe, deux responsables au niveau du département, et deux directeurs
@@ -223,9 +223,21 @@ au comité de direction. Chaque niveau tranche ses arbitrages par le même vote 
 
 R3 · POLARITÉ : CONTRAINTE → (deux camps, aucune règle qui exclut des options) ; SEUIL → (les camps coexistent à chaque niveau, aucun passage irréversible)
 
-**Structure hors corpus (R9)** : la **répétition du même motif à plusieurs échelles**
-(auto-similarité). Aucune carte ne la décrit depuis que RÉCURSIVITÉ est limitée à l'auto-référence.
-Elle est nommée en clair et notée au journal de `calibration.md` comme lacune possible du corpus.
+**Qualificatif (R13)** : la répétition du même motif à plusieurs échelles n'est pas une structure
+de plus. C'est la manière dont POLARITÉ se déploie ici. Avant R9, on vérifie le qualificatif :
 
-**Signature** : `POLARITÉ` · `⥀` — motif hors corpus : auto-similarité inter-échelles.
-**Statut** : Descriptif — ancrage Fort avec R3 complet, contre-observation classée.
+Q · POLARITÉ {multi-échelle} : POLARITÉ ancrée par un fait distinct à trois échelles nommées — binômes de l'équipe, responsables du département, directeurs du comité — avec les mêmes rôles (produit / commercial) ; contre-observation : au comité, la DAF arbitre parfois hors des deux camps — cela touche une échelle sur trois sans en retirer les deux pôles (marginale)
+
+En v0.4.1, ce motif était déclaré « structure hors corpus ». Il est désormais lu dans le corpus.
+
+**Signature** : `POLARITÉ {multi-échelle}` · `⥀{×N}`
+**Statut** : Descriptif — ancrage Fort avec R3 complet ; contre-observations classées pour la carte
+et pour le qualificatif.
+
+**Variante — un vrai hors-corpus.** Même entreprise : toutes les mises en production passent par
+un seul ingénieur, seul à détenir les accès ; trois incidents en 2025 ont attendu son retour de
+congé. RÉSEAU s'ancre (l'ingénieur est un pont unique), mais il décrit la topologie, pas ce qui
+organise les incidents : le **monopole d'une ressource** (les accès), un goulot d'étranglement.
+Aucune carte ni aucun qualificatif ne le nomme. On lit RÉSEAU, on nomme le motif en clair (R9) et
+on le note au journal des lacunes (`calibration.md` §4) comme **lacune possible** : un cas ne suffit
+pas à dire que le corpus manque d'une carte (procédure d'admission, `calibration.md` §6).

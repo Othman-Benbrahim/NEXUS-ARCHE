@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Notation des signatures
 
-> Version : 0.4.1
+> Version : 0.4.2
 
 > Remplace `stele_rules.md` (v0.3.1). Source de vérité des **identifiants**, **glyphes** et de la
 > **syntaxe des signatures**. Le script `scripts/nexus_tool.py` lit la table du §1.
@@ -58,9 +58,13 @@ Formes d'entrée acceptées par le validateur : nom avec ou sans accents, casse 
 | 3 | `tient / bouge / manque` (ordonnée) | `RÉCIPROCITÉ / POLARITÉ / RÉSEAU` | `⊗ / ⥀ / ⊛` |
 | 4 | `<signature mode 2 ou 3> ⇒ R` | `PÉRIODICITÉ / CONTRAINTE / ÉMERGENCE ⇒ SEUIL` | `↻ / ⊘ / ⊙ ⇒ ⊥` |
 | nul | `∅` | `∅` | `∅` |
+| qualificatif (R13) | `A {qualificatif}` à la place de `A`, dans tout mode | `POLARITÉ {multi-échelle}` · `CROISSANCE {rétroaction amplifiante} + CONTRAINTE` | `⥀{×N}` · `▲{R↑} + ⊘` |
 
 Chaque séparateur a un seul sens : `+` tension non ordonnée, `/` positions du Mode 3, `⇒` carte de
-tenue (Mode 4). Il n'y a plus d'opérative ni de modale dans une signature : la chaîne condensée
+tenue (Mode 4), `{…}` qualificatif de la carte qui le précède. Les qualificatifs sont écrits par
+leur **nom canonique** (`{rétroaction amplifiante}`, `{rétroaction stabilisante}`,
+`{multi-échelle}`, `{délai}`) ; le code court (`R↑`, `R↓`, `×N`, `Δt`) n'apparaît que dans la ligne
+glyphique. Aucun nom ni code ne contient `+`, `/` ou `⇒`. Il n'y a plus d'opérative ni de modale dans une signature : la chaîne condensée
 `S+O+M` de la v0.3.1 est supprimée (elle introduisait des glyphes de cartes non ancrées).
 
 ---
@@ -80,6 +84,9 @@ Une signature est valide si et seulement si :
    *manque*, avec les deux objets nommés ; R8). La carte `⇒ R` est distincte des cartes qu'elle tient.
 5. **Double écriture** — en sortie, toujours la ligne des noms ; la ligne glyphique est facultative
    et ne remplace jamais les noms.
+6. **Qualificatifs** — au plus deux par carte, sans répétition, pris dans la liste de R13 ; une
+   espace entre la carte et `{`, une espace entre deux qualificatifs. Chaque qualificatif d'une
+   signature a sa ligne `Q ·` dans la lecture (R13, règle 1 ; contrôlé par `lint` dans le corpus).
 
 Vérification mécanique : `python3 scripts/nexus_tool.py validate "<signature>"`. Le validateur
 signale aussi une paire incompatible : en *tient* / *manque* (configuration Lacune contradictoire
@@ -98,6 +105,9 @@ précisément séparer. D'où la règle 5 : le nom fait foi.
 | `↻` / `↺` | PÉRIODICITÉ / RÉCURSIVITÉ | confusion de risque élevé |
 | `⊙` / `⊛` / `⊗` | ÉMERGENCE / RÉSEAU / RÉCIPROCITÉ | cluster de confusion RÉSEAU–RÉCIPROCITÉ |
 | `✦` / `✶` | HIÉRARCHIE / RÉSONANCE | lisibilité |
+
+Les codes de qualificatifs ont été choisis hors de l'alphabet des cartes : la v0.4.1 envisageait
+`↻±` pour la rétroaction, glyphe de PÉRIODICITÉ, et `+`, séparateur du Mode 2. Les deux sont exclus.
 
 ---
 

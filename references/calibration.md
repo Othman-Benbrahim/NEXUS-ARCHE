@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Calibration
 
-> Version : 0.4.1
+> Version : 0.4.2
 
 > Mesure le risque qu'un lecteur ou un modèle prenne une carte pour une autre (**confusion**),
 > documente les faux positifs et les lacunes du corpus, et définit les indicateurs de suivi.
@@ -66,7 +66,7 @@ le corpus lui-même — registre anthropologique partagé ou structures compatib
 | CROISSANCE | « notre croissance » après une acquisition | coïncidence lexicale ; mécanisme concurrent dominant (R4) | SEUIL + TRANSFORMATION (exemple 4) |
 | TRANSFORMATION | « plan de transformation » récurrent | coïncidence lexicale ; structure cyclique | PÉRIODICITÉ (test_log 09) |
 | HIÉRARCHIE | déséquilibre de volumes horaires | rapport de grandeurs, pas de préséance | PROPORTION (test_log 05) |
-| RÉCURSIVITÉ | « on tourne en rond » | rétroaction ou répétition sans représentation de soi | PÉRIODICITÉ, ou structure hors corpus |
+| RÉCURSIVITÉ | « on tourne en rond » | rétroaction ou répétition sans représentation de soi | PÉRIODICITÉ, ou une carte munie de `{rétroaction stabilisante}` (R13) |
 | COMMUNAUTÉ | contributeurs sans bien commun nommé | intérêt partagé ≠ projet commun | ÉMERGENCE (test_log 03) |
 
 **Règle de vigilance** : quand le nom d'une carte figure dans la description, chercher
@@ -95,21 +95,26 @@ qui accumule 3 erreurs déclenche une révision de `cards.md`.
 
 ## 4. Journal des lacunes du corpus (structures hors corpus, R9)
 
-*Vide en données réelles.* Lacunes identifiées à l'analyse, à confirmer par l'usage :
-- **rétroaction simple** (sortie qui influence l'entrée, sans représentation de soi) — exclue de
-  RÉCURSIVITÉ en v0.4 ;
-- **auto-similarité** (même motif à plusieurs échelles) — idem (exemple 6).
+*Vide en données réelles.*
 
-Template :
+**Lacunes connues à l'analyse et leur traitement** :
+
+| Motif | Statut v0.4.2 |
+|---|---|
+| rétroaction (sortie qui revient sur l'entrée, sans représentation de soi) | couvert par les qualificatifs `{rétroaction amplifiante}` / `{rétroaction stabilisante}` (R13) |
+| auto-similarité (même motif à plusieurs échelles) | couvert par le qualificatif `{multi-échelle}` (R13 ; exemple 6) |
+| monopole d'une ressource, goulot d'étranglement | **lacune possible**, 1 cas construit (exemple 6, variante) ; ne compte pas pour le seuil du §6 |
+
+Template (une entrée par lecture **réelle** ; les cas construits ne comptent pas) :
 
 ```
 ## Lacune N — [date]
 Situation : [2 phrases]
 Motif nommé en clair : [...]
-Cartes testées et pourquoi elles ne conviennent pas : [...]
+Cartes testées et pourquoi elles ne conviennent pas : [... avec leurs lignes R3]
+Qualificatifs testés et pourquoi ils ne conviennent pas : [...]
+Source : [lecture réelle — qui, quand]
 ```
-
-Une lacune notée trois fois sur des situations indépendantes justifie d'examiner une carte nouvelle.
 
 ---
 
@@ -123,5 +128,32 @@ Une lacune notée trois fois sur des situations indépendantes justifie d'examin
 | Taux de confusion corrigée | % de lectures où la première carte a été remplacée | |
 | Accord inter-lecteurs | kappa de Cohen entre deux lecteurs indépendants sur les mêmes situations | voir `test_log.md` §3 |
 | Répartition des statuts | Descriptif / Spéculatif / Nul | |
-| Lacunes | nombre et récurrence des structures hors corpus | |
+| Lacunes | nombre et récurrence des structures hors corpus, après test des qualificatifs | au-delà de 15 % sur 20 lectures : déclencheur global du §6 |
+| Qualificatifs | fréquence de chacun ; part des qualificatifs retirés par anti-résonance | un qualificatif jamais retiré est peut-être décoratif (même logique que R4) |
 | Configurations confirmées / signalées | par configuration (Scission, Reproduction, Lacune contradictoire) et pour la relation de reproduction en Mode 2 | **Reproduction** est la seule configuration sans fréquence combinatoire et la plus exposée au sur-déclenchement (un mouvement est souvent en aval de la structure stable) : un taux de confirmation bas impose de durcir R6 (a)–(b) |
+
+---
+
+## 6. Procédure d'admission d'une carte
+
+Une carte nouvelle n'entre dans le corpus qu'au terme de ces quatre étapes, dans l'ordre. Une étape
+échouée arrête la procédure ; la lacune reste au journal.
+
+1. **Seuil d'entrée** — au moins **3 entrées** du §4 portant sur le même motif, issues de
+   **situations indépendantes** et de **lectures réelles** (ni exemples ni démonstrations construits).
+2. **Test de non-réduction** — sur chacune de ces entrées, appliquer R3 à la carte candidate contre
+   les cartes existantes, puis tester les quatre qualificatifs (R13). Si une carte existante,
+   qualifiée ou non, rend compte du motif dans un cas sur trois au moins, la candidate est refusée :
+   le motif est couvert.
+3. **Fiche complète** au format de `cards.md` : définition, structure mathématique **nommée**,
+   marqueurs observables, voisines documentées avec questions discriminantes (et ajout symétrique
+   dans les fiches voisines), registre anthropologique. Un registre « à établir » est admis, mais la
+   carte est déclarée **mono-registre** dans `SKILL.md`. Toute incompatibilité proposée passe le
+   critère d'`antagonismes.md` §2.
+4. **Régression** — `nexus_tool.py lint` vert ; `stats` relancé et `antagonismes.md` §5 mis à jour ;
+   les exemples et les démonstrations relus, chaque changement de lecture justifié au CHANGELOG ;
+   version mineure incrémentée.
+
+**Déclencheur global.** Si, sur au moins 20 lectures réelles, **plus de 15 %** concluent à un motif
+hors corpus après le test des qualificatifs, la couverture du corpus est en cause dans son ensemble :
+ouvrir une révision du corpus, pas seulement une carte.

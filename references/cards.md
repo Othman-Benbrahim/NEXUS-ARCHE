@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Les 16 cartes
 
-> Version : 0.4.1
+> Version : 0.4.2
 
 > Source de vérité des **définitions**. La procédure de lecture est dans `SKILL.md` ;
 > les identifiants et glyphes dans `references/notation.md`.
@@ -137,8 +137,8 @@ a terminé cette phase ?
 **Définition** : le système prend sa propre opération ou sa propre représentation pour objet, et
 cette prise **modifie** l'opération qu'elle observe. Une seule notion : l'auto-référence opérante.
 > Hors carte : la simple rétroaction (une sortie qui influence l'entrée sans représentation de
-> soi) et l'auto-similarité fractale. Si l'une d'elles organise la situation, la nommer en clair
-> comme structure hors corpus.
+> soi) et l'auto-similarité. Elles se lisent par les **qualificatifs** `{rétroaction amplifiante}`,
+> `{rétroaction stabilisante}` et `{multi-échelle}` posés sur la carte concernée (R13).
 
 **Structure mathématique** : points fixes d'applications auto-référentielles (théorème de
 récursion, Kleene 1938) ; réflexivité sociale et prophétie autoréalisatrice (Merton 1948).

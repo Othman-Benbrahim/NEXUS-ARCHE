@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Journal de tests
 
-> Version : 0.4.1
+> Version : 0.4.2
 >
 > **Statut honnête de ce fichier** : il ne contient encore **aucun test**. Les dix situations du §2
 > sont des **démonstrations construites** en v0.3, choisies pour faire apparaître des cartes

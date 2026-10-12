@@ -1,6 +1,6 @@
 # NEXUS-ARCHÊ — Guide d'activation
 
-> Version : 0.4.1
+> Version : 0.4.2
 
 > Templates à copier-coller. Les règles citées (R1–R12) sont dans `protocol.md` ; ce fichier ne
 > les redéfinit pas. Les parties entre crochets sont à remplacer.
@@ -54,6 +54,15 @@ Je confirme la configuration [Scission / Reproduction / Lacune contradictoire]
 [ce qui la confirme]. Quelle structure, déjà présente, permettrait de tenir cette tension ?
 ```
 
+## Template 4bis — Tester un qualificatif
+
+```
+Dans cette lecture, [CARTE] se répète-t-elle à plusieurs échelles, s'entretient-elle par une boucle,
+ou agit-elle avec un décalage daté ? Teste les qualificatifs de R13.
+```
+
+Un qualificatif n'est retenu qu'avec sa ligne `Q ·` : un fait, et une contre-observation classée.
+
 ## Template 5 — Vérifier une signature
 
 ```
@@ -103,6 +112,7 @@ configurations (R8), signature, statut (R11).
 | 2 | tirage aléatoire réel |
 | 3 | constellation |
 | 4 | carte de tenue |
+| 4bis | qualificatifs (R13) |
 | 5 | signature / export STÈLE |
 | 6 | cadrage OSINT ou prédictif |
 | 7 | complément Fractales du Destin |
