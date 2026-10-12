@@ -79,6 +79,39 @@ def load_incompat(cards):
     return pairs
 
 
+def load_qualifiers():
+    """Qualificatifs = table de R13 (protocol.md) : | `{nom}` | `code` | marqueur |"""
+    text = (REF / "protocol.md").read_text(encoding="utf-8")
+    sect = text.split("## R13")[1] if "## R13" in text else ""
+    out = {}
+    for m in re.finditer(r"^\| `\{([^}]+)\}` \| `([^`]+)` \|", sect, re.M):
+        out[m[1]] = m[2]
+    return out
+
+
+def split_quals(token, quals, errors):
+    """'POLARITÉ {multi-échelle}' -> ('POLARITÉ', ['multi-échelle'])"""
+    m = re.match(r"^(.*?)((?: \{[^{}]+\})*)$", token)
+    head, tail = m[1], m[2]
+    if "{" in head or "}" in head:
+        errors.append(f"qualificatif mal formé dans « {token} » (une espace avant chaque « {{ », notation.md §3 règle 6)")
+        return head, []
+    names = re.findall(r"\{([^{}]+)\}", tail)
+    by_code = {v: k for k, v in quals.items()}
+    out = []
+    for q in names:
+        qn = q if q in quals else by_code.get(q)
+        if not qn:
+            errors.append(f"« {{{q}}} » n'est pas un qualificatif (R13 : {', '.join(quals)})")
+            continue
+        out.append(qn)
+    if len(out) > 2:
+        errors.append(f"plus de deux qualificatifs sur « {head} » (R13 règle 3)")
+    if len(set(out)) != len(out):
+        errors.append(f"qualificatif répété sur « {head} »")
+    return head.strip(), out
+
+
 REQUIRED_REFS = ["protocol", "cards", "notation", "antagonismes", "calibration",
                  "examples", "test_log", "prompt_guide"]
 
@@ -208,12 +241,15 @@ def cmd_validate(sig, cards):
         parts, mode = [s], 1
     if res is not None and mode == 1:
         errors.append("⇒ s'applique à une signature de Mode 2 ou 3")
-    names = []
+    quals = load_qualifiers()
+    names, qlists = [], []
     for p in parts + ([res] if res is not None else []):
-        r = resolve(p, idx)
+        head, ql = split_quals(p, quals, errors)
+        r = resolve(head, idx)
         if not r:
-            errors.append(f"« {p} » n'est pas une carte (noms : notation.md §1)")
+            errors.append(f"« {head} » n'est pas une carte (noms : notation.md §1)")
         names.append(r)
+        qlists.append(ql)
     if not errors:
         base_names = names[: len(parts)]
         if len(set(base_names)) != len(base_names):
@@ -228,13 +264,17 @@ def cmd_validate(sig, cards):
             print("INVALIDE ·", e)
         return 1
     sep = {1: "", 2: " + ", 3: " / "}[mode]
-    canon = sep.join(names[: len(parts)])
-    gl = sep.join(glyph[n] for n in names[: len(parts)])
+    cn = lambda i: names[i] + "".join(f" {{{q}}}" for q in qlists[i])
+    gn = lambda i: glyph[names[i]] + "".join(f"{{{quals[q]}}}" for q in qlists[i])
+    canon = sep.join(cn(i) for i in range(len(parts)))
+    gl = sep.join(gn(i) for i in range(len(parts)))
     if res is not None:
-        canon += " ⇒ " + names[-1]
-        gl += " ⇒ " + glyph[names[-1]]
+        canon += " ⇒ " + cn(len(names) - 1)
+        gl += " ⇒ " + gn(len(names) - 1)
     label = f"Mode {4 if res is not None else mode}"
     print(f"VALIDE · {label}\n  {canon}\n  {gl}")
+    if any(qlists):
+        print("NOTE · chaque qualificatif doit avoir sa ligne « Q · CARTE {qualificatif} : fait ; contre-observation » (R13)")
     inc = {tuple(sorted(p)) for p in load_incompat(cards)}
     if mode == 3:
         t_, m_ = names[0], names[2]
@@ -343,6 +383,27 @@ def cmd_lint(cards):
     for fname in ("examples.md", "test_log.md"):
         n_checked = check_r3(REF / fname, neigh, cards, bad)
         print(f"OK · {fname} : {n_checked} cartes Fort, lignes R3 complètes" if ok else "")
+    # --- qualificatifs : chaque {q} d'une signature du corpus a sa ligne Q ---
+    quals = load_qualifiers()
+    if len(quals) != 4:
+        bad(f"protocol.md R13 : 4 qualificatifs attendus, {len(quals)} lus")
+    idxq = build_index(cards)
+    nq = 0
+    for fname in ("examples.md", "test_log.md"):
+        text = (REF / fname).read_text(encoding="utf-8")
+        for sec in re.split(r"^#{2,3} ", text, flags=re.M)[1:]:
+            title = sec.split("\n", 1)[0][:40]
+            for sig in re.findall(r"\*\*Signature\*\* :? ?`([^`]+)`", sec):
+                for card, qs in re.findall(r"([A-ZÀ-Ý·]+)((?: \{[^{}]+\})+)", sig):
+                    for q in re.findall(r"\{([^{}]+)\}", qs):
+                        nq += 1
+                        c = resolve(card, idxq)
+                        if q not in quals:
+                            bad(f"{fname} « {title} » : qualificatif inconnu {{{q}}}")
+                        pat = rf"^Q · {re.escape(card)} \{{{re.escape(q)}\}} : .+ ; contre-observation : .+\((marginale|aucune trouvée)\)"
+                        if not re.search(pat, sec, re.M):
+                            bad(f"{fname} « {title} » : {c} {{{q}}} sans ligne Q ancrée (fait ; contre-observation (portée))")
+    print(f"OK · {nq} qualificatif(s) dans les signatures du corpus, tous ancrés" if ok else "")
     # --- citations ↔ bibliographie ---
     refs_part = cards_md.split("## Références")[1]
     body = cards_md.split("## Références")[0]
